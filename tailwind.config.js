@@ -18,6 +18,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui","flowbite/plugin")],
   darkMode: "class",
 };

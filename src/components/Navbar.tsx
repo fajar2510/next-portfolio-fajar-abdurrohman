@@ -19,11 +19,14 @@ const Navbar = () => {
                  Project
             </Link>
             <Link href="#">
-                Course
+                 Experience
             </Link>
             <Link href="#">
                 Contact
-           </Link>
+            </Link>
+
+         
+          
         </ul>
         </div>
         <div className='flex items-center gap-[1ch]'>
@@ -44,11 +47,12 @@ const Navbar = () => {
                     Project
                 </Link>
                 <Link href="#">
-                    Course
+                    Experience
                 </Link>
                 <Link href="#">
                     Contact
-            </Link>
+                </Link>
+               
             </ul>
         </div>
         <Link href="/" className="ml-10  bg-black text-white font-medium py-2 px-10 rounded-3xl w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Resume  </Link>

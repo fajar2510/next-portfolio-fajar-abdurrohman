@@ -3,6 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply max-w-[90%] w-[1080] mx-auto;
-  /* @apply bg-white dark:bg-black; */
+  @apply max-w-[87%] w-[1080] mx-auto;
 }

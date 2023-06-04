@@ -8,8 +8,11 @@ import Linkedin from "../../public/linkedin.svg";
 import Twitter from "../../public/twitter.svg";
 import ProjectPreview from "@/components/ProjectPreview";
 import Link from "next/link";
+import Contact from "@/components/Contact";
+import Experience from "@/components/Experience";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -45,7 +48,12 @@ export default function Home() {
               </div>
             </div>
         </div>
-        <div className="h-[30rem] rounded-3xl p-8 bg-[url('/img/myfoto3.jpg')] bg-cover bg-center"/>
+
+        {/* foto layout */}
+        <div className="w-full h-full rounded-3xl duration-300 transition ease-in-out overflow-hidden group hover:scale-[97%]">
+
+        <div className="h-[30rem] group-hover:scale-[107%] duration-300 transition ease-in-out grayscale-0 rounded-3xl p-8 bg-[url('/avatar-profile.png')] bg-cover bg-center "/>
+        </div>
       </section>
 
       <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
@@ -84,7 +92,17 @@ export default function Home() {
           bgColor="#e4e456"
           dark
         />
+        <ProjectPreview
+          name="New Web 3.0"
+          description="Web 3.0 for the future"
+          imageUrl="/project-3.png"
+          bgColor="#e42323"
+          dark
+        />
       </section>
+     <Experience/>
+      <Contact/>
+     
     </>
   );
 }

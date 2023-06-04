@@ -1,6 +1,6 @@
 import React from 'react'
 import Arrow from "../../public/arrow.svg"
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface Props {
     name?: string | undefined;
@@ -19,10 +19,12 @@ const ProjectPreview: React.FC<Props> = ({
 }) => {
   return (
 
-    <div 
+    <motion.div 
     className={`h-[30rem] rounded-3xl overflow-hidden ${dark ? "dark" : ""}`} 
     style={{background: `${bgColor}`}}
-    
+    initial= "initial"
+    whileInView="animate"
+    variants={PreviewAnimation}
   
     >
         <div className='h-full w-full px-10 py-6 duration-[500ms] transition-all ease-in-out hover:scale-105 object-cover bg-cover bg-no-repeat bg-center'
@@ -37,7 +39,7 @@ const ProjectPreview: React.FC<Props> = ({
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -46,6 +48,11 @@ const PreviewAnimation = {
         y: 30,
         opacity: 0,
         scale: 0.9,
+    },
+    animate: {
+        y: 0,
+        opacity: 1,
+        scale: 1,
         transition: {
             ease: [0.6, 0.01, 0.05, 0.95],
             duration: 0.8,
