@@ -9,7 +9,9 @@ import Twitter from "../../public/twitter.svg";
 import ProjectPreview from "@/components/ProjectPreview";
 import Link from "next/link";
 import Contact from "@/components/Contact";
+import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import Skill from "@/components/Skill";
 
 export default function Home() {
 
@@ -23,19 +25,26 @@ export default function Home() {
       </Head>
       <Navbar/>
 
-      <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
+      <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <div className="h-[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
-            <h1 className="text-4xl text-black font-semibold">Hello, I am a Fullstack Developer with 5 years of experience.</h1>
-            <p className="flex-1 text-black">I care a lot about using programming for create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
+            <h1 className="text-4xl text-black font-semibold leading-tight">Hello🖐 there! Nice to meet you😄! <br /> 
+            I am Fajar Abdurrohman <br />
+            
+            
+           <span className="mt-1.5 text-2xl text-slate-700">  Freshgraduate and basically work with Fullstack Developer <br /> with 5+ years of experience</span>.</h1>
+            <p className="flex-1 font-medium text-md text-slate-700 dark:text-slate-200 leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
             
          
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
               
               <Link href="/" className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Contact me  </Link>
               <div className="flex items-center gap-4">
-                <SocialButton bgColor="linkedin">
-                  <Linkedin className="w-5 h-5"/>
-                </SocialButton>
+                <Link href="https://www.linkedin.com/in/fajar-abdurrohman/" target="_blank">
+                  <SocialButton  bgColor="linkedin">
+                    <Linkedin className="w-5 h-5"/>
+                  </SocialButton>
+                </Link>
+                
                 <SocialButton bgColor="instagram">
                   <Instagram className="w-5 h-5"/>
                 </SocialButton>
@@ -56,52 +65,55 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
+      <section id="project" className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
         <ProjectPreview
-          name="Flip App"
-          description="Next gen social media"
-          imageUrl="/project-1.png"
+          name="E-Commerce Website"
+          description="Next gen website with Next.js, tailwindcss, and prisma"
+          imageUrl="/project-3.png"
           bgColor="#685cdd"
           dark
         />
         <ProjectPreview
-          name="Moneyscape"
-          description="Lend and Borrow dashboard"
-          imageUrl="/project-2.png"
+          name="Simple Blog and Portfolio"
+          description="Next gen website with Next.js, tailwindcss, framer motion, and prisma"
+          imageUrl="/project-3.png"
           bgColor="#313442"
           dark
         />
         <ProjectPreview
-          name="Admin Onboarding"
-          description="Increase user engagement"
+          name="Stock Blood Bank Admin"
+          description="Blood Bank Management System for Rumah Sakit Islam Surabaya"
           imageUrl="/project-3.png"
           bgColor="#E1306C"
           dark
         />
         <ProjectPreview
           name="SIG Tenaga Kerja Jatim"
-          description="Interactive Map Marker Cluster"
-          imageUrl="/project-2.png"
+          description="Interactive Map Marker Cluster for Labor in East Java"
+          imageUrl="/project-3.png"
           bgColor="#4e4e56"
           dark
         />
         <ProjectPreview
-          name="Stock Blood Bank Admin"
-          description="Blood Bank Management System"
+          name="System Informtion Accounting"
+          description="System Informtion Accounting with Debet and Credit, and Balance Sheet"
           imageUrl="/project-3.png"
           bgColor="#e4e456"
           dark
         />
         <ProjectPreview
-          name="New Web 3.0"
-          description="Web 3.0 for the future"
-          imageUrl="/project-3.png"
-          bgColor="#e42323"
+          name="Aiku Psycology consultation online"
+          description="Aiku Android App Psycology consultation online with Flutter and Firebase"
+          imageUrl="/project-2.png"
+          bgColor="#65BCE7"
           dark
         />
       </section>
-     <Experience/>
+      <Education/>
+       <Experience/>
+      <Skill/>
       <Contact/>
+
      
     </>
   );
