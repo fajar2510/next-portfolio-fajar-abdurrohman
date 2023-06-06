@@ -26,34 +26,42 @@ export default function Home() {
       <Navbar/>
 
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-        <div className="h-[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
-            <h1 className="text-4xl text-black font-semibold leading-tight">Hello🖐 there! Nice to meet you😄! <br /> 
+        <div className="h-[30rem] rounded-3xl p-6 lg:p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+            <h1 className="text-xl lg:text-4xl text-black font-semibold leading-tight">Hello🖐 there! Nice to meet you😄! <br /> 
             I am Fajar Abdurrohman <br />
             
             
-           <span className="mt-1.5 text-2xl text-slate-700">  Freshgraduate and basically work with Fullstack Developer <br /> with 5+ years of experience</span>.</h1>
+           <span className="mt-1.5 text-lg lg:text-2xl text-slate-700">  Freshgraduate and basically work with Fullstack Developer <br /> with 5+ years of experience</span>.</h1>
             <p className="flex-1 font-medium text-md text-slate-700 dark:text-slate-200 leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
             
          
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
               
-              <Link href="/" className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Contact me  </Link>
+              <Link href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email" target="_blank"  className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Contact me  </Link>
               <div className="flex items-center gap-4">
                 <Link href="https://www.linkedin.com/in/fajar-abdurrohman/" target="_blank">
                   <SocialButton  bgColor="linkedin">
                     <Linkedin className="w-5 h-5"/>
                   </SocialButton>
                 </Link>
-                
+                <Link href="https://www.instagram.com/fajar.arh25/" target="_blank">
                 <SocialButton bgColor="instagram">
                   <Instagram className="w-5 h-5"/>
                 </SocialButton>
-                <SocialButton bgColor="twitter">
+                </Link>
+                <Link href="https://twitter.com/laststory432" target="_blank">
+                  <SocialButton bgColor="twitter">
                   <Twitter className="w-5 h-5"/>
                 </SocialButton>
-                <SocialButton bgColor="github">
+                </Link>
+                <Link href="https://github.com/fajar2510" target="_blank">
+                  <SocialButton bgColor="github">
                   <Github className="w-5 h-5"/>
                 </SocialButton>
+                </Link>
+                
+                
+                
               </div>
             </div>
         </div>
@@ -75,7 +83,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="Simple Blog and Portfolio"
-          description="Next gen website with Next.js, tailwindcss, framer motion, and prisma"
+          description="Next gen website with Next.js, tailwindcss, framer motion"
           imageUrl="/project-3.png"
           bgColor="#313442"
           dark

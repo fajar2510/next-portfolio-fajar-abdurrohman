@@ -17,7 +17,7 @@ import Prisma from "../../public/img/tech/prisma.svg"
 
 const Skill = () => {
     return (
-        <div className='flex p-10  flex-col mb-10'>
+        <div id='technology' className='flex p-10  flex-col mb-10'>
             <h2 className='text-3xl font-bold text-black mb-1.5'>Skills and Journey in Technology Adaptation</h2>
             <span className='mb-3 text-md font-semibold text-slate-500'>Technologies and frameworks I have learned from the beginning until recently.</span>
 
