@@ -67,7 +67,7 @@ export default function Home() {
         </div>
 
         {/* foto layout */}
-        <div className="w-full h-full lg:h-[32rem] rounded-3xl duration-300 transition ease-in-out overflow-hidden group hover:scale-[97%]">
+        <div className="w-full h-[32rem] rounded-3xl duration-300 transition ease-in-out overflow-hidden group hover:scale-[97%]">
           <div className="h-full group-hover:scale-[107%] duration-300 transition ease-in-out grayscale-0 rounded-3xl p-8 bg-[url('/avatar-profile.png')] bg-cover bg-center "/>
         </div>
       </section>
