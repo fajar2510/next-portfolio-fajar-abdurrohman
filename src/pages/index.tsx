@@ -26,7 +26,7 @@ export default function Home() {
       <Navbar/>
 
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-        <div className="h-full lg:h-[30rem] rounded-3xl p-6 lg:p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+        <div className="h-full  rounded-3xl p-6 lg:p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
             <h1 className="text-2xl lg:text-4xl text-black font-semibold leading-tight "> <div className="flex flex-col lg:flex-row"> Hello🖐 there! <span> Nice to meet you😄!</span> </div> 
             I am Fajar Abdurrohman <br />
             

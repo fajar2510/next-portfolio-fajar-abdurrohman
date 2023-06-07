@@ -21,7 +21,7 @@ const Skill = () => {
             <h2 className='text-3xl font-bold text-black mb-1.5'>Skills and Journey in Technology Adaptation</h2>
             <span className='mb-3 text-md font-semibold text-slate-500'>Technologies and frameworks I have learned from the beginning until recently.</span>
 
-            <div className='flex flex-wrap gap-2 lg:gap-3 justify-around mt-3 '>
+            <div className='flex flex-wrap gap-2 lg:gap-3 justify-center mt-3 '>
                 <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-orange-200 from-yellow-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <CodeIgniter className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-orange-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>CodeIgniter</span>
@@ -30,7 +30,7 @@ const Skill = () => {
                     <Laravel className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-orange-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Laravel</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg lg:w-40-gradient-to-t to-indigo-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg lg:w-40 bg-gradient-to-t to-indigo-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Bootstrap className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-indigo-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Bootstrap</span>
                 </div>
