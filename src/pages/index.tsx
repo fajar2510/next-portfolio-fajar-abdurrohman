@@ -26,12 +26,17 @@ export default function Home() {
       <Navbar/>
 
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-        <div className="h-full  rounded-3xl p-6 lg:p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
-            <h1 className="text-2xl lg:text-4xl text-black font-semibold leading-tight "> <div className="flex flex-col lg:flex-row"> Hello🖐 there! <span>&nbsp;Nice to meet you😄!</span> </div> 
-            I&apos;am Fajar Abdurrohman <br />
-            
-            
-           <span className="mt-3 text-lg lg:text-2xl text-slate-700">  Freshgraduate and basically work with Fullstack Developer <br /> with 5+ years of experience</span>.</h1>
+        <div className="h-full  rounded-3xl p-6 lg:p-10 flex flex-col gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
+            <h1 className="text-2xl lg:text-4xl text-black font-semibold leading-tight "> 
+            <div className="flex flex-col my-0 py-0 lg:flex-row"> 
+              Hello🖐 there!&nbsp; 
+              <span>Nice to meet you😄!</span> 
+            </div> 
+            I&apos;am Fajar Abdurrohman </h1>
+
+           <span className=" text-lg lg:text-2xl text-slate-700">  
+           Freshgraduate and basically work with Fullstack Developer<br />with 5+ years of experience.</span>
+
             <p className="flex font-medium text-md text-slate-700 dark:text-slate-200 leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
             
          

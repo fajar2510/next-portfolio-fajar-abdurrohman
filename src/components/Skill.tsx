@@ -17,11 +17,11 @@ import Prisma from "../../public/img/tech/prisma.svg"
 
 const Skill = () => {
     return (
-        <div id='technology' className='flex p-2 lg:p-10  flex-col mb-10'>
+        <div id='technology' className='flex p-2 -mt-10 lg:p-10  flex-col mb-10'>
             <h2 className='text-3xl font-bold text-black mb-1.5'>Skills and Journey in Technology Adaptation</h2>
             <span className='mb-3 text-md font-semibold text-slate-500'>Technologies and frameworks I have learned from the beginning until recently.</span>
 
-            <div className='flex flex-wrap gap-2 lg:gap-3 justify-center mt-3 '>
+            <div className='flex flex-wrap gap-2 lg:gap-3 justify-evenly mt-3 '>
                 <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-orange-200 from-yellow-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <CodeIgniter className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-orange-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>CodeIgniter</span>

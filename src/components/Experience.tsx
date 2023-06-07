@@ -64,11 +64,11 @@ const certifs = [
 
 const Experience = () => {
     return (
-        <div id="experience" className='my-2 h-full rounded-3xl p-2 lg:p-10 flex flex-col'>
+        <div id="experience" className=' h-full rounded-3xl p-2 lg:p-10 flex flex-col'>
             <h2 className='text-3xl font-bold text-black mb-1.5'>Experience</h2>
-            <span className='mb-3 text-md font-semibold text-black'>Intern & Course</span>
+            <span className='mb-3 text-lg font-semibold text-black'>Intern & Course</span>
 
-            <ol className="relative border-l border-slate-4\300 dark:border-slate-700">
+            <ol className="relative border-l border-slate-300 dark:border-slate-700">
 
                 <li className="mb-6 border-b border-slate-200 ml-4">
                     <h3 className='text-lg font-bold text-black mb-1.5'>Intern</h3>
@@ -76,7 +76,7 @@ const Experience = () => {
                     <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">Aug 2021 - Nov 2021</time>
                     <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Web Developer include IT Support - Disnakertrans Jawa Timur</h3>
                     <p className="text-base font-normal text-slate-600 dark:text-slate-400">Build interactive Web Apps with mapping of labor in East Java, using Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap .</p>
-                    <div className='flex flex-wrap justify-start gap-1.5 lg:gap-5 px-0 lg:px-2 py-3'>
+                    <div className='flex flex-wrap justify-start gap-1.5 lg:gap-5 px-0 lg:px-2 py-2'>
                         {internImages.map((internImage) => (
                             <div key={internImage.id} className=' group h-full rounded-md overflow-hidden'>
                                 <Image src={internImage.urlImage}
@@ -90,7 +90,7 @@ const Experience = () => {
 
 
                 {certifs.map((certif, index) => (
-                    <li key={certif.id} className="mb-8  ml-4">
+                    <li key={certif.id} className="mb-6  ml-4">
                         {index === 0 && <h3 className='text-lg font-bold text-black mb-1.5'>Course</h3>}
                         <div className="absolute w-3 h-3 bg-slate-300 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                         <time className="mb-1 text-sm font-normal leading-none text-slate-700 dark:text-slate-300">{certif.date}</time>
