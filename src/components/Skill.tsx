@@ -30,43 +30,43 @@ const Skill = () => {
                     <Laravel className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-orange-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Laravel</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-indigo-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg lg:w-40-gradient-to-t to-indigo-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Bootstrap className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-indigo-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Bootstrap</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Github className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-slate-900" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Github</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-blue-200 from-indigo-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-blue-200 from-indigo-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <MySQL className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-blue-600" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Github</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-blue-200 from-cyan-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-blue-200 from-cyan-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Postgre className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-blue-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>PostgreSQL</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-cyan-200 from-blue-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-cyan-200 from-blue-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Flutter className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-cyan-400" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Flutter</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <TailwindCSS className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-cyan-400" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>TailwindCSS</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Reactjs className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-cyan-400" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>React.js</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-green-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-green-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Nodejs className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-green-700" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Node.js</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Nextjs className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-slate-900" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Next.js</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-indigo-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-indigo-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
                     <Prisma className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-indigo-500" />
                     <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Prisma</span>
                 </div>

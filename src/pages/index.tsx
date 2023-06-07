@@ -38,7 +38,7 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
               
               <Link href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email" target="_blank"  className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 text-center tracking-widest lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Contact me  </Link>
-              <div className="flex items-center gap-4">
+              <div className="flex mt-3 lg:mt-0 items-center gap-4">
                 <Link href="https://www.linkedin.com/in/fajar-abdurrohman/" target="_blank">
                   <SocialButton  bgColor="linkedin">
                     <Linkedin className="w-5 h-5"/>
