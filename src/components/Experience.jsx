@@ -64,7 +64,7 @@ const certifs = [
 
 const Experience = () => {
     return (
-        <div id="experience" className='my-2 h-full rounded-3xl p-10 flex flex-col'>
+        <div id="experience" className='my-2 h-full rounded-3xl p-2 lg:p-10 flex flex-col'>
             <h2 className='text-3xl font-bold text-black mb-1.5'>Experience</h2>
             <span className='mb-3 text-md font-semibold text-black'>Intern & Course</span>
 
@@ -76,12 +76,12 @@ const Experience = () => {
                     <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">Aug 2021 - Nov 2021</time>
                     <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Web Developer include IT Support - Disnakertrans Jawa Timur</h3>
                     <p className="text-base font-normal text-slate-600 dark:text-slate-400">Build interactive Web Apps with mapping of labor in East Java, using Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap .</p>
-                    <div className='flex justify-start gap-5 px-2 py-3'>
+                    <div className='flex flex-wrap justify-start gap-1.5 lg:gap-5 px-0 lg:px-2 py-3'>
                         {internImages.map((internImage) => (
                             <div key={internImage.id} className=' group h-full rounded-md overflow-hidden'>
                                 <Image src={internImage.urlImage}
                                     width={140} height={120} alt={`${internImage.title}`}
-                                    className='rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover' />
+                                    className=' rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover' />
                             </div>
                         ))}
 
@@ -105,7 +105,7 @@ const Experience = () => {
 
                         <p className="mb-4  text-base font-normal text-slate-600 dark:text-gray-400">{certif.description}</p>
                         {index === 2 ?
-                            <div className='flex gap-3'>
+                            <div className='flex flex-wrap gap-3'>
                                 <Link href="https://www.dicoding.com/certificates/MEPJKO35WX3V" className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Frontend Cert. <svg className="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></Link>
                                 <Link href="https://www.dicoding.com/certificates/1OP85230LPQK" className=" inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">Backend Cert.<svg className="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></Link>
                             </div>

@@ -88,22 +88,22 @@ const Navbar: React.FC = () => {
                
             </ul>
         </div>
-        <div className="ml-3 flex gap-3 items-center justify-center bg-black text-white font-medium py-2 px-2 lg:px-5 rounded-3xl w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black transition-all duration-300 ease-in-out">
-     <span className='hidden lg:block'>Resume</span> 
-        <select name="language" className="pl-2 rounded-lg " onChange={handleSelectChange} defaultValue={selectedOption.value}>
-          {options.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
-        </select>
-        <Link href={selectedOption.file} download target="_blank" className="bg-white px-3 py-1 rounded-3xl font-medium text-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
-          <Image className='lg:hidden' src="/download.png" width={20} height={20} alt="Download"></Image>
-            <span className="hidden lg:block">Download</span>
-        </Link>
-        </div>
-       </div>
-      </div>
+        <div className=" lg:ml-3 flex gap-2 lg:gap-3 items-center justify-center bg-black text-white font-medium py-2 px-0 lg:px-5 rounded-3xl w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black transition-all duration-300 ease-in-out">
+        <span className='text-whie dark:text-black'>Resume</span> 
+            <select name="language" className="pl-2 rounded-lg  text-white" onChange={handleSelectChange} defaultValue={selectedOption.value}>
+              {options.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+            <Link href={selectedOption.file} download target="_blank" className="bg-white px-3 py-1 rounded-3xl font-medium text-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
+              <Image className='lg:hidden' src="/download.png" width={20} height={20} alt="Download"></Image>
+                <span className="hidden lg:block">Download</span>
+            </Link>
+            </div>
+          </div>
+          </div>
     </>
     
   )

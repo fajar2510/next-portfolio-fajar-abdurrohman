@@ -26,18 +26,18 @@ export default function Home() {
       <Navbar/>
 
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-        <div className="h-[30rem] rounded-3xl p-6 lg:p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
-            <h1 className="text-xl lg:text-4xl text-black font-semibold leading-tight">Hello🖐 there! Nice to meet you😄! <br /> 
+        <div className="h-full lg:h-[30rem] rounded-3xl p-6 lg:p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+            <h1 className="text-2xl lg:text-4xl text-black font-semibold leading-tight "> <div className="flex flex-col lg:flex-row"> Hello🖐 there! <span> Nice to meet you😄!</span> </div> 
             I am Fajar Abdurrohman <br />
             
             
-           <span className="mt-1.5 text-lg lg:text-2xl text-slate-700">  Freshgraduate and basically work with Fullstack Developer <br /> with 5+ years of experience</span>.</h1>
-            <p className="flex-1 font-medium text-md text-slate-700 dark:text-slate-200 leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
+           <span className="mt-3 text-lg lg:text-2xl text-slate-700">  Freshgraduate and basically work with Fullstack Developer <br /> with 5+ years of experience</span>.</h1>
+            <p className="flex font-medium text-md text-slate-700 dark:text-slate-200 leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
             
          
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
               
-              <Link href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email" target="_blank"  className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Contact me  </Link>
+              <Link href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email" target="_blank"  className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 text-center tracking-widest lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Contact me  </Link>
               <div className="flex items-center gap-4">
                 <Link href="https://www.linkedin.com/in/fajar-abdurrohman/" target="_blank">
                   <SocialButton  bgColor="linkedin">
@@ -76,16 +76,16 @@ export default function Home() {
       <section id="project" className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
         <ProjectPreview
           name="E-Commerce Website"
-          description="Next gen website with Next.js, tailwindcss, and prisma"
+          description="Project hariSenin.com build Next gen website with Next.js, tailwindcss, and prisma"
           imageUrl="/img/portofolio/ecommerce-project1.png"
           bgColor="#685cdd"
           dark
         />
         <ProjectPreview
           name="Simple Blog and Portfolio"
-          description="Next gen website with Next.js, tailwindcss, framer motion"
+          description="Build a website with Next.js, tailwindcss, framer motion and add Next Auth"
           imageUrl="/img/portofolio/simpleblog.png"
-          bgColor="#313442"
+          bgColor="#181919"
           dark
         />
         <ProjectPreview
@@ -97,7 +97,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="SIG Tenaga Kerja Jatim"
-          description="Interactive Map Marker Cluster for Labor in East Java"
+          description="Interactive Map Cluster Marker with Geographic Information Systems for Labor in East Java"
           imageUrl="/img/portofolio/penta-map1.png"
           bgColor="#4e4e56"
           dark
@@ -106,11 +106,11 @@ export default function Home() {
           name="System Informtion Accounting"
           description="System Informtion Accounting with Debet and Credit, and Balance Sheet"
           imageUrl="/img/portofolio/siakuntansi1.png"
-          bgColor="#e4e456"
+          bgColor="#938400"
           dark
         />
         <ProjectPreview
-          name="Aiku Psycology consultation online"
+          name="Aiku Psycology Consultation"
           description="Aiku Android App Psycology consultation online with Flutter and Firebase"
           imageUrl="/img/portofolio/aiku1.png"
           bgColor="#65BCE7"

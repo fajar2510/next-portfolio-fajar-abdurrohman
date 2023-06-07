@@ -17,58 +17,58 @@ import Prisma from "../../public/img/tech/prisma.svg"
 
 const Skill = () => {
     return (
-        <div id='technology' className='flex p-10  flex-col mb-10'>
+        <div id='technology' className='flex p-2 lg:p-10  flex-col mb-10'>
             <h2 className='text-3xl font-bold text-black mb-1.5'>Skills and Journey in Technology Adaptation</h2>
             <span className='mb-3 text-md font-semibold text-slate-500'>Technologies and frameworks I have learned from the beginning until recently.</span>
 
-            <div className='flex flex-wrap gap-3 justify-around mt-3 '>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-orange-200 from-yellow-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <CodeIgniter className="h-40 w-40 rounded-full fill-orange-500" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>CodeIgniter</span>
+            <div className='flex flex-wrap gap-2 lg:gap-3 justify-around mt-3 '>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-orange-200 from-yellow-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <CodeIgniter className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-orange-500" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>CodeIgniter</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-pink-200 from-yellow-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Laravel className="h-40 w-40 rounded-full fill-orange-500" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Laravel</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 lg:w-40 bg-gradient-to-t to-pink-200 from-yellow-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Laravel className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-orange-500" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Laravel</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-indigo-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Bootstrap className="h-40 w-40 rounded-full fill-indigo-500" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Bootstrap</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-indigo-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Bootstrap className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-indigo-500" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Bootstrap</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Github className="h-40 w-40 rounded-full fill-slate-900" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Github</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Github className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-slate-900" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Github</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-blue-200 from-indigo-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <MySQL className="h-40 w-40 rounded-full fill-blue-600" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Github</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-blue-200 from-indigo-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <MySQL className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-blue-600" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Github</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-blue-200 from-cyan-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Postgre className="h-40 w-40 rounded-full fill-blue-500" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>PostgreSQL</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-blue-200 from-cyan-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Postgre className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-blue-500" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>PostgreSQL</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-cyan-200 from-blue-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Flutter className="h-40 w-40 rounded-full fill-cyan-400" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Flutter</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-cyan-200 from-blue-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Flutter className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-cyan-400" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Flutter</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <TailwindCSS className="h-40 w-40 rounded-full fill-cyan-400" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>TailwindCSS</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <TailwindCSS className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-cyan-400" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>TailwindCSS</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Reactjs className="h-40 w-40 rounded-full fill-cyan-400" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>React.js</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-cyan-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Reactjs className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-cyan-400" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>React.js</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-green-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Nodejs className="h-40 w-40 rounded-full fill-green-700" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Node.js</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-green-200 from-emerald-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Nodejs className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-green-700" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Node.js</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Nextjs className="h-40 w-40 rounded-full fill-slate-900" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Next.js</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-slate-200 from-gray-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Nextjs className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-slate-900" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Next.js</span>
                 </div>
-                <div className='flex flex-col gap-3 items-center h-40 w-40 bg-gradient-to-t to-indigo-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
-                    <Prisma className="h-40 w-40 rounded-full fill-indigo-500" />
-                    <span className='text-md font-semibold text-slate-700 tracking-widest'>Prisma</span>
+                <div className='flex flex-col gap-3 items-center h-32 w-32 lg:h-40 bg-gradient-to-t to-indigo-200 from-slate-100 overflow-hidden justify-center m-2 p-8  rounded-full '>
+                    <Prisma className="h-32 w-32 lg:h-40 lg:w-40 rounded-full fill-indigo-500" />
+                    <span className='text-sm lg:text-md font-semibold text-slate-700 tracking-widest'>Prisma</span>
                 </div>
             </div>
 

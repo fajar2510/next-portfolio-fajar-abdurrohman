@@ -20,7 +20,7 @@ const ProjectPreview: React.FC<Props> = ({
   return (
 
     <div 
-    className={`h-[30rem] rounded-3xl overflow-hidden ${dark ? "dark" : ""}`} 
+    className={`h-[29rem] lg:h-[30rem] rounded-3xl overflow-hidden ${dark ? "dark" : ""}`} 
     style={{background: `${bgColor}`}}
     // initial= "initial"
     // whileInView="animate"
@@ -32,10 +32,10 @@ const ProjectPreview: React.FC<Props> = ({
             <div className='flex justify-between'>
                 <div>
                     <h2 className='font-medium text-black text-lg dark:text-white'>{name}</h2>
-                    <p className='text-sm text-zinc-500 dark:text-zinc-300'>{description}</p>
+                    <p className='text-sm text-slate-600 dark:text-zinc-300'>{description}</p>
                 </div>
-                <div className='h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer'>
-                    <Arrow className="w-6 h-6"/>
+                <div className='h-8 w-16 lg:h-10 lg:w-16 bg-white rounded-full flex justify-center items-center cursor-pointer'>
+                    <Arrow className="w-4 h-4 lg:w-6 lg:h-6"/>
                 </div>
             </div>
         </div>
