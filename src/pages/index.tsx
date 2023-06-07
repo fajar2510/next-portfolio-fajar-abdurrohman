@@ -77,42 +77,42 @@ export default function Home() {
         <ProjectPreview
           name="E-Commerce Website"
           description="Next gen website with Next.js, tailwindcss, and prisma"
-          imageUrl="/project-3.png"
+          imageUrl="/img/portofolio/ecommerce-project1.png"
           bgColor="#685cdd"
           dark
         />
         <ProjectPreview
           name="Simple Blog and Portfolio"
           description="Next gen website with Next.js, tailwindcss, framer motion"
-          imageUrl="/project-3.png"
+          imageUrl="/img/portofolio/simpleblog.png"
           bgColor="#313442"
           dark
         />
         <ProjectPreview
           name="Stock Blood Bank Admin"
           description="Blood Bank Management System for Rumah Sakit Islam Surabaya"
-          imageUrl="/project-3.png"
+          imageUrl="/img/portofolio/siebankdarah1.png"
           bgColor="#E1306C"
           dark
         />
         <ProjectPreview
           name="SIG Tenaga Kerja Jatim"
           description="Interactive Map Marker Cluster for Labor in East Java"
-          imageUrl="/project-3.png"
+          imageUrl="/img/portofolio/penta-map1.png"
           bgColor="#4e4e56"
           dark
         />
         <ProjectPreview
           name="System Informtion Accounting"
           description="System Informtion Accounting with Debet and Credit, and Balance Sheet"
-          imageUrl="/project-3.png"
+          imageUrl="/img/portofolio/siakuntansi1.png"
           bgColor="#e4e456"
           dark
         />
         <ProjectPreview
           name="Aiku Psycology consultation online"
           description="Aiku Android App Psycology consultation online with Flutter and Firebase"
-          imageUrl="/project-2.png"
+          imageUrl="/img/portofolio/aiku1.png"
           bgColor="#65BCE7"
           dark
         />
