@@ -76,11 +76,11 @@ const Experience = () => {
                     <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">Aug 2021 - Nov 2021</time>
                     <h3 className="text-lg font-semibold text-slate-900 dark:text-white">Web Developer include IT Support - Disnakertrans Jawa Timur</h3>
                     <p className="text-base font-normal text-slate-600 dark:text-slate-400">Build interactive Web Apps with mapping of labor in East Java, using Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap .</p>
-                    <div className='flex flex-wrap justify-start gap-1.5 lg:gap-5 px-0 lg:px-2 py-2'>
+                    <div className='flex flex-wrap justify-start gap-0 lg:gap-4 px-0 lg:px-2 py-1'>
                         {internImages.map((internImage) => (
-                            <div key={internImage.id} className=' group h-full rounded-md overflow-hidden'>
+                            <div key={internImage.id} className='group h-full rounded-md overflow-hidden'>
                                 <Image src={internImage.urlImage}
-                                    width={140} height={120} alt={`${internImage.title}`}
+                                    width={138} height={116} alt={`${internImage.title}`}
                                     className=' rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover' />
                             </div>
                         ))}
