@@ -6,6 +6,6 @@ body {
   @apply max-w-[87%] w-[1080] mx-auto;
 }
 
-* {
+/* * {
   border: 1px solid rgb(157, 253, 145);
-}
+} */
