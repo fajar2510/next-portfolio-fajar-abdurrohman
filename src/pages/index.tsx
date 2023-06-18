@@ -35,7 +35,7 @@ export default function Home() {
             
            <span className="mt-3 text-lg lg:text-2xl text-slate-700"> 
            Freshgraduate and basically work with Fullstack Developer <br /> 
-           with 5+ years of experience.</span>
+           with 3+ years of experience in programming.</span>
             <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
             
          
