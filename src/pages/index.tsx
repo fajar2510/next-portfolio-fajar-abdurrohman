@@ -68,6 +68,7 @@ export default function Home() {
                 
               </div>
             </div>
+            <p className="text-sm font-normal text-slate-500 italic">Last updated : 23/06/2023</p>
         </div>
 
         {/* foto layout */}
