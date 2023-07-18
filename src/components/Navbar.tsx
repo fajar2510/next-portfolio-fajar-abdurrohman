@@ -11,8 +11,8 @@ type Option = {
 
   
 const options: Option[] = [
-    { value: 'EN', label: 'EN', file: '/pdf/Fajar_Abdurrohman ENG CV ATS Friendly - FSD - Harisenin.com.pdf' },
-    { value: 'ID', label: 'ID', file: '/pdf/Fajar_Abdurrohman IND CV ATS Friendly - FSD - Harisenin.com.pdf' },
+    { value: 'EN', label: 'EN', file: '/pdf/Fajar_Abdurrohman ENG CV ATS Friendly.pdf' },
+    { value: 'ID', label: 'ID', file: '/pdf/Fajar_Abdurrohman IND CV ATS Friendly.pdf' },
   ];
 
 const Navbar: React.FC = () => {
