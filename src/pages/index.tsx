@@ -12,6 +12,7 @@ import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Skill from "@/components/Skill";
+import Certification from "@/components/Certification";
 
 export default function Home() {
 
@@ -68,7 +69,7 @@ export default function Home() {
                 
               </div>
             </div>
-            <p className="text-sm font-normal text-slate-500 italic">Last updated : 23/06/2023</p>
+            <p className="text-sm font-normal text-slate-500 italic">Last updated : 14/07/2023</p>
         </div>
 
         {/* foto layout */}
@@ -123,6 +124,7 @@ export default function Home() {
       </section>
       <Education/>
        <Experience/>
+        <Certification/>
       <Skill/>
       <Contact/>
 
