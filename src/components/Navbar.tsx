@@ -45,6 +45,9 @@ const Navbar: React.FC = () => {
             <Link href="#experience" className='text-slate-600 text-lg font-medium py-1.5'>
                  Experience
             </Link>
+            <Link href="#certification" className='text-slate-600 text-lg font-medium py-1.5'>
+              Certif
+            </Link>
             <Link href="#technology" className='text-slate-600 text-lg font-medium py-1.5'>
               Technology
             </Link>
@@ -78,6 +81,9 @@ const Navbar: React.FC = () => {
                 </Link>
                 <Link href="#experience" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
                     Experience
+                </Link>
+                <Link href="#certification" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                  Certif
                 </Link>
                 <Link href="#technology" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
                     Tech
