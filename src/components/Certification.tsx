@@ -8,7 +8,7 @@ const certifs = [
     title: "Harisenin Fullstack Developer Bootcamp 2023",
     date: "Mar 2022 - Jul 2023 (now)",
     img: "/img/certification/harisenin.jpg",
-    link: "/",
+    link: "/#waiting",
     description:
       "Web Developer Harisenin.com Bootcamp 2023 is Immersive Learning that teaches you how to build web applications from scratch. The Sylabus learn HTML, CSS, Javascript, React.js, Node.js, Express, MySql, and more.",
   },
