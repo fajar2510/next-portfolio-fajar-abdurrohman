@@ -103,10 +103,10 @@ const Navbar: React.FC = () => {
                 </option>
               ))}
             </select>
-            <Link href={selectedOption.file} download target="_blank" className="bg-white px-3 py-1 rounded-3xl font-medium text-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
+            <a href={selectedOption.file} download target="_blank" className="bg-white px-3 py-1 rounded-3xl font-medium text-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
               <Image className='lg:hidden' src="/download.png" width={20} height={20} alt="Download"></Image>
                 <span className="hidden lg:block">Download</span>
-            </Link>
+            </a>
             </div>
           </div>
           </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Arrow from "../../public/arrow.svg"
+// import Link from "next/link"
 // import { motion } from 'framer-motion';
 
 interface Props {
@@ -7,6 +8,7 @@ interface Props {
     description?: string | undefined;
     imageUrl?: string | undefined;
     bgColor?: string | undefined;
+    url?: string | undefined;
     dark?: boolean | undefined;
 }
 
@@ -15,6 +17,7 @@ const ProjectPreview: React.FC<Props> = ({
     description = "Project Description",
     imageUrl = "/project-1.png",
     bgColor = "#e4e4e7",
+    url = "#",
     dark = false,
 }) => {
   return (
@@ -27,7 +30,8 @@ const ProjectPreview: React.FC<Props> = ({
     // variants={PreviewAnimation}
   
     >
-        <div className='h-full w-full px-10 py-6 duration-[500ms] transition-all ease-in-out hover:scale-105 object-cover bg-cover bg-no-repeat bg-center'
+        <a href={url} target="_blank" rel="noopener noreferrer">
+            <div className='h-full w-full px-10 py-6 duration-[500ms] transition-all ease-in-out hover:scale-105 object-cover bg-cover bg-no-repeat bg-center'
             style={{ backgroundImage: `url('${imageUrl}')`}}>
             <div className='flex justify-between'>
                 <div>
@@ -39,6 +43,7 @@ const ProjectPreview: React.FC<Props> = ({
                 </div>
             </div>
         </div>
+        </a>
     </div>
   );
 };

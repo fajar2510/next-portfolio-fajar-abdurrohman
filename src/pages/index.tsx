@@ -80,45 +80,51 @@ export default function Home() {
 
       <section id="project" className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
         <ProjectPreview
-          name="E-Commerce Website"
-          description="Project hariSenin.com build Next gen website with Next.js, tailwindcss, and prisma"
-          imageUrl="/img/portofolio/ecommerce-project1.png"
+          name="Shoe Store Web Apps."
+          description="Project hariSenin.com build with Next.js, tailwindcss, Strapi for CMS, and Stripe Payment"
+          imageUrl="/img/portofolio/shoe-store.png"
           bgColor="#685cdd"
           dark
+          url="https://github.com/OngkyRinaldo/project9-shoes-market"
         />
         <ProjectPreview
-          name="Simple Blog and Portfolio"
-          description="Build a website with Next.js, tailwindcss, framer motion and add Next Auth"
-          imageUrl="/img/portofolio/simpleblog.png"
+          name="Clothing E-Commerce"
+          description="Build a website simple Clothing Store, with React.js and Firebase for Login"
+          imageUrl="/img/portofolio/crwn-clothing.png"
           bgColor="#181919"
+           url="https://clothing-web-app.netlify.app/"
           dark
         />
         <ProjectPreview
           name="Stock Blood Bank Admin"
-          description="Blood Bank Management System for Rumah Sakit Islam Surabaya"
+          description="Blood Bank Management System for Rumah Sakit Islam Surabaya (CodeIgniter)"
           imageUrl="/img/portofolio/siebankdarah1.png"
           bgColor="#E1306C"
+           url="https://github.com/fajar2510/Stock-blood-rsibd"
           dark
         />
         <ProjectPreview
           name="SIG Tenaga Kerja Jatim"
-          description="Interactive Map Cluster Marker with Geographic Information Systems for Labor in East Java"
+          description="Interactive Map Cluster Marker with Geographic Information Systems for Labor in East Java with Leaflet.js(CodeIgniter)"
           imageUrl="/img/portofolio/penta-map1.png"
           bgColor="#4e4e56"
+           url="https://github.com/fajar2510/pentamap"
           dark
         />
         <ProjectPreview
-          name="System Informtion Accounting"
-          description="System Informtion Accounting with Debet and Credit, and Balance Sheet"
+          name="System Information Accounting"
+          description="System Informtion Accounting with Debet and Credit, and Balance Sheet(PHP Nattive)"
           imageUrl="/img/portofolio/siakuntansi1.png"
           bgColor="#938400"
+           url="https://github.com/fajar2510/sia-akuntansi"
           dark
         />
         <ProjectPreview
           name="Aiku Psycology Consultation"
-          description="Aiku Android App Psycology consultation online with Flutter and Firebase"
+          description="Aiku Android App Psycology consultation online with Flutter(Dart), CodeIgniter, and Firebase Auth"
           imageUrl="/img/portofolio/aiku1.png"
           bgColor="#65BCE7"
+           url="https://drive.google.com/file/d/15bjWCoaVqfwC0JEIWP8G4xqhlnXkJ0OY/view?usp=sharing"
           dark
         />
       </section>
