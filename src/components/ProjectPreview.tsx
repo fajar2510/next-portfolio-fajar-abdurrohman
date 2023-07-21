@@ -1,7 +1,7 @@
 import React from 'react'
 import Arrow from "../../public/arrow.svg"
 // import Link from "next/link"
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface Props {
     name?: string | undefined;
@@ -22,12 +22,12 @@ const ProjectPreview: React.FC<Props> = ({
 }) => {
   return (
 
-    <div 
+    <motion.div 
     className={`h-[29rem] lg:h-[30rem] rounded-3xl overflow-hidden ${dark ? "dark" : ""}`} 
     style={{background: `${bgColor}`}}
-    // initial= "initial"
-    // whileInView="animate"
-    // variants={PreviewAnimation}
+    initial= "initial"
+    whileInView="animate"
+    variants={PreviewAnimation}
   
     >
         <a href={url} target="_blank" rel="noopener noreferrer">
@@ -44,7 +44,12 @@ const ProjectPreview: React.FC<Props> = ({
             </div>
         </div>
         </a>
-    </div>
+        <div className="p-2 flex flex-col">
+            <h2 className="font-medium text-lg text-black">Simple Try</h2>
+            <a href="" target="_blank"> Simple Create Read Update Delete on Laravel 10 </a>
+        </div>
+    </motion.div>
+
   );
 };
 

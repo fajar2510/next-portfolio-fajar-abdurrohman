@@ -47,7 +47,7 @@ const Contact = () => {
                         </Link>
                     </div>
                     <div>
-                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © 2023 - All right reserved by Fajar Abdurrohman and Inspiration by <Link href="https://www.aboghanbari.com/" className='text-pink-600 font-medium text-sm'>aboghanbari</Link></p>
+                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © 2023 - All right reserved by Fajar Abdurrohman. Thanks</p>
                     </div>
 
                 </div>

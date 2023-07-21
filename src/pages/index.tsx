@@ -81,7 +81,7 @@ export default function Home() {
       <section id="project" className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
         <ProjectPreview
           name="Shoe Store Web Apps."
-          description="Project hariSenin.com build with Next.js, tailwindcss, Strapi for CMS, and Stripe Payment"
+          description="Project hariSenin.com build with Next.js, Tailwindcss, Strapi for CMS, and Stripe Payment"
           imageUrl="/img/portofolio/shoe-store.png"
           bgColor="#685cdd"
           dark
@@ -89,7 +89,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="Clothing E-Commerce"
-          description="Build a website simple Clothing Store, with React.js and Firebase for Login"
+          description="Build a website simple Clothing Store, with React.js, Sass, and Firebase"
           imageUrl="/img/portofolio/crwn-clothing.png"
           bgColor="#181919"
            url="https://clothing-web-app.netlify.app/"
@@ -97,7 +97,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="Stock Blood Bank Admin"
-          description="Blood Bank Management System for Rumah Sakit Islam Surabaya (CodeIgniter)"
+          description="System Information Executive for Blood Bank Management case study Rumah Sakit Islam Surabaya (MySql, CodeIgniter, Bootstrap)"
           imageUrl="/img/portofolio/siebankdarah1.png"
           bgColor="#E1306C"
            url="https://github.com/fajar2510/Stock-blood-rsibd"
@@ -105,7 +105,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="SIG Tenaga Kerja Jatim"
-          description="Interactive Map Cluster Marker with Geographic Information Systems for Labor in East Java with Leaflet.js(CodeIgniter)"
+          description="Interactive Map Cluster Marker with Geographic Information Systems for Labor in East Java with Leaflet.js (MySql, CodeIgniter, Bootstrap)"
           imageUrl="/img/portofolio/penta-map1.png"
           bgColor="#4e4e56"
            url="https://github.com/fajar2510/pentamap"
@@ -113,7 +113,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="System Information Accounting"
-          description="System Informtion Accounting with Debet and Credit, and Balance Sheet(PHP Nattive)"
+          description="System Informtion Accounting with Debet and Credit, and Balance Sheet (MySql, PHP Nattive, Bootstrap)"
           imageUrl="/img/portofolio/siakuntansi1.png"
           bgColor="#938400"
            url="https://github.com/fajar2510/sia-akuntansi"
@@ -121,13 +121,41 @@ export default function Home() {
         />
         <ProjectPreview
           name="Aiku Psycology Consultation"
-          description="Aiku Android App Psycology consultation online with Flutter(Dart), CodeIgniter, and Firebase Auth"
+          description="Aiku Android App Psycology consultation online with Flutter(Dart), CodeIgniter, MySql, and Firebase Auth"
           imageUrl="/img/portofolio/aiku1.png"
           bgColor="#65BCE7"
            url="https://drive.google.com/file/d/15bjWCoaVqfwC0JEIWP8G4xqhlnXkJ0OY/view?usp=sharing"
           dark
         />
+
+         
       </section>
+
+      <div className="p-2 flex flex-col flex-wrap">
+          <h2 className="font-semibold text-lg text-black mb-2">More Simple Try</h2>
+           <ul className="list-disc" >
+             <li className="flex flex-wrap">
+               <a href="https://github.com/fajar2510/crud-laravel-10" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
+               ▫️ Simple CRUD(Create-Read-Update-Delete) with Laravel 10  
+               </a>
+             </li>
+
+             <li className="flex flex-wrap">
+               <a href="https://github.com/fajar2510/next-crud" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
+               ▫️ Simple CRUD(Create-Read-Update-Delete) with Next.js and Typescript
+               </a>
+             </li>
+
+             <li className="flex flex-wrap">
+               <a href="https://github.com/fajar2510/nodejs-reactjs-crud" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
+               ▫️ Simple CRUD(Create-Read-Update-Delete) with Express, Axios, MySql, Vite+ReactJs, TailwindCSS
+               </a>
+             </li>
+           </ul>
+           
+            
+        </div>
+
       <Education/>
        <Experience/>
         <Certification/>
