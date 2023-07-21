@@ -141,6 +141,12 @@ export default function Home() {
              </li>
 
              <li className="flex flex-wrap">
+               <a href="https://github.com/fajar2510/rest-api-laravel-10" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
+               ▫️ REST API with Laravel 10 (tested in postman) 
+               </a>
+             </li>
+
+             <li className="flex flex-wrap">
                <a href="https://github.com/fajar2510/next-crud" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
                ▫️ Simple CRUD(Create-Read-Update-Delete) with Next.js and Typescript
                </a>
