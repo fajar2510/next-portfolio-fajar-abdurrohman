@@ -148,7 +148,7 @@ export default function Home() {
 
              <li className="flex flex-wrap">
                <a href="https://github.com/fajar2510/next-crud" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
-               ▫️ Simple CRUD(Create-Read-Update-Delete) with Next.js and Typescript
+               ▫️ Simple CRUD(Create-Read-Update-Delete) with Next.js, Prisma, and Typescript
                </a>
              </li>
 
@@ -160,7 +160,7 @@ export default function Home() {
 
              <li className="flex flex-wrap">
                <a href="https://github.com/fajar2510/myblog-next" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
-               ▫️ Blog with Login System, CRUD, Middleware,Typescript, TailwindCSS (styling), and MongoDB (Database)
+               ▫️ Blog with Login System, CRUD, Middleware,Typescript, Prisma, TailwindCSS (styling), and MongoDB (Database)
                </a>
              </li>
            </ul>
