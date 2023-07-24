@@ -160,7 +160,7 @@ export default function Home() {
 
              <li className="flex flex-wrap">
                <a href="https://github.com/fajar2510/myblog-next" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
-               ▫️ Blog with Login System, CRUD, Middleware, TailwindCSS (styling), and MongoDB (Database)
+               ▫️ Blog with Login System, CRUD, Middleware,Typescript, TailwindCSS (styling), and MongoDB (Database)
                </a>
              </li>
            </ul>
