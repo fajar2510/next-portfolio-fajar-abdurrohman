@@ -157,6 +157,12 @@ export default function Home() {
                ▫️ Simple CRUD(Create-Read-Update-Delete) with Express, Axios, MySql, Vite+ReactJs, TailwindCSS
                </a>
              </li>
+
+             <li className="flex flex-wrap">
+               <a href="https://github.com/fajar2510/myblog-next" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
+               ▫️ Blog with Login System, CRUD, Middleware, TailwindCSS (styling), and MongoDB (Database)
+               </a>
+             </li>
            </ul>
            
             
