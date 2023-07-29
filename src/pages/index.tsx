@@ -89,7 +89,7 @@ export default function Home() {
         />
         <ProjectPreview
           name="Clothing E-Commerce"
-          description="Build a website simple Clothing Store, with React.js, Sass, and Firebase"
+          description="Deployed in Netlify! Build a website simple Clothing Store, with React.js, Sass, and Firebase"
           imageUrl="/img/portofolio/crwn-clothing.png"
           bgColor="#181919"
            url="https://clothing-web-app.netlify.app/"
@@ -159,8 +159,8 @@ export default function Home() {
              </li>
 
              <li className="flex flex-wrap">
-               <a href="https://github.com/fajar2510/myblog-next" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
-               ▫️ Blog with Login System, CRUD, Middleware,Typescript, Prisma, TailwindCSS (styling), and MongoDB (Database)
+               <a href="https://fajar-simple-blog.vercel.app/" target="_blank" className="font-normal text-slate-600 text-md border-b border-slate-300 hover:border-none"> 
+               ▫️ <span className="text-pink-600 font-semibold text-base">Deployed on Vercel!</span> Blog with Login System, CRUD, Middleware,Typescript, Prisma, TailwindCSS (styling), and MongoDB (Database)
                </a>
              </li>
            </ul>
