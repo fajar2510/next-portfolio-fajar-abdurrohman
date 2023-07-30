@@ -28,15 +28,14 @@ export default function Home() {
 
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <div className="h-full lg:h-[30rem]  rounded-3xl p-6 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
-            <h1 className="text-2xl lg:text-4xl text-black font-semibold leading-tight ">
-               <div className="flex flex-col lg:flex-row"> Hello🖐 there!&nbsp;
-               <span>Nice to meet you!</span> </div> 
-            I&apos;am Fajar Abdurrohman</h1>
+            <h1 className="text-2xl md:text-2xl lg:text-3xl text-black font-semibold leading-tight ">
+               <div className="flex flex-col lg:flex-row">Assalamualaikum 🙏 !&nbsp;
+               <span>Glad to meet you, Sir!</span> </div> 
+            My name is Fajar Abdurrohman</h1>
             
             
            <span className="mt-3 text-lg lg:text-2xl text-slate-700"> 
-           Freshgraduate and basically work with Fullstack Developer <br /> 
-           with 3+ years of experience in programming.</span>
+           Fresh graduate in System Information, basically working as a Fullstack Developer, with some project experience in mobile and web apps, and I am actually flexible.</span>
             <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
             
          
@@ -69,12 +68,12 @@ export default function Home() {
                 
               </div>
             </div>
-            <p className="text-sm font-normal text-slate-500 italic">Last updated : 14/07/2023</p>
+            <p className="text-sm font-normal text-slate-500 italic">Last updated : 30/07/2023</p>
         </div>
 
         {/* foto layout */}
         <div className="w-full h-[22rem] lg:h-[30rem] rounded-3xl duration-300 transition ease-in-out overflow-hidden group hover:scale-[97%]">
-          <div className="h-full group-hover:scale-[107%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/avatar-profile.png')] bg-cover bg-center "/>
+          <div className="h-full group-hover:scale-[107%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/myfoto3.jpg')] bg-cover bg-center "/>
         </div>
       </section>
 
