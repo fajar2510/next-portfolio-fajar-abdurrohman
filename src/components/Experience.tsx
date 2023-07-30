@@ -30,7 +30,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className=" h-full rounded-3xl p-2 lg:p-10 flex flex-col"
+      className="h-full rounded-3xl p-2 lg:p-10 flex flex-col"
     >
       <h2 className="text-3xl font-bold text-black mb-1.5">Experience</h2>
       {/* <span className="mb-3 text-lg font-semibold text-black">
@@ -39,13 +39,13 @@ const Experience = () => {
 
       <ol className="relative border-l border-slate-300 dark:border-slate-700">
         <li className="mb-6 border-b border-slate-200 ml-4">
-          <h3 className="text-lg font-bold text-black mb-1.5">Intern</h3>
+          <h3 className="text-lg font-bold text-black mb-1.5">Intern+Freelance</h3>
           <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
           <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
-            Aug 2021 - Nov 2021
+            Aug 2020 - Jun 2021
           </time>
           <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-            Web Developer include IT Support - Disnakertrans Jawa Timur
+            Web Developer & IT Support - Disnakertrans Jawa Timur (Surabaya)
           </h3>
           <p className="text-base font-normal text-slate-600 dark:text-slate-400">
             Build interactive Web Apps with mapping of labor in East Java, using
