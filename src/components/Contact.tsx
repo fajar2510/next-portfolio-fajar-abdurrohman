@@ -30,16 +30,16 @@ const Contact = () => {
                                 <Linkedin className="w-5 h-5" />
                             </SocialButton>
                         </Link>
-                        <Link href="https://www.instagram.com/fajar.arh25/" target="_blank">
+                        <Link href="https://www.instagram.com/farawayys25/" target="_blank">
                             <SocialButton bgColor="instagram">
                                 <Instagram className="w-5 h-5" />
                             </SocialButton>
                         </Link>
-                        <Link href="https://twitter.com/laststory432" target="_blank">
+                        {/* <Link href="https://twitter.com/laststory432" target="_blank">
                             <SocialButton bgColor="twitter">
                                 <Twitter className="w-5 h-5" />
                             </SocialButton>
-                        </Link>
+                        </Link> */}
                         <Link href="https://github.com/fajar2510" target="_blank">
                             <SocialButton bgColor="github">
                                 <Github className="w-5 h-5" />
@@ -47,7 +47,7 @@ const Contact = () => {
                         </Link>
                     </div>
                     <div>
-                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © 2023 - All right reserved by Fajar Abdurrohman. Thanks</p>
+                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © 2024 - All right reserved by Fajar Abdurrohman. Thanks</p>
                     </div>
 
                 </div>
