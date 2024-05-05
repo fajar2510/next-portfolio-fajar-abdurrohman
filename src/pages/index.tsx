@@ -28,15 +28,15 @@ export default function Home() {
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <div className="h-full lg:h-[30rem]  rounded-3xl p-6 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
             <h1 className="text-2xl lg:text-4xl text-black font-semibold leading-tight ">
-               <div className="flex flex-col lg:flex-row"> Hello🖐 there!&nbsp;
-               <span>Nice to meet you!</span> </div> 
+               <div className="flex flex-col lg:flex-row"> Hello🖐 !&nbsp;
+               <span>Nice to meet you sir!</span> </div> 
             I&apos;am Fajar Abdurrohman</h1>
             
             
            <span className="mt-3 text-lg lg:text-2xl text-slate-700"> 
-           Freshgraduate and basically work with Fullstack Developer <br /> 
-           with 3+ years of experience in programming.</span>
-            <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">I care a lot about using programming, because my hobby likes create enviroment to be positive impact and enjoy creating user-centric, delighfull, best practice, security, and human experience.</p>
+           I'm really Freshgraduated and basically work with Fullstack Dev. <br /> 
+           for any cases from System Requirement step until Maintenance.</span>
+            <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">I care a lot about using programming, because i just likes that! and love to create environment to be positive impact and enjoy creating to efficient for human experience.</p>
             
          
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
@@ -68,7 +68,7 @@ export default function Home() {
                 
               </div>
             </div>
-            <p className="text-sm font-normal text-slate-500 italic">Last updated : 23/06/2023</p>
+            <p className="text-sm font-normal text-slate-500 italic">Last updated : 05/05/2024</p>
         </div>
 
         {/* foto layout */}

@@ -28,15 +28,33 @@ const internImages = [
 const certifs = [
   {
     id: 1,
+    title: "2D Animation Digitalent KOMINFO",
+    date: "May 2024 - Jun 2024(ongoing)",
+    img: "/img/certification/digitalent.png",
+    link: "/",
+    description:
+      "2D Animation is a field that explores moving works with a two-dimensional animation style. Where the result resembles a direct hand drawing (manual drawing), complete with coloring but moving. In the process, participants are not only taught to be experts in playing the software (tools, frames, layers, etc.).",
+  },
+  {
+    id: 2,
+    title: "Flutter & Javascript Bootcamp",
+    date: "Aug 2023 - Dec 2023",
+    img: "/img/certification/CODE_ID.jpg",
+    link: "/",
+    description:
+      "Concern in Advance Javascript especially ES6 and structured programming with object oriented, and flexibelity mobile platform.",
+  },
+  {
+    id: 3,
     title: "Harisenin Web Developer Bootcamp 2023",
-    date: "Mar 2022 - Jul 2023 (now)",
+    date: "Mar 2022 - Jul 2023",
     img: "/img/certification/harisenin.jpg",
     link: "/",
     description:
       "Web Developer Harisenin.com Bootcamp 2023 is Immersive Learning that teaches you how to build web applications from scratch. The Sylabus learn HTML, CSS, Javascript, React.js, Node.js, Express, MySql, and more.",
   },
   {
-    id: 2,
+    id: 4,
     title: "Udemy Web Developer Bootcamp 2023",
     date: "Nov 2022 - May 2023",
     img: "/img/certification/udemy.png",
@@ -45,7 +63,7 @@ const certifs = [
       "Learn build Web from scarth, like HTML, CSS, Javascript, React, Node.js, Express, MongoDB, and more.",
   },
   {
-    id: 3,
+    id: 5,
     title: "Dicoding Front End & Backend Developer Junior",
     date: "Nov 2022 - Jan 2023",
     img: "/img/certification/dicoding-header-logo.png",
@@ -54,7 +72,7 @@ const certifs = [
       "Learn and build simple project, Frontend like Javascript DOM manipulation and Backend like crud, and Rest API.",
   },
   {
-    id: 4,
+    id: 6,
     title: "Coursera Google IT Support",
     date: "Sep 2022 - Nov 2022",
     img: "/img/certification/Coursera.png",
