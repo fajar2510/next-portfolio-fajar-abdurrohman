@@ -11,8 +11,8 @@ type Option = {
 
   
 const options: Option[] = [
-    { value: 'EN', label: 'EN', file: '/pdf/CV EN Fajar Abdurrohman 2024.pdf' },
-    // { value: 'ID', label: 'ID', file: '/pdf/Fajar_Abdurrohman IND CV ATS Friendly.pdf' },
+    { value: 'EN', label: 'EN', file: '/pdf-private/CV EN Fajar Abdurrohman 2024.pdf'},
+    // { value: 'ID', label: 'Indonesia', file: '/pdf/Fajar_Abdurrohman IND CV ATS Friendly.pdf' },
   ];
 
 const Navbar: React.FC = () => {
@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
                
             </ul>
         </div>
-        <div className=" lg:ml-3 flex gap-2 lg:gap-3 items-center justify-center bg-black text-white font-medium py-2 px-0 lg:px-5 rounded-3xl w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black transition-all duration-300 ease-in-out">
+        <div className=" lg:ml-3 flex gap-2 lg:gap-3 items-center justify-center bg-white text-black font-medium py-2 px-0 lg:px-5 rounded-3xl w-60 lg:w-auto hover:scale-95 hover:bg-transparent border border-black hover:text-black transition-all duration-300 ease-in-out">
         <span className='text-whie dark:text-black'>CV</span> 
             <select name="language" className="pl-2 rounded-lg  text-black bg-white" onChange={handleSelectChange} defaultValue={selectedOption.value}>
               {options.map((option) => (

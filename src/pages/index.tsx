@@ -38,7 +38,7 @@ export default function Home() {
            I’m Fajar Abdurrohman, an Information Technology graduate with a strong passion for technological innovation <br/>
            With experience in web development, animation, and IT support, I’m here to help you create creative and effective digital solutions.
 
-Let’s explore what I can offer! 🚀
+          Let’s explore what I can offer! 🚀
            </span>
             <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">I care a lot about using programming, because i just likes that! and love to create environment to be positive impact and enjoy creating to efficient for human experience.</p>
             
