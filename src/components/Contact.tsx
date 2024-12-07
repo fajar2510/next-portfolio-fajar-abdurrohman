@@ -8,12 +8,13 @@ import Linkedin from "../../public/linkedin.svg";
 import Twitter from "../../public/twitter.svg";
 
 const Contact = () => {
+    const currentYear = new Date().getFullYear(); // Mendapatkan tahun saat ini
     return (
 
         <section id="contact" className=" mb-8">
             <div className="h-full lg:h-[22rem] rounded-3xl p-8 lg:p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
-                <h1 className="text-3xl lg:text-6xl text-black font-semibold dark:text-white text-center lg:text-start">Want to being partner or collaborate ?</h1>
-                <p className="flex-1 text-black dark:text-white text-center lg:text-start">Feel free to reach out for collaborations or just a friendly hello, contact to my email below.<br />
+                <h1 className="text-3xl lg:text-6xl text-black font-semibold dark:text-white text-center lg:text-start">Looking to partner or collaborate?</h1>
+                <p className="flex-1 text-black dark:text-white text-center lg:text-start">Don’t hesitate to get in touch! Whether it’s for collaboration or just a friendly hello, feel free to contact me at:<br />
                     <Link href="/" className='border-b border-slate-500 hover:border-none hover:font-semibold'>abdurrohmanfajar10@gmail.com</Link>
                 </p>
 
@@ -30,16 +31,17 @@ const Contact = () => {
                                 <Linkedin className="w-5 h-5" />
                             </SocialButton>
                         </Link>
-                        <Link href="https://www.instagram.com/farawayys25/" target="_blank">
+                        <Link href="https://www.instagram.com/fajarabd25/" target="_blank">
                             <SocialButton bgColor="instagram">
                                 <Instagram className="w-5 h-5" />
                             </SocialButton>
                         </Link>
-                        {/* <Link href="https://twitter.com/laststory432" target="_blank">
+                        {/* <Link href="https://twitter.com/laststory432" target="_blank"> */}
+                        <Link href="#" target="_blank">
                             <SocialButton bgColor="twitter">
                                 <Twitter className="w-5 h-5" />
                             </SocialButton>
-                        </Link> */}
+                        </Link>
                         <Link href="https://github.com/fajar2510" target="_blank">
                             <SocialButton bgColor="github">
                                 <Github className="w-5 h-5" />
@@ -47,7 +49,7 @@ const Contact = () => {
                         </Link>
                     </div>
                     <div>
-                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © 2024 - All right reserved by Fajar Abdurrohman. Thanks</p>
+                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © {currentYear} - All right reserved by Fajar Abdurrohman. Appreciated</p>
                     </div>
 
                 </div>

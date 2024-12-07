@@ -39,7 +39,7 @@ const Experience = () => {
 
       <ol className="relative border-l border-slate-300 dark:border-slate-700">
         <li className="mb-6 border-b border-slate-200 ml-4">
-          <h3 className="text-lg font-bold text-black mb-1.5">Intern+Freelance</h3>
+          <h3 className="text-lg font-bold text-black mb-1.5">Intern+Honorary</h3>
           <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
           <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
             Aug 2020 - Jun 2021
@@ -70,6 +70,39 @@ const Experience = () => {
           </div>
         </li>
 
+
+        <li className="mb-6 border-b border-slate-200 ml-4">
+          <h3 className="text-lg font-bold text-black mb-1.5">Freelance</h3>
+          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
+            Aug 2020 - Jun 2021
+          </time>
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+            Frontend Mobile Android Flutter - CV. Linas Media Informatika (Gresik)
+          </h3>
+          <p className="text-base font-normal text-slate-600 dark:text-slate-400">
+            Build frontend to ordering food for school canteen application.
+          </p>
+          
+        </li>
+
+        <li className="mb-6 border-b border-slate-200 ml-4">
+          <h3 className="text-lg font-bold text-black mb-1.5">Project & Assignment</h3>
+          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
+             Feb 2018 - Dec 2019
+          </time>
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+            Programmer Fullstack - Universitas Negeri Surabaya (Surabaya)
+          </h3>
+          <p className="text-base font-normal text-slate-600 dark:text-slate-400">
+            Build and Development; <br />
+            ▫️ System Information Accountant(<em>PHP Nattive</em>), <br />
+            ▫️ System Information Executive(<em>CodeIgniter</em>), <br />
+            ▫️ System Information Wedding Organizer(<em>Laravel</em>), <br />
+            ▫️ Mobile Psycholog Consutation(<em>Flutter</em>).
+          </p>
+        </li>
       </ol>
     </div>
   );

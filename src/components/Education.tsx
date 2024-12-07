@@ -32,17 +32,35 @@ const Education = () => {
 
                     </div>
 
-
-                    <p className="text-base font-normal text-slate-600 dark:text-slate-400">Build some project and assignment for Web and Android Applications, Sytem Analyst, IT Hardware, Networking, Troubleshooting, and Business.
+                    
+                        <p className="text-base font-normal text-slate-600 dark:text-slate-400">Build some project and assignment for Web and Android Applications, Sytem Analyst, IT Hardware, Networking, Troubleshooting, and Business.
                         Extra Join game development community and build some games.
                     </p>
-                    <Link href="/pdf/17051214047SPK.pdf" download target='_blank' className="mt-4 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                    <ol>
+
+                        <li className="text-base font-normal text-slate-600 dark:text-slate-400">
+                        ▫️ <strong>Organization:</strong> Bidikmisi Scholarship Student Comunity; Web Game Development Comunity.
+                    
+                        </li>
+                         <li className="text-base font-normal text-slate-600 dark:text-slate-400">
+                        <a href='#' target='_blank'>▫️ <strong>E-Journal Publication</strong></a> . Interactive Geographic Information System: Visual Mapping, predict Training fund allocation.
+                    
+                        </li>
+                    
+                    </ol>
+                    
+                    {/* <Link href="/pdf/17051214047SPK.pdf" download target='_blank' className="mt-4 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
                        <span className=' p-1 italic'> Graduation Certificate (Ijazah)</span> <svg className="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></Link>
 
                     <Link href="/pdf/SIAKAD_ Transkrip Mahasiswa.pdf" download target='_blank' className="mt-4 lg:ml-3 ml-0 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
                        <span  className=' p-1 italic'> Transcript</span> <svg className="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></Link>
-                    <Link href="/pdf/Sertifikat TEP Fajar Abdurrohman.pdf" download target='_blank' className="mt-4 lg:ml-3 ml-0 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-                       <span  className=' p-1 italic inline-flex'> English TOEFL Prediction <span className='hidden lg:block  italic'> ( Score 473 )</span> </span> <svg className="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></Link>
+                     */}
+
+                  
+                       <Link href="/pdf/ENGLISH_PROFICIENCY_TEST_FAJAR_546.pdf" download target='_blank' className="mt-4 lg:ml-3 ml-0 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                       <span  className=' p-1 italic inline-flex'> Test English Proficiency Certif. <span className='text-sm text-gray-500 italic'> ~ Valid until June 2024 - June 2025 </span><span className='hidden lg:block  italic'> ( Score 546 )</span> </span> <svg className="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></Link>
+                     <Link href="/pdf/Sertifikat TEP Fajar Abdurrohman.pdf" download target='_blank' className="mt-4 lg:ml-3 ml-0 inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                       <span  className=' p-1 italic inline-flex'> Test English Proficiency Certif. <span className='text-sm text-gray-500 italic'> ~ Valid until April 2023 - April 2024 </span> <span className='hidden lg:block  italic'> ( Score 473 )</span> </span> <svg className="w-3 h-3 ml-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg></Link>
 
                 </li>
             </ol>

@@ -6,9 +6,9 @@ const certifs = [
   {
     id: 1,
     title: "2D Animation Digitalent KOMINFO",
-    date: "May 2024 - Jun 2024(ongoing)",
+    date: "May 2024 - Jun 2024",
     img: "/img/certification/digitalent.png",
-    link: "/",
+    link: "https://drive.google.com/file/d/1AQqLEGSwQPXqhJw-0g08ki3M-BdDvYzH/view?usp=sharing",
     description:
       "2D Animation is a field that explores moving works with a two-dimensional animation style. Where the result resembles a direct hand drawing (manual drawing), complete with coloring but moving. In the process, participants are not only taught to be experts in playing the software (tools, frames, layers, etc.).",
   },
@@ -26,7 +26,7 @@ const certifs = [
     title: "Harisenin Web Developer Bootcamp 2023",
     date: "Mar 2022 - Jul 2023",
     img: "/img/certification/harisenin.jpg",
-    link: "/",
+    link: "https://bit.ly/4cg5Je5",
     description:
       "Web Developer Harisenin.com Bootcamp 2023 is Immersive Learning that teaches you how to build web applications from scratch. The Sylabus learn HTML, CSS, Javascript, React.js, Node.js, Express, MySql, and more.",
   },
@@ -65,7 +65,7 @@ const Certification = () => {
       id="certification"
       className=" h-full rounded-3xl p-2 lg:p-10 flex flex-col"
     >
-      <h2 className="text-3xl font-bold text-black mb-1.5">Course & Certification</h2>
+      <h2 className="text-3xl font-bold text-black mb-1.5">Bootcamp, Course, Learning & Certification</h2>
       {/* <span className="mb-3 text-lg font-semibold text-black">
         Course & Certification
       </span> */}
@@ -75,7 +75,7 @@ const Certification = () => {
         {certifs.map((certif, index) => (
           <li key={certif.id} className="mb-6  ml-4">
             {index === 0 && (
-              <h3 className="text-lg font-bold text-black mb-1.5">Training - Bootcamp</h3>
+              <h3 className="text-lg font-bold text-black mb-1.5">Relevant studies</h3>
             )}
             <div className="absolute w-3 h-3 bg-slate-300 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
             <time className="mb-1 text-sm font-normal leading-none text-slate-700 dark:text-slate-300">
@@ -99,7 +99,7 @@ const Certification = () => {
             <p className="mb-4  text-base font-normal text-slate-600 dark:text-gray-400">
               {certif.description}
             </p>
-            {index === 2 ? (
+            {index === 4 ? (
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="https://www.dicoding.com/certificates/MEPJKO35WX3V"

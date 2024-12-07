@@ -5,7 +5,7 @@ import SocialButton from "@/components/SocialButton";
 import Github from "../../public/github.svg";
 import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
-// import Twitter from "../../public/twitter.svg";
+import Twitter from "../../public/twitter.svg";
 import ProjectPreview from "@/components/ProjectPreview";
 import Link from "next/link";
 import Contact from "@/components/Contact";
@@ -29,14 +29,17 @@ export default function Home() {
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <div className="h-full lg:h-[30rem]  rounded-3xl p-6 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
             <h1 className="text-2xl md:text-2xl lg:text-3xl text-black font-semibold leading-tight ">
-               <div className="flex flex-col lg:flex-row">Hello🖐 !&nbsp;
-               <span>Glad to meet you, Sir!</span> </div> 
-               I am Fajar Abdurrohman</h1>
+               <div className="flex flex-col lg:flex-row">Hello! Welcome to My Page🖐 !&nbsp;
+            </div> 
+              </h1>
             
             
            <span className="mt-3 text-lg lg:text-2xl text-slate-700"> 
-           I am really Freshgraduated and basically work with Fullstack Dev. <br /> 
-           for any cases from System Requirement step until Maintenance.</span>
+           I’m Fajar Abdurrohman, an Information Technology graduate with a strong passion for technological innovation <br/>
+           With experience in web development, animation, and IT support, I’m here to help you create creative and effective digital solutions.
+
+Let’s explore what I can offer! 🚀
+           </span>
             <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">I care a lot about using programming, because i just likes that! and love to create environment to be positive impact and enjoy creating to efficient for human experience.</p>
             
          
@@ -54,22 +57,23 @@ export default function Home() {
                   <Instagram className="w-5 h-5"/>
                 </SocialButton>
                 </Link>
-                {/* <Link href="https://twitter.com/laststory432" target="_blank">
+                <Link href="#" target="_blank">
                   <SocialButton bgColor="twitter">
                   <Twitter className="w-5 h-5"/>
                 </SocialButton>
-                </Link> */}
+                </Link>
                 <Link href="https://github.com/fajar2510" target="_blank">
                   <SocialButton bgColor="github">
                   <Github className="w-5 h-5"/>
                 </SocialButton>
                 </Link>
+                <p className="text-sm font-normal text-slate-500 italic">Last updated : 07/09/2024</p>
                 
                 
                 
               </div>
             </div>
-            <p className="text-sm font-normal text-slate-500 italic">Last updated : 05/05/2024</p>
+           
         </div>
 
         {/* foto layout */}
