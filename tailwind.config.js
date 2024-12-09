@@ -15,9 +15,10 @@ module.exports = {
         instagram: "#E1306C",
         linkedin: "#0077B5",
         twitter: "#1DA1F2",
+        replit: "#fc9003",
       },
     },
   },
-  plugins: [require("daisyui","flowbite/plugin")],
+  plugins: [require("daisyui", "flowbite/plugin")],
   darkMode: "class",
 };

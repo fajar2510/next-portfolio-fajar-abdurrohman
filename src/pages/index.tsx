@@ -5,7 +5,8 @@ import SocialButton from "@/components/SocialButton";
 import Github from "../../public/github.svg";
 import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
-import Twitter from "../../public/twitter.svg";
+// import Twitter from "../../public/twitter.svg";
+import Replit from "../../public/replit.svg";
 import ProjectPreview from "@/components/ProjectPreview";
 import Link from "next/link";
 import Contact from "@/components/Contact";
@@ -57,9 +58,13 @@ export default function Home() {
                   <Instagram className="w-5 h-5"/>
                 </SocialButton>
                 </Link>
-                <Link href="#" target="_blank">
+                {/* <Link href="#" target="_blank">
                   <SocialButton bgColor="twitter">
                   <Twitter className="w-5 h-5"/>
+                </SocialButton> */}
+                <Link href="https://replit.com/@fajar2510" target="_blank">
+                  <SocialButton bgColor="replit">
+                  <Replit className="w-5 h-5"/>
                 </SocialButton>
                 </Link>
                 <Link href="https://github.com/fajar2510" target="_blank">
@@ -67,7 +72,7 @@ export default function Home() {
                   <Github className="w-5 h-5"/>
                 </SocialButton>
                 </Link>
-                <p className="text-sm font-normal text-slate-500 italic">Last updated : 07/09/2024</p>
+                <p className="text-sm font-normal text-slate-500 italic">Last updated : 20/11/2024</p>
                 
                 
                 

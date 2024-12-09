@@ -39,7 +39,7 @@ const Experience = () => {
 
       <ol className="relative border-l border-slate-300 dark:border-slate-700">
         <li className="mb-6 border-b border-slate-200 ml-4">
-          <h3 className="text-lg font-bold text-black mb-1.5">Intern+Honorary</h3>
+          <h3 className="text-lg font-bold text-black mb-1.5">Relevant Experience</h3>
           <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
           <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
             Aug 2020 - Jun 2021
@@ -102,6 +102,48 @@ const Experience = () => {
             ▫️ System Information Wedding Organizer(<em>Laravel</em>), <br />
             ▫️ Mobile Psycholog Consutation(<em>Flutter</em>).
           </p>
+        </li>
+      </ol>
+
+      {/* General Experience */}
+      <ol className="relative border-l border-slate-300 dark:border-slate-700">
+
+      <li className="mb-6 border-b border-slate-200 ml-4">
+          <h3 className="text-lg font-bold text-black mb-1.5">General Experience</h3>
+          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
+            Aug 2023 - Present
+          </time>
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+          Freelance Web Developer/Graphics Design - Ngawi
+          </h3>
+          <p>Ngawi, East Java, Indonesia</p>
+        
+         
+        </li>
+        <li className="mb-6 border-b border-slate-200 ml-4">
+        
+          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
+            Jan 2024 - Dec 2024
+          </time>
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+          Freelance & Support System in Election 2024 for President, Vice President, DPR (House of Representatives), DPRD (Regional House of Representatives), DPD (Regional Representative Council), East Java Governor, and Ngawi Regent (District Head) in Village Government - Ngawi
+          </h3>
+          <p>Ngawi, East Java, Indonesia</p>
+        
+         
+        </li>
+        <li className="mb-6 border-b border-slate-200 ml-4">
+          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
+            Sept 2021 - Aug 2022
+          </time>
+          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+          Entrepreneurship/Wiraswasta - Surakarta
+          </h3>
+          <p>Surakarta, Central Java, Indonesia</p>
+        
         </li>
       </ol>
     </div>

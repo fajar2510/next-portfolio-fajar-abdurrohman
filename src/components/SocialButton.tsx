@@ -21,6 +21,9 @@ const SocialButton: React.FC<Props> = ({ children, bgColor = "black" }) => {
         case "linkedin":
             bgHoverColorClass = "hover:bg-linkedin";
             break;
+        case "replit":
+            bgHoverColorClass = "hover:bg-replit";
+            break;
         default:
             bgHoverColorClass = "hover:bg-black";
             break;
