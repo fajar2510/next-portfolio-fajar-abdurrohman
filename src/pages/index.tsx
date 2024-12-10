@@ -14,6 +14,11 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Skill from "@/components/Skill";
 import Certification from "@/components/Certification";
+import YouTubeEmbed from "@/components/YoutubeEmbed";
+import Nextjs from "../../public/img/tech/nextjs.svg"
+import TailwindCSS from "../../public/img/tech/tailwindcss.svg"
+import Typescript from "../../public/img/tech/Typescript.svg"
+
 
 export default function Home() {
 
@@ -30,7 +35,7 @@ export default function Home() {
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <div className="h-full lg:h-[30rem]  rounded-3xl p-6 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
             <h1 className="text-2xl md:text-2xl lg:text-3xl text-black font-semibold leading-tight ">
-               <div className="flex flex-col lg:flex-row">Hello! Welcome to My Page🖐 !&nbsp;
+               <div className="flex flex-col lg:flex-row">Hello! Welcome to My World🖐 !&nbsp;
             </div> 
               </h1>
             
@@ -41,7 +46,9 @@ export default function Home() {
 
           Let’s explore what I can offer! 🚀
            </span>
-            <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">I care a lot about using programming, because i just likes that! and love to create environment to be positive impact and enjoy creating to efficient for human experience.</p>
+            <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">
+              Concern technology use; React.js, Next.js, Node.js, TailwindCSS, Typescript & Figma.
+            </p>
             
          
             <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
@@ -72,11 +79,15 @@ export default function Home() {
                   <Github className="w-5 h-5"/>
                 </SocialButton>
                 </Link>
-                <p className="text-sm font-normal text-slate-500 italic">Last updated : 20/11/2024</p>
+                
+               
                 
                 
                 
               </div>
+              <div className="flex p-2 flex-auto">
+                <p className=" text-sm font-normal text-slate-500 italic">Last updated on 09/11/2024</p>
+                </div>
             </div>
            
         </div>
@@ -182,6 +193,23 @@ export default function Home() {
        <Experience/>
         <Certification/>
       <Skill/>
+
+      
+     
+
+      {/* Embed dari Youtube */}
+      <section id="youtube" className=" mb-8">
+      <div className="h-full lg:h-[40rem] rounded-3xl p-8 lg:p-10 flex flex-col gap-16 items-center justify-center bg-[url('/gradient-bg.jpg')] bg-cover">
+      
+        <h1 className="text-4xl font-bold -mb-5 text-gray-900 dark:text-white">
+          2D Animation Project Sample by Fajar Abdurrohman
+        </h1>
+        <YouTubeEmbed videoId="7hqffNLydc8" title="2D Animation Project - Fajar Abdurrohman" />
+        
+      </div>
+      </section>
+
+    {/* for contact - bawah sendiri */}
       <Contact/>
 
      

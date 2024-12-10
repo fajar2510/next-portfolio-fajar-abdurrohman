@@ -5,7 +5,11 @@ import SocialButton from "@/components/SocialButton";
 import Github from "../../public/github.svg";
 import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
-import Twitter from "../../public/twitter.svg";
+// import Twitter from "../../public/twitter.svg";
+import Replit from "../../public/replit.svg";
+import Nextjs from "../../public/img/tech/nextjs.svg"
+import TailwindCSS from "../../public/img/tech/tailwindcss.svg"
+import Typescript from "../../public/img/tech/Typescript.svg"
 
 const Contact = () => {
     const currentYear = new Date().getFullYear(); // Mendapatkan tahun saat ini
@@ -37,10 +41,16 @@ const Contact = () => {
                             </SocialButton>
                         </Link>
                         {/* <Link href="https://twitter.com/laststory432" target="_blank"> */}
-                        <Link href="#" target="_blank">
+                        {/* <Link href="#" target="_blank">
                             <SocialButton bgColor="twitter">
                                 <Twitter className="w-5 h-5" />
                             </SocialButton>
+                        </Link>
+                         */}
+                         <Link href="https://replit.com/@fajar2510" target="_blank">
+                        <SocialButton bgColor="replit">
+                        <Replit className="w-5 h-5"/>
+                        </SocialButton>
                         </Link>
                         <Link href="https://github.com/fajar2510" target="_blank">
                             <SocialButton bgColor="github">
@@ -49,7 +59,10 @@ const Contact = () => {
                         </Link>
                     </div>
                     <div>
-                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © {currentYear} - All right reserved by Fajar Abdurrohman. Appreciated</p>
+                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © {currentYear} - All right reserved by Fajar Abdurrohman. Appreciated </p> 
+                            <span className='flex flex-wrap text-slate-600 dark:text-white text-sm font-normal text-center lg:text-start'>This website technology use &nbsp; 
+                                <Nextjs className="h-5 w-5 rounded-full fill-black-400" />&nbsp;Nextjs, <TailwindCSS className="h-5 w-5 rounded-full fill-cyan-400" />&nbsp;TailwindCSS, and&nbsp; <Typescript className="h-5 w-5 rounded-full fill-cyan-400" />&nbsp;Typescript</span>
+                       
                     </div>
 
                 </div>

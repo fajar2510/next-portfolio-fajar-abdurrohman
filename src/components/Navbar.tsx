@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { useState } from 'react';
 import Image from 'next/image';
 
+
 type Option = {
     value: string;
     label: string;
@@ -64,6 +65,7 @@ const Navbar: React.FC = () => {
             <span className='hidden lg:block text-md text-black font-semibold tracking-widest uppercase'>
                 Fajar Abdurrohman
             </span>
+            
         </div>
     </div>
     
