@@ -22,7 +22,7 @@ import Figma from "../../public/img/tech/figma-logo.svg"
 
 const Skill = () => {
     return (
-        <div id='technology' className='flex p-2 -mt-2 lg:-mt-10 lg:p-10  flex-col mb-10'>
+        <div id='technology' className='flex p-2 -mt-2 lg:-mt-10 lg:p-1  flex-col mb-10'>
             <h2 className='text-2xl lg:text-3xl font-bold text-black mb-1.5'>Skill Technical</h2>
             <span className='mb-3 text-md font-semibold text-slate-500'>Technologies and frameworks I have learned from the beginning to the present.</span>
 
@@ -96,9 +96,25 @@ const Skill = () => {
                     <span className='text-sm lg:text-md font-semibold text-slate-700 text-center tracking-widest'>Figma</span>
                 </div>
             </div>
-            <div className='flex flex-wrap gap-2 lg:gap-6 mt-5'>
+            <div className='flex flex-col gap-2 lg:gap-6 mt-5'>
                 <h2 className='text-2xl lg:text-3xl font-bold text-black mb-1'>Skills non-Technical :</h2>
                 <p className=' text-lg  text-justify font-semibold text-slate-500'> Attention to Detail, Critical Thinking, Empathy, Flexibility, Respectfulness, Organized, Teamwork.</p>
+            
+            <div className='flex flex-wrap gap-3 items-center justify-between'>
+                {/* foto skill non-tech */}
+                <div className="w-[22rem] h-[20rem] lg:h-[20rem] mb-5 rounded-3xl duration-300 transition ease-in-out border border-1 border-slate-500   overflow-hidden group hover:scale-[97%]">
+                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/skill/nontech3.jpeg')] bg-cover bg-center "/>
+                </div>
+                {/* foto skill non-tech */}
+                <div className="w-[22rem] h-[20rem] lg:h-[20rem] mb-5 rounded-3xl duration-300 transition ease-in-out border border-1 border-slate-500   overflow-hidden group hover:scale-[97%]">
+                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/skill/nontech1.jpeg')] bg-cover bg-center "/>
+                </div>
+                {/* foto skill non-tech */}
+                <div className="w-[22rem] h-[20rem] lg:h-[20rem] mb-5 rounded-3xl duration-300 transition ease-in-out border border-1 border-slate-500   overflow-hidden group hover:scale-[97%]">
+                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/skill/nontech2.jpeg')] bg-cover bg-center "/>
+                </div>
+            </div>
+
             </div>
         </div>
     )

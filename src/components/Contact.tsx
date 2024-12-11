@@ -59,9 +59,9 @@ const Contact = () => {
                         </Link>
                     </div>
                     <div>
-                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © {currentYear} - All right reserved by Fajar Abdurrohman. Appreciated </p> 
+                        <p className='text-slate-600 dark:text-white text-sm font-medium text-center lg:text-start'>Copyright © {currentYear} - All right reserved by Fajar Abdurrohman. Thanks. </p> 
                             <span className='flex flex-wrap text-slate-600 dark:text-white text-sm font-normal text-center lg:text-start'>This website technology use &nbsp; 
-                                <Nextjs className="h-5 w-5 rounded-full fill-black-400" />&nbsp;Nextjs, <TailwindCSS className="h-5 w-5 rounded-full fill-cyan-400" />&nbsp;TailwindCSS, and&nbsp; <Typescript className="h-5 w-5 rounded-full fill-cyan-400" />&nbsp;Typescript</span>
+                                <Nextjs className="h-5 w-5 rounded-full fill-black-400" />&nbsp;Nextjs, <TailwindCSS className="h-5 w-5 rounded-full fill-cyan-400" />&nbsp;TailwindCSS, and&nbsp; <Typescript className="h-5 w-5 rounded-full fill-cyan-400" />&nbsp;Typescript.</span>
                        
                     </div>
 

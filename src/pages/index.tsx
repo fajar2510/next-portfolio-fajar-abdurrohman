@@ -33,21 +33,21 @@ export default function Home() {
       <Navbar/>
 
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-        <div className="h-full lg:h-[30rem]  rounded-3xl p-6 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
+        <div className="h-full lg:h-[28rem]  rounded-3xl p-6 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
             <h1 className="text-2xl md:text-2xl lg:text-3xl text-black font-semibold leading-tight ">
                <div className="flex flex-col lg:flex-row">Hello! Welcome to My World🖐 !&nbsp;
             </div> 
               </h1>
             
             
-           <span className="mt-3 text-lg lg:text-2xl text-slate-700"> 
+           <span className="mt-1 text-base lg:text-xl text-slate-700"> 
            I’m Fajar Abdurrohman, an Information Technology graduate with a strong passion for technological innovation <br/>
-           With experience in web development, animation, and IT support, I’m here to help you create creative and effective digital solutions.
+           With experience in web/mobile development, responsive design, 2D animation, and IT support, I’m here to help you create creative and effective digital solutions. 
 
           Let’s explore what I can offer! 🚀
            </span>
-            <p className="flex font-medium text-md text-slate-700 dark:text-slate-200  leading-relaxed">
-              Concern technology use; React.js, Next.js, Node.js, TailwindCSS, Typescript & Figma.
+            <p className="flex font-medium text-base text-slate-600 dark:text-slate-200  leading-relaxed">
+              Experience technology use; CodeIgniter, Laravel, Bootstrap, React.js, Next.js, Node.js, TailwindCSS, Typescript, Flutter, MySQL, Postgres, & Figma.
             </p>
             
          
@@ -93,10 +93,12 @@ export default function Home() {
         </div>
 
         {/* foto layout */}
-        <div className="w-full h-[22rem] lg:h-[30rem] rounded-3xl duration-300 transition ease-in-out overflow-hidden group hover:scale-[97%]">
-          <div className="h-full group-hover:scale-[107%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/avatar-profile.png')] bg-cover bg-center "/>
+        <div className="w-full h-[22rem] lg:h-[28rem] rounded-3xl duration-300 transition ease-in-out overflow-hidden group hover:scale-[97%]">
+          <div className="h-full group-hover:scale-[110%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/avatar-profile.png')] bg-cover bg-center "/>
         </div>
+        
       </section>
+       
 
       <section id="project" className="grid grid-cols-1 lg:grid-cols-3 gap-4 my-4">
         <ProjectPreview
@@ -151,6 +153,24 @@ export default function Home() {
          
       </section>
 
+      {/* foto banner */}
+      <div className="w-full h-full lg:h-[17rem] mb-5 rounded-3xl duration-300 transition ease-in-out border border-1 border-slate-500   overflow-hidden group hover:scale-[97%]">
+          <div className="h-full group-hover:scale-[107%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/portofolio/banner.jpeg')] bg-cover bg-center "/>
+        </div>
+
+      {/* Embed dari Youtube */}
+      <section id="animation" className=" mb-8">
+      <div className="h-full lg:h-[40rem] rounded-3xl p-8 lg:p-10 flex flex-col gap-16 items-center justify-center bg-[url('/gradient-bg.jpg')] bg-cover">
+      
+        <h1 className="lg:text-3xl text-2xl font-bold -mb-5 text-gray-900 dark:text-white">
+          2D Animation Project Sample by Fajar Abdurrohman
+        </h1>
+        <YouTubeEmbed videoId="7hqffNLydc8" title="2D Animation Project - Fajar Abdurrohman" />
+        
+      </div>
+      </section>
+
+
       <div className="p-2 flex flex-col flex-wrap">
           <h2 className="font-semibold text-lg text-black mb-2">more project</h2>
            <ul className="list-disc" >
@@ -196,18 +216,6 @@ export default function Home() {
 
       
      
-
-      {/* Embed dari Youtube */}
-      <section id="youtube" className=" mb-8">
-      <div className="h-full lg:h-[40rem] rounded-3xl p-8 lg:p-10 flex flex-col gap-16 items-center justify-center bg-[url('/gradient-bg.jpg')] bg-cover">
-      
-        <h1 className="text-4xl font-bold -mb-5 text-gray-900 dark:text-white">
-          2D Animation Project Sample by Fajar Abdurrohman
-        </h1>
-        <YouTubeEmbed videoId="7hqffNLydc8" title="2D Animation Project - Fajar Abdurrohman" />
-        
-      </div>
-      </section>
 
     {/* for contact - bawah sendiri */}
       <Contact/>

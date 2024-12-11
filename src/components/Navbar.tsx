@@ -52,6 +52,9 @@ const Navbar: React.FC = () => {
             <Link href="#technology" className='text-slate-600 text-lg font-medium py-1.5'>
               Technology
             </Link>
+            {/* <Link href="#animation" className='text-slate-600 text-lg font-medium py-1.5'>
+                Animation
+            </Link> */}
             <Link href="#contact" className='text-slate-600 text-lg font-medium py-1.5'>
                 Contact
             </Link>
@@ -70,7 +73,7 @@ const Navbar: React.FC = () => {
     </div>
     
     <div className=" navbar-end w-2/3 ">
-        <div className=" hidden lg:flex lg:gap-4">
+        <div className=" hidden lg:flex flex-col lg:gap-4">
             <ul className="menu menu-horizontal font-medium gap-1 px-2">
                 <Link href="#home" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
                     Home
@@ -90,6 +93,9 @@ const Navbar: React.FC = () => {
                 <Link href="#technology" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
                     Tech
                 </Link>
+                {/* <Link href="#animation" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                    Animation
+                </Link> */}
                 <Link href="#contact" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
                     Contact
                 </Link>
