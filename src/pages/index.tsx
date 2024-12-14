@@ -35,7 +35,7 @@ export default function Home() {
       <section id="home" className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <div className="h-full lg:h-[28rem]  rounded-3xl p-6 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-[url('/gradient-bg.jpg')] bg-cover">
             <h1 className="text-2xl md:text-2xl lg:text-3xl text-black font-semibold leading-tight ">
-               <div className="flex flex-col lg:flex-row">Hello! Welcome to My World🖐 !&nbsp;
+               <div className="flex flex-col lg:flex-row">Hello! Welcome to My Page🖐 !&nbsp;
             </div> 
               </h1>
             
