@@ -8,6 +8,17 @@ const nextConfig = {
     });
     return config;
   },
+  images: {
+    domains: ["ik.imagekit.io"], // Tambahkan domain ImageKit
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "ik.imagekit.io",
+        port: "",
+        pathname: "/fajarblog/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;

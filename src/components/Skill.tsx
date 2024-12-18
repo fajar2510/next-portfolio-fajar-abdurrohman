@@ -103,15 +103,15 @@ const Skill = () => {
             <div className='flex flex-wrap gap-3 items-center justify-between'>
                 {/* foto skill non-tech */}
                 <div className="w-[22rem] h-[20rem] lg:h-[20rem] mb-5 rounded-3xl duration-300 transition ease-in-out border border-1 border-slate-500   overflow-hidden group hover:scale-[97%]">
-                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/skill/nontech3.jpeg')] bg-cover bg-center "/>
+                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('https://ik.imagekit.io/fajarblog/porto/skill/nontech3.jpeg')] bg-cover bg-center "/>
                 </div>
                 {/* foto skill non-tech */}
                 <div className="w-[22rem] h-[20rem] lg:h-[20rem] mb-5 rounded-3xl duration-300 transition ease-in-out border border-1 border-slate-500   overflow-hidden group hover:scale-[97%]">
-                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/skill/nontech1.jpeg')] bg-cover bg-center "/>
+                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('https://ik.imagekit.io/fajarblog/porto/skill/nontech1.jpeg')] bg-cover bg-center "/>
                 </div>
                 {/* foto skill non-tech */}
                 <div className="w-[22rem] h-[20rem] lg:h-[20rem] mb-5 rounded-3xl duration-300 transition ease-in-out border border-1 border-slate-500   overflow-hidden group hover:scale-[97%]">
-                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('/img/skill/nontech2.jpeg')] bg-cover bg-center "/>
+                    <div className="h-[20rem] group-hover:scale-[105%] duration-300 transition ease-in-out  rounded-3xl p-8 bg-[url('https://ik.imagekit.io/fajarblog/porto/skill/nontech2.jpeg')] bg-cover bg-center "/>
                 </div>
             </div>
 

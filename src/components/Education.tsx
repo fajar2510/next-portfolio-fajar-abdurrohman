@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 
 const Education = () => {
+    
     return (
         <div id="education" className=' h-full rounded-3xl px-2 lg:px-10 mt-10 flex flex-col'>
             <h2 className='text-3xl font-bold text-black mb-1.5'>Education</h2>

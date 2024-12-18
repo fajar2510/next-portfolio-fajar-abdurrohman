@@ -1,27 +1,52 @@
 import React from "react";
 import Link from "next/link";
+// import IKImage from "./Image"; 
 import Image from "next/image";
 
+ const endpoint='https://ik.imagekit.io/fajarblog/porto/'
 const internImages = [
   {
     id: 1,
     title: "Intern 1",
-    urlImage: "/img/intern/intern1.jpg",
+    urlImage: `${endpoint}intern/intern1.jpg`,
   },
   {
     id: 2,
     title: "Intern 2",
-    urlImage: "/img/intern/intern2.jpeg",
+    urlImage: `${endpoint}intern/intern2.jpeg` ,
   },
   {
     id: 3,
     title: "Intern 3",
-    urlImage: "/img/intern/intern3.jpg",
+    urlImage: `${endpoint}intern/intern3_11zon.jpg`,
   },
   {
     id: 4,
     title: "Intern 4",
-    urlImage: "/img/intern/intern4.jpeg",
+    urlImage: `${endpoint}intern/intern4.jpeg`,
+  },
+];
+
+const pemdesImage = [
+  {
+    id: 1,
+    title: "img 1",
+    urlImage: `${endpoint}pemdes/pemdes00.jpg`,
+  },
+  {
+    id: 2,
+    title: "img 2",
+    urlImage: `${endpoint}pemdes/pemdes01.jpg` ,
+  },
+  {
+    id: 3,
+    title: "img 3",
+    urlImage: `${endpoint}pemdes/pemdes3.jpg`,
+  },
+  {
+    id: 4,
+    title: "img 4",
+    urlImage: `${endpoint}pemdes/pemdes4.jpg`,
   },
 ];
 
@@ -56,7 +81,7 @@ const Experience = () => {
             {internImages.map((internImage) => (
               <div
                 key={internImage.id}
-                className="group h-full rounded-md overflow-hidden"
+                className="group h-full  rounded-md overflow-hidden"
               >
                 <Image
                   src={internImage.urlImage}
@@ -65,6 +90,13 @@ const Experience = () => {
                   alt={`${internImage.title}`}
                   className=" rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover"
                 />
+                {/* <IKImage
+                  src={internImage.urlImage}
+                  w={138}
+                  h={116}
+                  alt={`${internImage.title}`}
+                  className="rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover"
+                /> */}
               </div>
             ))}
           </div>
@@ -131,6 +163,23 @@ const Experience = () => {
           Freelance & Support System in Election 2024 for President, Vice President, DPR (House of Representatives), DPRD (Regional House of Representatives), DPD (Regional Representative Council), East Java Governor, and Ngawi Regent (District Head) in Village Government - Ngawi
           </h3>
           <p>Ngawi, East Java, Indonesia</p>
+          <div className="flex flex-wrap justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
+            {pemdesImage.map((pemdesImage) => (
+              <div
+                key={pemdesImage.id}
+                className="group h-[100px] w-[130px] rounded-md overflow-hidden"
+              >
+                <Image
+                  src={pemdesImage.urlImage}
+                  width={138}
+                  height={116}
+                  alt={`${pemdesImage.title}`}
+                  className=" rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter object-cover"
+                />
+               
+              </div>
+              ))}
+               </div>
         
          
         </li>

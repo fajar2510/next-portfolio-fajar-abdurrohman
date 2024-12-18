@@ -12,6 +12,8 @@ interface Props {
     dark?: boolean | undefined;
 }
 
+
+ const endpoint='https://ik.imagekit.io/fajarblog/porto/'
 const ProjectPreview: React.FC<Props> = ({
     name = "Project Name",  
     description = "Project Description",
@@ -32,7 +34,7 @@ const ProjectPreview: React.FC<Props> = ({
     >
         <a href={url} target="_blank" rel="noopener noreferrer">
             <div className='h-full w-full px-10 py-6 duration-[500ms] transition-all ease-in-out hover:scale-105 object-cover bg-cover bg-no-repeat bg-center'
-            style={{ backgroundImage: `url('${imageUrl}')`}}>
+            style={{ backgroundImage: `url('${endpoint}${imageUrl}')`}}>
             <div className='flex justify-between'>
                 <div className='container rounded-md bg-slate-600 p-3 lg:p-0 lg:bg-transparent'>
                     <h2 className='font-medium text-black text-lg dark:text-white'>{name}</h2>
