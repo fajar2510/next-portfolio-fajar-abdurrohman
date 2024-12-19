@@ -12,7 +12,7 @@ type Option = {
 
 const endpoint='https://ik.imagekit.io/fajarblog/porto/'
 const options: Option[] = [
-    { value: 'EN', label: 'EN', file: `${endpoint}pdf-private/CV EN Fajar Abdurrohman 2024.pdf`},
+    { value: 'EN', label: 'EN', file: `${endpoint}pdf-private/CV EN Fajar Abdurrohman 2024v2.pdf`},
     // { value: 'ID', label: 'Indonesia', file: '/pdf/Fajar_Abdurrohman IND CV ATS Friendly.pdf' },
   ];
 
