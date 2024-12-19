@@ -88,7 +88,7 @@ const Navbar: React.FC = () => {
                     Education
                 </Link>
                 <Link href="#experience" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
-                    Experience
+                    Exper
                 </Link>
                 <Link href="#certification" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
                   Certif
@@ -102,8 +102,13 @@ const Navbar: React.FC = () => {
                 <Link href="#contact" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
                     Contact
                 </Link>
-                <Link href="https://fajarblog.vercel.app/" target="_blank" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
-                    Blog <span className='text-slate-600 text-sm hover:font-normal hover:text-slate-600'>(soon)</span>
+                <Link href="https://fajarblog.vercel.app/" target="_blank" className='flex flex-col text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                   <div className='p-0 mb-0'>
+                     Blog
+                   </div>
+                   <div className='text-slate-500 text-xs p-0 -mt-1.5'>
+                    (soon)
+                   </div>
                 </Link>
                 
                
