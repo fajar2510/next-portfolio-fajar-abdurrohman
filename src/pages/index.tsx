@@ -107,7 +107,7 @@ export default function Home() {
           imageUrl="portofolio/shoe-store.png"
           bgColor="#685cdd"
           dark
-          url="https://github.com/OngkyRinaldo/project9-shoes-market"
+          url="https://scaling-space-dollop-qpxq5w59476hxwg-3000.app.github.dev/"
         />
         <ProjectPreview
           name="Clothing E-Commerce"
@@ -130,7 +130,7 @@ export default function Home() {
           description="Interactive Map Cluster Marker with Geographic Information Systems for Labor in East Java with Leaflet.js (MySql, CodeIgniter, Bootstrap)"
           imageUrl="portofolio/penta-map1.png"
           bgColor="#4e4e56"
-           url="https://github.com/fajar2510/pentamap"
+           url="https://fajarnext.my.id/pentamap/"
           dark
         />
         <ProjectPreview
@@ -138,7 +138,7 @@ export default function Home() {
           description="System Informtion Accounting with Debet and Credit, and Balance Sheet (MySql, PHP Nattive, Bootstrap)"
           imageUrl="portofolio/siakuntansi1.png"
           bgColor="#938400"
-           url="https://github.com/fajar2510/sia-akuntansi"
+           url="https://fajarnext.my.id/siakuntansi"
           dark
         />
         <ProjectPreview
