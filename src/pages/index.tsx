@@ -107,7 +107,7 @@ export default function Home() {
           imageUrl="portofolio/shoe-store.png"
           bgColor="#685cdd"
           dark
-          url="https://scaling-space-dollop-qpxq5w59476hxwg-3000.app.github.dev/"
+          url="https://github.com/fajar2510/project9-shoes-marketf"
         />
         <ProjectPreview
           name="Clothing E-Commerce"
