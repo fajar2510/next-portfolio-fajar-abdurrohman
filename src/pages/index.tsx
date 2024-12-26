@@ -160,10 +160,10 @@ export default function Home() {
 
       {/* Embed dari Youtube */}
       <section id="animation" className=" mb-8">
-      <h1 className="lg:text-3xl text-2xl font-bold mb-5 text-gray-900 dark:text-white">
-          2D Animation Project Sample by Fajar Abdurrohman
+      <h1 className="lg:text-3xl md:text-2xl text-md font-bold mb-5 text-gray-900 dark:text-white">
+          2D Animation Project by Fajar Abdurrohman
         </h1>
-      <div className="h-[30rem] w-auto rounded-3xl p-8 lg:p-10 flex flex-row gap-16 items-center justify-center bg-[url('https://ik.imagekit.io/fajarblog/porto//gradient-bg.jpg')] bg-cover">
+      <div className="h-[60rem] lg:h-[30rem] w-auto rounded-3xl p-8 lg:p-10 flex flex-col lg:flex-row  gap-16 items-center justify-center bg-[url('https://ik.imagekit.io/fajarblog/porto//gradient-bg.jpg')] bg-cover">
       
        
        <YouTubeEmbed videoId="7hqffNLydc8" title="Kominfo 2D Animation Bootcamp - Fajar Abdurrohman" />
