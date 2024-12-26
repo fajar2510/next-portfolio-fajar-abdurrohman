@@ -11,7 +11,7 @@ const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({
   videoId,
   title,
   height = "100%", // Default tinggi video
-  width = "78%",   // Default lebar video
+  width = "100%",   // Default lebar video
 }) => {
   if (!videoId) {
     console.error("Error: 'videoId' is required for YouTubeEmbed component.");
@@ -26,7 +26,7 @@ const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({
   <iframe
     src={`https://www.youtube.com/embed/${videoId}`}
     title={title || "YouTube video"}
-    frameBorder="0"
+    frameBorder="1"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
     allowFullScreen
     style={{

@@ -160,13 +160,17 @@ export default function Home() {
 
       {/* Embed dari Youtube */}
       <section id="animation" className=" mb-8">
-      <div className="h-full lg:h-[40rem] rounded-3xl p-8 lg:p-10 flex flex-col gap-16 items-center justify-center bg-[url('https://ik.imagekit.io/fajarblog/porto//gradient-bg.jpg')] bg-cover">
-      
-        <h1 className="lg:text-3xl text-2xl font-bold -mb-5 text-gray-900 dark:text-white">
+      <h1 className="lg:text-3xl text-2xl font-bold mb-5 text-gray-900 dark:text-white">
           2D Animation Project Sample by Fajar Abdurrohman
         </h1>
-        <YouTubeEmbed videoId="7hqffNLydc8" title="2D Animation Project - Fajar Abdurrohman" />
-        
+      <div className="h-[30rem] w-auto rounded-3xl p-8 lg:p-10 flex flex-row gap-16 items-center justify-center bg-[url('https://ik.imagekit.io/fajarblog/porto//gradient-bg.jpg')] bg-cover">
+      
+       
+       <YouTubeEmbed videoId="7hqffNLydc8" title="Kominfo 2D Animation Bootcamp - Fajar Abdurrohman" />
+        <YouTubeEmbed videoId="AWrRxuIc6kA" title="Ninu Kucing Pemalas - Fajar Abdurrohman" />
+  
+     
+  
       </div>
       </section>
 
