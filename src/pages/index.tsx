@@ -224,6 +224,8 @@ export default function Home() {
     {/* for contact - bawah sendiri */}
       <Contact/>
 
+      
+
      
     </>
   );
