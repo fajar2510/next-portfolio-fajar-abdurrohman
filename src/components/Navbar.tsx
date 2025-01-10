@@ -26,8 +26,8 @@ const Navbar: React.FC = () => {
   };
   return (
     
-    <>
-    <div className="navbar sticky top-0 z-10 bg-white dark:bg-black mb-3 ">
+    <div className="container navbar sticky top-0 z-10 px-16 mt-0 pt-0 mx-auto">
+    <div className="navbar bg-white dark:bg-black ">
     <div className="navbar-start w-1/3">
         <div className="dropdown">
         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -67,42 +67,42 @@ const Navbar: React.FC = () => {
         </ul>
         </div>
         <div className='flex items-center gap-[1ch]'>
-            <div className='hidden lg:block w-5 h-5 bg-yellow-400 rounded-full'/>
-            <span className='hidden lg:block text-md text-black font-semibold tracking-widest uppercase'>
+            <div className='hidden lg:block w-5 h-5 bg-yellow-400 rounded-full shadow-brutalism'/>
+            <span className='hidden lg:block text-md text-black font-semibold lg:font-bold tracking-widest uppercase'>
                 Fajar Abdurrohman
             </span>
             
         </div>
     </div>
     
-    <div className=" navbar-end w-2/3 ">
-        <div className=" hidden lg:flex flex-col lg:gap-4">
-            <ul className="menu menu-horizontal font-medium gap-1 px-2">
-                <Link href="#home" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+    <div className="navbar-end w-2/3 ">
+        <div className="hidden lg:flex flex-col lg:gap-4">
+            <ul className="menu text-center justify-content menu-horizontal items-center align-center font-bold gap-1 px-2 ">
+                <Link href="#home" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Home
                 </Link>
-                <Link href="#project" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                <Link href="#project" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Project
                 </Link>
-                <Link href="#education" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                <Link href="#education" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Education
                 </Link>
-                <Link href="#experience" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                <Link href="#experience" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Exper
                 </Link>
-                <Link href="#certification" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                <Link href="#certification" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                   Certif
                 </Link>
-                <Link href="#technology" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                <Link href="#technology" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Tech
                 </Link>
-                {/* <Link href="#animation" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                {/* <Link href="#animation" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Animation
                 </Link> */}
-                <Link href="#contact" className='text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                <Link href="#contact" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Contact
                 </Link>
-                <Link href="https://fajarblog.vercel.app/" target="_blank" className='flex flex-col text-slate-600 dark:text-white px-1.5 py-1 rounded-3xl font-medium hover:text-black hover:font-bold'>
+                <Link href="https://fajarblog.vercel.app/" target="_blank" className='flex flex-col text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                    <div className='p-0 mb-0'>
                      Blog
                    </div>
@@ -114,8 +114,8 @@ const Navbar: React.FC = () => {
                
             </ul>
         </div>
-        <div className=" lg:ml-3 flex gap-2 lg:gap-3 items-center justify-center bg-white text-black font-medium py-2 px-0 lg:px-5 rounded-3xl w-60 lg:w-auto hover:scale-95 hover:bg-transparent border border-black hover:text-black transition-all duration-300 ease-in-out">
-        <span className='text-whie dark:text-black'>CV</span> 
+        <div className="shadow-brutalism lg:ml-3 flex gap-2 lg:gap-3 items-center justify-center bg-white text-black font-medium py-2 px-0 lg:px-5 rounded-3xl w-60 lg:w-auto hover:scale-95 hover:bg-transparent border border-black hover:text-black transition-all duration-300 ease-in-out">
+        <span className=' dark:text-black font-bold text-base text-black'>CV</span> 
             <select name="language" className="pl-2 rounded-lg  text-black bg-white" onChange={handleSelectChange} defaultValue={selectedOption.value}>
               {options.map((option) => (
                 <option key={option.value} value={option.value}>
@@ -125,12 +125,12 @@ const Navbar: React.FC = () => {
             </select>
             <a href={selectedOption.file} download target="_blank" className="bg-white px-3 py-1 rounded-3xl font-medium text-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out">
               <Image className='lg:hidden' src="/download.png" width={20} height={20} alt="Download"></Image>
-                <span className="hidden lg:block">Download</span>
+                <span className="hidden text-black font-semibold text-base hover:text-white lg:block">Download</span>
             </a>
             </div>
           </div>
           </div>
-    </>
+    </div>
     
   )
 }
