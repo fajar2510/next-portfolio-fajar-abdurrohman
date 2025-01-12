@@ -4,7 +4,12 @@ export default function Document() {
   return (
     <Html className="bg-white dark:bg-slate-800 scroll-smooth" lang="en">
       <Head>
-        {/* Google tag (gtag.js) */}
+        <link rel="icon" href="https://ik.imagekit.io/fajarblog/porto/faviconF.ico"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"/>
+
+        {/* Google tag (gtag.js), untuk monitoring visitor dengan Google Analytic */}
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-E72GCSKST1"></script>
         <script
           dangerouslySetInnerHTML={{
@@ -16,7 +21,6 @@ export default function Document() {
             `,
           }}
         />
-
       </Head>
       <body >
         <Main />
