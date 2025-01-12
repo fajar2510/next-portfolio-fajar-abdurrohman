@@ -101,10 +101,10 @@ const certifs = [
 const Certification = () => {
   return (
     <div  id="certification"
-      className=" h-full rounded-3xl p-2 lg:p-10 flex flex-col"
+      className=" h-full rounded-3xl p-2  lg:pt-0 lg:pl-10 lg:pr-10 lg:pb-10 flex flex-col"
     >
       <h2 className="text-3xl font-bold text-black mb-1.5">Bootcamp, Course, Learning & Certification</h2>
-      <ul className="relative list-none p-2 m-0 border-slate-500 rounded-3xl">
+      <ul className="relative border-l p-2 m-0 border-slate-500 ">
 
         {certifs.map((certif, index) => (
           <li key={certif.id} className="mb-0  ml-4">
@@ -115,7 +115,7 @@ const Certification = () => {
             <time className="mb-1 text-sm font-medium leading-none text-slate-700 dark:text-slate-300">
               {certif.date}
             </time>
-            <div className="flex items-center justify-start py-1.5 gap-3 ">
+            <div className="flex items-center justify-start py-1.5 gap-3 border-b border-slate-500">
                 <div className="flex overflow-hidden items-center justify-center rounded-2xl w-16 h-16 object-cover">
                 <Image
                   src={certif.img}
@@ -128,32 +128,35 @@ const Certification = () => {
                 />
                 </div>
 
-              <h3 className="text-lg font-semibold text-black dark:text-white">
-                {certif.title}
-              </h3>
+             <div className="flex flex-col justify-start">
+                <h3 className="text-lg font-semibold text-black dark:text-white">
+                  {certif.title}
+                  <Link href={certif.link}
+                      className="inline-flex justify-center items-center p-1 text-black -rotate-45 hover:rotate-0 hover:scale-125 hover:text-amber-500 transition-all duration-300 ease-in-out"
+                    >
+                      <svg
+                        className="w-4 h-4"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                          clipRule="evenodd"
+                        ></path>
+                      </svg>
+                    </Link>
+                </h3>
 
-              <Link
-                href={certif.link}
-                className="inline-flex items-center p-1 text-black hover:text-white bg-white border-2 hover:bg-black border-black rounded-full transition-all duration-300 ease-in-out"
-              >
-                <svg
-                  className="w-4 h-4"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  ></path>
-                </svg>
-              </Link>
+                <p className="mb-4  text-base font-normal text-slate-800 dark:text-gray-400">
+                {certif.description}
+              </p>
+             </div>
+           
             </div>
+            
 
-            <p className="mb-4  text-base font-normal text-slate-800 dark:text-gray-400">
-              {certif.description}
-            </p>
   
            
            

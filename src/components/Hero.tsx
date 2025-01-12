@@ -22,8 +22,8 @@ const Hero = () => {
         </p>
         <span className="text-base lg:text-lg text-black font-bold pl-4 pt-0">Let’s explore what I can offer! 🚀</span>
         
-        <div className="flex m-4 flex-col lg:flex-row items-center gap-4 justify-self-end mt-auto ">             
-          <Link href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email" target="_blank"  className="bg-black text-white  py-3 px-12 rounded-full w-60 text-center tracking-widest lg:w-auto font-bold hover:scale-95 hover:bg-white hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">  Contact me  </Link>
+        <div className="flex m-4 flex-col lg:flex-row items-center gap-4 lg:gap-16 mx-auto justify-around mt-auto ">             
+          <Link href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email" target="_blank"  className="bg-black text-white  py-3 px-12 rounded-full w-full md:w-[60%] lg:w-60 text-lg text-center tracking-widest  font-bold hover:scale-95 hover:bg-white hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out">Contact me</Link>
           <div className="flex mt-3 lg:mt-0 items-center gap-4">
             <Link href="https://www.linkedin.com/in/fajar-abdurrohman/" target="_blank">
               <SocialButton  bgColor="linkedin">

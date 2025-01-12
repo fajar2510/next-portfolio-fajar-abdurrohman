@@ -1,200 +1,109 @@
 import React from "react";
-import Link from "next/link";
-// import IKImage from "./Image"; 
 import Image from "next/image";
 
- const endpoint='https://ik.imagekit.io/fajarblog/porto/'
-const internImages = [
+const endpoint = 'https://ik.imagekit.io/fajarblog/porto/';
+
+interface ExperienceData {
+  id: number;
+  title: string;
+  time: string;
+  position: string;
+  description: string;
+  location?: string;
+  images?: { id: number; title: string; urlImage: string }[];
+}
+
+const experiences: ExperienceData[] = [
   {
     id: 1,
-    title: "Intern 1",
-    urlImage: `${endpoint}intern/intern1.jpg`,
+    title: "Relevant Experience",
+    time: "Aug 2020 - Jun 2021",
+    position: "Web Developer & IT Support - Disnakertrans Jawa Timur (Surabaya)",
+    description: "Build interactive Web Apps with mapping of labor in East Java, using Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap.",
+    images: [
+      { id: 1, title: "Intern 1", urlImage: `${endpoint}intern/intern1.jpg` },
+      { id: 2, title: "Intern 2", urlImage: `${endpoint}intern/intern2.jpeg` },
+      { id: 3, title: "Intern 3", urlImage: `${endpoint}intern/intern3_11zon.jpg` },
+      { id: 4, title: "Intern 4", urlImage: `${endpoint}intern/intern4.jpeg` },
+    ],
   },
   {
     id: 2,
-    title: "Intern 2",
-    urlImage: `${endpoint}intern/intern2.jpeg` ,
+    title: "Freelance",
+    time: "Aug 2020 - Jun 2021",
+    position: "Frontend Mobile Android Flutter - CV. Linas Media Informatika (Gresik)",
+    description: "Build frontend to ordering food for school canteen application.",
   },
   {
     id: 3,
-    title: "Intern 3",
-    urlImage: `${endpoint}intern/intern3_11zon.jpg`,
+    title: "Project & Assignment",
+    time: "Feb 2018 - Dec 2019",
+    position: "Programmer Fullstack - Universitas Negeri Surabaya (Surabaya)",
+    description: "Build and Development; System Information Accountant(PHP Nattive), System Information Executive(CodeIgniter), System Information Wedding Organizer(Laravel), Mobile Psycholog Consutation(Flutter).",
   },
+  // {
+  //   id: 4,
+  //   title: "General Experience",
+  //   time: "Aug 2023 - Present",
+  //   position: "Freelance Web Developer/Graphics Design - Ngawi",
+  //   description: "Freelance web development and graphic design services.",
+  //   location: "Ngawi, East Java, Indonesia",
+  // },
+  // {
+  //     id: 5,
+  //     title: "General Experience",
+  //     time: "Jan 2024 - Dec 2024",
+  //     position: "Freelance & Support System in Election 2024 for President, Vice President, DPR (House of Representatives), DPRD (Regional House of Representatives), DPD (Regional Representative Council), East Java Governor, and Ngawi Regent (District Head) in Village Government - Ngawi",
+  //     description: "Support system and freelance work for the 2024 election.",
+  //     location: "Ngawi, East Java, Indonesia",
+  //     images: [
+  //       { id: 1, title: "img 1", urlImage: `${endpoint}pemdes/pemdes00.jpg` },
+  //       { id: 2, title: "img 2", urlImage: `${endpoint}pemdes/pemdes01.jpg` },
+  //       { id: 3, title: "img 3", urlImage: `${endpoint}pemdes/pemdes3.jpg` },
+  //       { id: 4, title: "img 4", urlImage: `${endpoint}pemdes/pemdes4.jpg` },
+  //     ],
+  //   },
   {
-    id: 4,
-    title: "Intern 4",
-    urlImage: `${endpoint}intern/intern4.jpeg`,
+    id: 6,
+    title: "General Experience",
+    time: "Sept 2021 - Aug 2022",
+    position: "Entrepreneurship/Wiraswasta - Surakarta",
+    description: "Entrepreneurship and business activities in Surakarta.",
+    location: "Surakarta, Central Java, Indonesia",
   },
 ];
-
-const pemdesImage = [
-  {
-    id: 1,
-    title: "img 1",
-    urlImage: `${endpoint}pemdes/pemdes00.jpg`,
-  },
-  {
-    id: 2,
-    title: "img 2",
-    urlImage: `${endpoint}pemdes/pemdes01.jpg` ,
-  },
-  {
-    id: 3,
-    title: "img 3",
-    urlImage: `${endpoint}pemdes/pemdes3.jpg`,
-  },
-  {
-    id: 4,
-    title: "img 4",
-    urlImage: `${endpoint}pemdes/pemdes4.jpg`,
-  },
-];
-
 
 const Experience = () => {
   return (
-    <div
-      id="experience"
-      className="h-full rounded-3xl p-2 lg:p-10 flex flex-col"
-    >
+    <div id="experience" className="h-full rounded-3xl p-2 lg:p-10 flex flex-col">
       <h2 className="text-3xl font-bold text-black mb-1.5">Experience</h2>
-      {/* <span className="mb-3 text-lg font-semibold text-black">
-        Intern
-      </span> */}
-
-      <ol className="relative border-l border-slate-300 dark:border-slate-700">
-        <li className="mb-6 border-b border-slate-200 ml-4">
-          <h3 className="text-lg font-bold text-black mb-1.5">Relevant Experience</h3>
-          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
-            Aug 2020 - Jun 2021
-          </time>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-            Web Developer & IT Support - Disnakertrans Jawa Timur (Surabaya)
-          </h3>
-          <p className="text-base font-normal text-slate-600 dark:text-slate-400">
-            Build interactive Web Apps with mapping of labor in East Java, using
-            Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap
-            .
-          </p>
-          <div className="flex flex-wrap justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
-            {internImages.map((internImage) => (
-              <div
-                key={internImage.id}
-                className="group h-full  rounded-md overflow-hidden"
-              >
-                <Image
-                  src={internImage.urlImage}
-                  width={138}
-                  height={116}
-                  alt={`${internImage.title}`}
-                  className=" rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover"
-                />
-                {/* <IKImage
-                  src={internImage.urlImage}
-                  w={138}
-                  h={116}
-                  alt={`${internImage.title}`}
-                  className="rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover"
-                /> */}
+      <ul className="relative border-l p-2 m-0 border-slate-500">
+        {experiences.map((exp) => (
+          <li key={exp.id} className="mb-1 border-b border-slate-700 ml-4">
+            <h3 className="text-lg font-bold text-black mb-1.5">{exp.title}</h3>
+            <div className="absolute w-4 h-4 bg-black rounded-full mt-1.5 -left-[0.6rem]"></div>
+            <time className="mb-1 text-md font-normal leading-none text-slate-700 dark:text-slate-300">{exp.time}</time>
+            <h3 className="text-lg font-semibold text-black dark:text-white">{exp.position}</h3>
+            <p className="text-base font-normal text-slate-700 dark:text-slate-400">{exp.description}</p>
+            {exp.location && <p>{exp.location}</p>}
+            {exp.images && (
+              <div className="flex flex-wrap justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
+                {exp.images.map((image) => (
+                  <div key={image.id} className="group h-full rounded-md overflow-hidden">
+                    <Image
+                      src={image.urlImage}
+                      width={138}
+                      height={116}
+                      alt={image.title}
+                      className="rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover"
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </li>
-
-
-        <li className="mb-6 border-b border-slate-200 ml-4">
-          <h3 className="text-lg font-bold text-black mb-1.5">Freelance</h3>
-          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
-            Aug 2020 - Jun 2021
-          </time>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-            Frontend Mobile Android Flutter - CV. Linas Media Informatika (Gresik)
-          </h3>
-          <p className="text-base font-normal text-slate-600 dark:text-slate-400">
-            Build frontend to ordering food for school canteen application.
-          </p>
-          
-        </li>
-
-        <li className="mb-6 border-b border-slate-200 ml-4">
-          <h3 className="text-lg font-bold text-black mb-1.5">Project & Assignment</h3>
-          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
-             Feb 2018 - Dec 2019
-          </time>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-            Programmer Fullstack - Universitas Negeri Surabaya (Surabaya)
-          </h3>
-          <p className="text-base font-normal text-slate-600 dark:text-slate-400">
-            Build and Development; <br />
-            ▫️ System Information Accountant(<em>PHP Nattive</em>), <br />
-            ▫️ System Information Executive(<em>CodeIgniter</em>), <br />
-            ▫️ System Information Wedding Organizer(<em>Laravel</em>), <br />
-            ▫️ Mobile Psycholog Consutation(<em>Flutter</em>).
-          </p>
-        </li>
-      </ol>
-
-      {/* General Experience */}
-      <ol className="relative border-l border-slate-300 dark:border-slate-700">
-
-      <li className="mb-6 border-b border-slate-200 ml-4">
-          <h3 className="text-lg font-bold text-black mb-1.5">General Experience</h3>
-          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
-            Aug 2023 - Present
-          </time>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-          Freelance Web Developer/Graphics Design - Ngawi
-          </h3>
-          <p>Ngawi, East Java, Indonesia</p>
-        
-         
-        </li>
-        <li className="mb-6 border-b border-slate-200 ml-4">
-        
-          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
-            Jan 2024 - Dec 2024
-          </time>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-          Freelance & Support System in Election 2024 for President, Vice President, DPR (House of Representatives), DPRD (Regional House of Representatives), DPD (Regional Representative Council), East Java Governor, and Ngawi Regent (District Head) in Village Government - Ngawi
-          </h3>
-          <p>Ngawi, East Java, Indonesia</p>
-          <div className="flex flex-wrap justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
-            {pemdesImage.map((pemdesImage) => (
-              <div
-                key={pemdesImage.id}
-                className="group h-[100px] w-[130px] rounded-md overflow-hidden"
-              >
-                <Image
-                  src={pemdesImage.urlImage}
-                  width={138}
-                  height={116}
-                  alt={`${pemdesImage.title}`}
-                  className=" rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter object-cover"
-                />
-               
-              </div>
-              ))}
-               </div>
-        
-         
-        </li>
-        <li className="mb-6 border-b border-slate-200 ml-4">
-          <div className="absolute w-3 h-3 bg-slate-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <time className="mb-1 text-md font-normal leading-none text-slate-600 dark:text-slate-300">
-            Sept 2021 - Aug 2022
-          </time>
-          <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
-          Entrepreneurship/Wiraswasta - Surakarta
-          </h3>
-          <p>Surakarta, Central Java, Indonesia</p>
-        
-        </li>
-      </ol>
+            )}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

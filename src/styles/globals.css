@@ -1,11 +1,9 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
-  margin-left: auto;
-  margin-right: auto;
-  font-family: 'Open Sans', sans-serif;
+  @apply mx-auto font-openSans;
 }
 
 /* * {
