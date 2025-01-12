@@ -13,7 +13,7 @@ interface Props {
 }
 
 
-const IKIT=process.env.NEXT_PUBLIC_IK_URL_IKIT
+const IKIT='https://ik.imagekit.io/fajarblog/porto/'
 const ProjectPreview: React.FC<Props> = ({
     name = "Project Name",  
     description = "Project Description",

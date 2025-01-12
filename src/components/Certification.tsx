@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-const IKIT=process.env.NEXT_PUBLIC_IK_URL_ENDPOINT
+// const IKIT=process.env.NEXT_PUBLIC_IK_URL_ENDPOINT
+const IKIT='https://ik.imagekit.io/fajarblog/porto/'
 const certifs = [
   {
     id: 1,
