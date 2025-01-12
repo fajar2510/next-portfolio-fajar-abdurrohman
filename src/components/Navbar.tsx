@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
 
             <a href={selectedOption.file} download target="_blank" className="bg-white px-3 py-1 rounded-3xl font-medium text-black hover:bg-amber-400 hover:border hover:border-black hover:text-white transition-all duration-300 ease-in-out">
               <Image className='lg:hidden' src="/download.png" width={20} height={20} alt="Download"></Image>
-                <span className="hidden text-black font-semibold text-base hover:text-white lg:block">Download</span>
+                <span className="hidden text-black font-semibold text-base lg:block">Download</span>
             </a>
         </div>
         </div>

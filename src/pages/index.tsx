@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero"
 import ProjectMain from "@/components/ProjectMain";
 import ProjectMore from "@/components/ProjectMore";
-import Animation from "@/components/Animation"
+import AnimationDesign from "@/components/AnimationDesign"
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
@@ -19,40 +19,40 @@ export default function Home() {
       {/* Header */}
       <Header/>
 
-      {/* Navbar component start */}
-      <Navbar />
-      {/* Navbar component end */}
+        {/* Navbar component start */}
+        <Navbar />
+        {/* Navbar component end */}
 
-      {/* Body Content start */}
-      <div className=" w-full px-2 md:px-4 lg:px-16">
-        {/* Section Hero */}
-        <Hero/>
-        
-        {/* Section Project Main */}
-        <ProjectMain/>
+        {/* Body Content start */}
+        <div className="w-full px-2 md:px-4 lg:px-16">
+          {/* Section Hero */}
+          <Hero/>
+          
+          {/* Section Project Main */}
+          <ProjectMain/>
 
-        {/* Section Animation */}
-        <Animation/>
+          {/* Section Animation */}
+          <AnimationDesign/>
 
-        {/* Section Project More */}
-        <ProjectMore/>
+          {/* Section Project More */}
+          <ProjectMore/>
 
-        {/* Section Education */}
-        <Education/>
+          {/* Section Education */}
+          <Education/>
 
-        {/* Section Experience */}
-        <Experience/>
-        
-        {/* Section Certification, Learning, & Courses */}
-        <Certification/>
+          {/* Section Experience */}
+          <Experience/>
+          
+          {/* Section Certification, Learning, & Courses */}
+          <Certification/>
 
-        {/* Section Skill */}
-        <Skill/>
+          {/* Section Skill */}
+          <Skill/>
 
-        {/* Section Contact me */}
-        <Contact/>
+          {/* Section Contact me */}
+          <Contact/>
 
-      </div>
+        </div>
     </div>
   );
 }
