@@ -1,14 +1,13 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
- const endpoint='https://ik.imagekit.io/fajarblog/porto/'
+const IKIT=process.env.NEXT_PUBLIC_IK_URL_ENDPOINT
 const certifs = [
   {
     id: 1,
     title: "Alibaba Cloud (AWS)",
     date: "Jul 2024 - Aug 2024",
-    img: `${endpoint}certification/alibaba-cloud.jpg`,
+    img: `${IKIT}certification/alibaba-cloud.jpg`,
     link: "https://drive.google.com/drive/folders/1J4nh3XpmCVpOCjXf4A4sridx5avQzTwK?usp=sharing",
     description:
       "Learn the basics of cloud computing, including cloud architecture, security, and core AWS services. ",
@@ -17,7 +16,7 @@ const certifs = [
     id: 2,
     title: "Digitalent KOMINFO x HelloMotion - 2D Animation",
     date: "May 2024 - Jun 2024",
-    img: `${endpoint}certification/digitalent.png`,
+    img: `${IKIT}certification/digitalent.png`,
     link: "https://drive.google.com/file/d/1AQqLEGSwQPXqhJw-0g08ki3M-BdDvYzH/view?usp=sharing",
     description:
       "The 2D Animation Bootcamp in collaboration with Hello Motion focuses on creating animations using Adobe Animate.",
@@ -26,7 +25,7 @@ const certifs = [
     id: 3,
     title: "Skillshare - Figma, UI-UX Design and 2D Animation",
     date: "Feb 2024 - Mar 2024",
-    img: `${endpoint}certification/skillshare.jpg`,
+    img: `${IKIT}certification/skillshare.jpg`,
     link: "https://drive.google.com/file/d/1-a-bmK1375YFTZoYubHt0y3X31v_jKki/view?usp=sharing",
     description:
       "The Figma course covers the basics of the Figma interface, design principles, and creating interactive prototypes. ",
@@ -36,7 +35,7 @@ const certifs = [
     id: 4,
     title: "Prakerja - Konten Marketing Sosial Media, Konten Desain Grafis, Website Toko Online",
     date: "Feb 2024 - Apr 2024",
-    img: `${endpoint}certification/prakerja.jpg`,
+    img: `${IKIT}certification/prakerja.jpg`,
     link: "https://drive.google.com/drive/folders/1-Q1odNtWGp88f0UKzxzRHulY18851B_a?usp=sharing",
     description:
       "Prakerja Courses Finished: Konten Marketing Sosial Media – Learn how to create engaging social media content, grow your audience, and increase brand awareness. ",
@@ -45,7 +44,7 @@ const certifs = [
     id: 5,
     title: "Codecademy - Basic JavaScript, Typescript, CSS, HTML, Command Line, Git & GitHub.",
     date: "Aug 2023 - Dec 2023",
-    img: `${endpoint}certification/codecademy.png`,
+    img: `${IKIT}certification/codecademy.png`,
     link: "https://www.codecademy.com/profiles/fajar2510",
     description:
       "Focused on JavaScript, TypeScript, CSS, HTML, Command Line, Git & GitHub. ",
@@ -54,7 +53,7 @@ const certifs = [
     id: 6,
     title: "CODE ID - Flutter & Javascript Bootcamp",
     date: "Aug 2023 - Dec 2023",
-    img: `${endpoint}certification/CODE_ID.jpg`,
+    img: `${IKIT}certification/CODE_ID.jpg`,
     link: "/",
     description:
       "CODE ID Bootcamp is a 4-month program that teaches you how to build mobile applications using Flutter and JavaScript.",
@@ -64,7 +63,7 @@ const certifs = [
     id: 7,
     title: "Harisenin Web Developer Bootcamp 2023",
     date: "Mar 2023 - Jul 2023",
-    img: `${endpoint}certification/harisenin.jpg`,
+    img: `${IKIT}certification/harisenin.jpg`,
     link: "https://bit.ly/4cg5Je5",
     description:
       "Harisenin Web Developer Bootcamp 2023 teaches you how to build websites from scratch, covering key technologies such as HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and more.",
@@ -73,7 +72,7 @@ const certifs = [
     id: 8,
     title: "Udemy Web Developer Bootcamp 2023",
     date: "Nov 2023 - May 2023",
-    img: `${endpoint}certification/udemy.png`,
+    img: `${IKIT}certification/udemy.png`,
     link: "https://www.udemy.com/certificate/UC-cc4f5533-976b-46a9-9013-145a56f3b052/",
     description:
       "Udemy Web Developer Bootcamp 2023 teaches you how to build websites from scratch, covering key technologies such as HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, and more.",
@@ -82,7 +81,7 @@ const certifs = [
     id: 9,
     title: "Dicoding Courses",
     date: "Nov 2022 - Jan 2023",
-    img: `${endpoint}certification/dicoding-header-logo.png`,
+    img: `${IKIT}certification/dicoding-header-logo.png`,
     link: "https://drive.google.com/drive/folders/1-KSYJ4qUtDQJXWH0eSfk4dEk1UqUQzyt?usp=sharing",
     description:
       "Dicoding Courses Finished: Frontend Web Development, Backend Web Development, Cloud Computing etc.",
@@ -91,7 +90,7 @@ const certifs = [
     id: 10,
     title: "Coursera Google IT Support",
     date: "Sep 2022 - Nov 2022",
-    img: `${endpoint}/certification/Coursera.png`,
+    img: `${IKIT}/certification/Coursera.png`,
     link: "https://www.coursera.org/account/accomplishments/professional-cert/MG8DY2NHJJFY",
     description:
       "The Google IT Support Professional Certificate introduces learners to troubleshooting, customer service, networking, operating systems, system administration, and security.",
@@ -105,10 +104,6 @@ const Certification = () => {
       className=" h-full rounded-3xl p-2 lg:p-10 flex flex-col"
     >
       <h2 className="text-3xl font-bold text-black mb-1.5">Bootcamp, Course, Learning & Certification</h2>
-      {/* <span className="mb-3 text-lg font-semibold text-black">
-        Course & Certification
-      </span> */}
-
       <ol className="relative border-l border-slate-300 dark:border-slate-700">
 
         {certifs.map((certif, index) => (
