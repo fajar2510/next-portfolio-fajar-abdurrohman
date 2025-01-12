@@ -13,7 +13,7 @@ interface Props {
 }
 
 
-const endpoint='https://ik.imagekit.io/fajarblog/porto/'
+const IKIT=process.env.NEXT_PUBLIC_IK_URL_IKIT
 const ProjectPreview: React.FC<Props> = ({
     name = "Project Name",  
     description = "Project Description",
@@ -38,7 +38,7 @@ const ProjectPreview: React.FC<Props> = ({
         >
         <a href={url} target="_blank" rel="noopener noreferrer">
             <div className='h-full w-full px-4 py-6 duration-[400ms] transition-all ease-in-out hover:scale-[102%] object-cover bg-cover bg-no-repeat bg-center'
-            style={{ backgroundImage: `url('${endpoint}${imageUrl}')`}}>
+            style={{ backgroundImage: `url('${IKIT}${imageUrl}')`}}>
             <div className='flex'>
                 <div className='container rounded-xl bg-black p-1.5 lg:p-2 lg:bg-transparent'>
                     <h2 className='font-bold text-black text-lg dark:text-white leading-relaxed'>{name}</h2>
