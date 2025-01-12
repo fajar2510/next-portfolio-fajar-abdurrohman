@@ -100,48 +100,44 @@ const certifs = [
 
 const Certification = () => {
   return (
-    <div
-      id="certification"
+    <div  id="certification"
       className=" h-full rounded-3xl p-2 lg:p-10 flex flex-col"
     >
       <h2 className="text-3xl font-bold text-black mb-1.5">Bootcamp, Course, Learning & Certification</h2>
-      <ol className="relative border-l border-slate-300 dark:border-slate-700">
+      <ul className="relative list-none p-2 m-0 border-slate-500 rounded-3xl">
 
         {certifs.map((certif, index) => (
-          <li key={certif.id} className="mb-6  ml-4">
+          <li key={certif.id} className="mb-0  ml-4">
             {index === 0 && (
-              <h3 className="text-lg font-bold text-black mb-1.5">Relevant studies</h3>
+              <h3 className="text-lg font-bold mt-2 text-black mb-1.5">Relevant studies</h3>
             )}
-            <div className="absolute w-3 h-3 bg-slate-300 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-sm font-normal leading-none text-slate-700 dark:text-slate-300">
+            <div className="absolute w-4 h-4 bg-black rounded-full mt-1.5 -left-[0.6rem] dark:border-gray-900 dark:bg-gray-700"></div>
+            <time className="mb-1 text-sm font-medium leading-none text-slate-700 dark:text-slate-300">
               {certif.date}
             </time>
-            <div className="flex items-center justify-start py-2 gap-3 ">
-              <div className="overflow-hidden rounded-full">
+            <div className="flex items-center justify-start py-1.5 gap-3 ">
+                <div className="flex overflow-hidden items-center justify-center rounded-2xl w-16 h-16 object-cover">
                 <Image
                   src={certif.img}
-                  width={40}
-                  height={40}
+                  width={80}
+                  height={80}
                   alt={`${certif.title}`}
+                  loading="lazy"
+                  placeholder="blur"
+                  blurDataURL={`${IKIT}placeholder.jpg`}
                 />
-              </div>
+                </div>
 
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-white">
+              <h3 className="text-lg font-semibold text-black dark:text-white">
                 {certif.title}
               </h3>
-            </div>
 
-            <p className="mb-4  text-base font-normal text-slate-600 dark:text-gray-400">
-              {certif.description}
-            </p>
-  
               <Link
                 href={certif.link}
-                className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+                className="inline-flex items-center p-1 text-black hover:text-white bg-white border-2 hover:bg-black border-black rounded-full transition-all duration-300 ease-in-out"
               >
-                Certification{" "}
                 <svg
-                  className="w-3 h-3 ml-2"
+                  className="w-4 h-4"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -153,10 +149,17 @@ const Certification = () => {
                   ></path>
                 </svg>
               </Link>
+            </div>
+
+            <p className="mb-4  text-base font-normal text-slate-800 dark:text-gray-400">
+              {certif.description}
+            </p>
+  
+           
            
           </li>
         ))}
-      </ol>
+      </ul>
     </div>
   );
 };
