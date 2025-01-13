@@ -21,13 +21,13 @@ import Figma from "../../public/img/tech/figma-logo.svg"
 
 const Skill = () => {
     return (
-        <div id='technology' className='flex p-2 -mt-2 lg:-mt-10 lg:p-1  flex-col mb-10'>
+        <div id='technology' className='flex p-2 -mt-2 lg:-mt-10 lg:p-1  flex-col mb-5 md:mb-10'>
 
             {/* Skill Technical */}
             <h2 className='text-2xl lg:text-3xl font-bold text-black mt-5 mb-1.5'>Technical Skills</h2>
             <span className='mb-3 text-md font-semibold text-slate-800'>Technology or Stack use</span>
 
-            <div className='flex flex-wrap gap-2 lg:gap-3 justify-evenly mt-3 mb-5 '>
+            <div className='flex flex-wrap gap-2 lg:gap-3 justify-around mt-3 mb-5 '>
                 {[
                     { Component: CodeIgniter, name: "CodeIgniter", bgColor: "bg-orange-200", fill: "fill-orange-500" },
                     { Component: Laravel, name: "Laravel", bgColor: "bg-pink-200", fill: "fill-orange-500" },
@@ -46,7 +46,7 @@ const Skill = () => {
                     { Component: Figma, name: "Figma", bgColor: "bg-pink-200", fill: "fill-pink-500" }
                 ].map(({ Component, name, bgColor, fill }) => (
 
-                    <div key={name} className={`flex flex-col gap-1 items-center h-32 w-32 lg:h-40 lg:w-40 ${bgColor} border-2 border-black overflow-hidden justify-center m-2 p-3 md:p-6 rounded-3xl`}>
+                    <div key={name} className={`flex flex-col gap-1 items-center h-28 w-28 lg:h-40 lg:w-40 ${bgColor} border-2 border-black overflow-hidden justify-center m-0 md:m-2 p-4 md:p-6 rounded-3xl`}>
                         <Component className={`h-32 w-32 lg:h-44 lg:w-44  ${fill}`} />
                         <span className=' text-sm lg:text-base lg:text-md text-center font-semibold md:font-bold text-slate-700 tracking-widest hidden md:block'>{name}</span>
                     </div>
@@ -55,15 +55,15 @@ const Skill = () => {
 
             {/* Skill Non-Technical */}
             <div className='flex flex-col gap-2 lg:gap-4 mt-5'>
-                <h2 className='text-2xl lg:text-3xl font-bold text-black '>non-Technical Skills</h2>
+                <h2 className='text-lg md:text-2xl lg:text-3xl font-bold text-black '>non-Technical Skills</h2>
                 <div className='flex flex-wrap justify-between gap-2'>
-                    <p className='text-lg font-bold text-black text-center bg-yellow-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Attention to Detail</p>
-                    <p className='text-lg font-bold text-black text-center bg-pink-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Critical Thinking</p>
-                    <p className='text-lg font-bold text-black text-center bg-green-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Empathy</p>
-                    <p className='text-lg font-bold text-black text-center bg-blue-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Flexibility</p>
-                    <p className='text-lg font-bold text-black text-center bg-purple-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Respectfulness</p>
-                    <p className='text-lg font-bold text-black text-center bg-red-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Organized</p>
-                    <p className='text-lg font-bold text-black text-center bg-orange-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Teamwork</p>
+                    <p className='text-base md:text-lg font-bold text-black text-center bg-yellow-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Attention to Detail</p>
+                    <p className='text-base md:text-lg font-bold text-black text-center bg-pink-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Critical Thinking</p>
+                    <p className='text-base md:text-lg font-bold text-black text-center bg-green-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Empathy</p>
+                    <p className='text-base md:text-lg font-bold text-black text-center bg-blue-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Flexibility</p>
+                    <p className='text-base md:text-lg font-bold text-black text-center bg-purple-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Respectfulness</p>
+                    <p className='text-base md:text-lg font-bold text-black text-center bg-red-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Organized</p>
+                    <p className='text-base md:text-lg font-bold text-black text-center bg-orange-300 border-2 border-black px-3 py-2 rounded-3xl flex-grow'>Teamwork</p>
                 </div>
 
             </div>

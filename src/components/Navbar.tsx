@@ -38,13 +38,13 @@ const Navbar: React.FC = () => {
   }, []);
   return (
     
-    <div className={`navbar sticky bg-white top-0 z-10 px-16 mt-0 pt-0 mx-auto transition-all duration-600 ease-in-out ${
+    <div className={`navbar sticky bg-white top-0 z-10 px-2 md:px-16 mt-0 pt-0 mx-auto transition-all duration-600 ease-in-out ${
       isScrolled ? 'border-b-2 border-black' : ''
     }`}>
-    <div className="navbar bg-white dark:bg-black ">
+    <div className="navbar mx-auto  bg-white dark:bg-black ">
     <div className="navbar-start w-1/3">
         <div className="dropdown">
-        <label tabIndex={0} className="btn btn-ghost lg:hidden">
+        <label tabIndex={0} className="btn btn-ghost xl:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="black"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-6 shadow bg-white rounded-box w-52">
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
     </div>
     
     <div className="navbar-end w-2/3 ">
-        <div className="hidden lg:flex flex-col lg:gap-4">
+        <div className="hidden xl:flex flex-col lg:gap-4">
             <ul className="menu text-center justify-content menu-horizontal items-center align-center font-bold gap-1 px-2 ">
                 <Link href="#home" className='text-slate-700 dark:text-white px-2 py-1 rounded-3xl   hover:text-white hover:bg-black transition-all duration-300 ease-in-out'>
                     Home
@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
                
             </ul>
         </div>
-        <div className="shadow-brutalism lg:ml-3 flex gap-2 lg:gap-3 items-center justify-center bg-white text-black font-medium py-2 px-0 lg:px-5 rounded-3xl w-40 md:w-60 lg:w-auto hover:scale-[97%] hover:bg-transparent border border-black hover:text-black transition-all duration-300 ease-in-out">
+        <div className="shadow-brutalism lg:ml-3 flex gap-2 lg:gap-3 items-center justify-center bg-white text-black font-medium py-2 px-0 lg:px-5 rounded-3xl w-40 md:w-60 lg:w-auto group hover:scale-[97%] border border-black hover:text-black transition-all duration-300 ease-in-out">
           <span className=' dark:text-black font-bold text-base text-black'>CV</span> 
             
             <select name="language" className="pl-2 rounded-lg hidden md:block  text-black bg-white" onChange={handleSelectChange} defaultValue={selectedOption.value}>
@@ -139,10 +139,10 @@ const Navbar: React.FC = () => {
               ))}
             </select>
 
-            <a href={selectedOption.file} download target="_blank" className="bg-white px-3 py-1 rounded-3xl font-medium text-black hover:bg-amber-400 hover:border hover:border-black hover:text-white transition-all duration-300 ease-in-out">
+                  <Link href={selectedOption.file} download target="_blank" className="bg-white  px-3 py-1 rounded-3xl group-hover:scale-[105%]  font-medium text-black hover:bg-amber-400 hover:border hover:border-black hover:text-white transition-all duration-300 ease-in-out">
               <Image className='lg:hidden' src="/download.png" width={20} height={20} alt="Download"></Image>
                 <span className="hidden text-black font-semibold text-base lg:block">Download</span>
-            </a>
+            </Link>
         </div>
         </div>
         </div>

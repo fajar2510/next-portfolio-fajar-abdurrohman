@@ -24,7 +24,7 @@ export default function Home() {
         {/* Navbar component end */}
 
         {/* Body Content start */}
-        <div className="w-full px-2 md:px-4 lg:px-16">
+        <div className="w-full px-2 md:px-6 lg:px-16">
           {/* Section Hero */}
           <Hero/>
           

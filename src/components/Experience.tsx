@@ -80,14 +80,14 @@ const Experience = () => {
       <ul className="relative border-l p-2 m-0 border-slate-500">
         {experiences.map((exp) => (
           <li key={exp.id} className="mb-1 border-b border-slate-700 ml-4">
-            <h3 className="text-lg font-bold text-black mb-1.5">{exp.title}</h3>
+            <h3 className="text-justify text-lg font-bold text-black mb-1.5">{exp.title}</h3>
             <div className="absolute w-4 h-4 bg-black rounded-full mt-1.5 -left-[0.6rem]"></div>
-            <time className="mb-1 text-md font-normal leading-none text-slate-700 dark:text-slate-300">{exp.time}</time>
-            <h3 className="text-lg font-semibold text-black dark:text-white">{exp.position}</h3>
-            <p className="text-base font-normal text-slate-700 dark:text-slate-400">{exp.description}</p>
+            <time className="text-justify mb-1 text-base md:text-base font-normal leading-none text-slate-700 dark:text-slate-300">{exp.time}</time>
+            <h3 className="text-justify text-base md:text-lg font-semibold text-black dark:text-white">{exp.position}</h3>
+            <p className="text-justify text-base font-normal text-slate-700 dark:text-slate-400">{exp.description}</p>
             {exp.location && <p>{exp.location}</p>}
             {exp.images && (
-              <div className="flex flex-wrap justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
+              <div className="flex flex-wrap justify-center w-auto md:justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
                 {exp.images.map((image) => (
                   <div key={image.id} className="group h-full rounded-md overflow-hidden">
                     <Image

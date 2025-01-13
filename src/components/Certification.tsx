@@ -103,20 +103,20 @@ const Certification = () => {
     <div  id="certification"
       className=" h-full rounded-3xl p-2  lg:pt-0 lg:pl-10 lg:pr-10 lg:pb-10 flex flex-col"
     >
-      <h2 className="text-3xl font-bold text-black mb-1.5">Bootcamp, Course, Learning & Certification</h2>
+      <h2 className="text-xl md:text-3xl text-justify font-bold text-black mb-1.5">Bootcamp, Course, Learning & Certification</h2>
       <ul className="relative border-l p-2 m-0 border-slate-500 ">
 
         {certifs.map((certif, index) => (
           <li key={certif.id} className="mb-0  ml-4">
             {index === 0 && (
-              <h3 className="text-lg font-bold mt-2 text-black mb-1.5">Relevant studies</h3>
+              <h3 className="text-base text-justify md:text-lg font-bold mt-2 text-black mb-1.5">Relevant studies</h3>
             )}
             <div className="absolute w-4 h-4 bg-black rounded-full mt-1.5 -left-[0.6rem] dark:border-gray-900 dark:bg-gray-700"></div>
-            <time className="mb-1 text-sm font-medium leading-none text-slate-700 dark:text-slate-300">
+            <time className="mb-1 text-justify text-sm font-medium leading-none text-slate-700 dark:text-slate-300">
               {certif.date}
             </time>
-            <div className="flex items-center justify-start py-1.5 gap-3 border-b border-slate-500">
-                <div className="flex overflow-hidden items-center justify-center rounded-2xl w-16 h-16 object-cover">
+            <div className="flex items-center  justify-start py-1.5 gap-3 border-b border-slate-500">
+                <div className="hidden lg:flex overflow-hidden items-center justify-center rounded-2xl w-16 h-16 object-cover">
                 <Image
                   src={certif.img}
                   width={80}
@@ -129,7 +129,7 @@ const Certification = () => {
                 </div>
 
              <div className="flex flex-col justify-start">
-                <h3 className="text-lg font-semibold text-black dark:text-white">
+                <h3 className="text-base text-justify md:text-lg font-semibold text-black dark:text-white">
                   {certif.title}
                   <Link href={certif.link}
                       className="inline-flex justify-center items-center p-1 text-black -rotate-45 hover:rotate-0 hover:scale-125 hover:text-amber-500 transition-all duration-300 ease-in-out"
@@ -149,7 +149,7 @@ const Certification = () => {
                     </Link>
                 </h3>
 
-                <p className="mb-4  text-base font-normal text-slate-800 dark:text-gray-400">
+                <p className="mb-4 text-justify  text-base font-normal text-slate-800 dark:text-gray-400">
                 {certif.description}
               </p>
              </div>
