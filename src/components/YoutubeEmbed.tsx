@@ -1,17 +1,17 @@
-import React from 'react';
+import React from "react";
 
 interface YouTubeEmbedProps {
-  videoId: string;
+  videoId: string; // ID video YouTube yang akan ditampilkan di akhir link video url
   title?: string;
-  height?: string; // Tambahkan opsi untuk tinggi
-  width?: string;  // Tambahkan opsi untuk lebar
+  height?: string; //  opsi untuk tinggi
+  width?: string; //  opsi untuk lebar
 }
 
 const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({
   videoId,
   title,
   height = "100%", // Default tinggi video
-  width = "100%",   // Default lebar video
+  width = "100%", // Default lebar video
 }) => {
   if (!videoId) {
     console.error("Error: 'videoId' is required for YouTubeEmbed component.");
@@ -20,22 +20,20 @@ const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({
 
   return (
     <div
-  style={{ width, height }}
-  className="relative flex items-center justify-center overflow-hidden rounded-lg shadow-md"
->
-  <iframe
-    src={`https://www.youtube.com/embed/${videoId}`}
-    title={title || "YouTube video"}
-    frameBorder="1"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-    style={{
-      width: "100%",
-      height: "100%", // Pastikan iframe mengikuti ukuran induknya
-    }}
-  ></iframe>
-</div>
-
+      style={{ width, height }}
+      className="relative flex items-center justify-center overflow-hidden rounded-lg shadow-md"
+    >
+      <iframe
+        src={`https://www.youtube.com/embed/${videoId}`}
+        title={title || "YouTube video"}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+        style={{
+          width: "100%",
+          height: "100%", // Pastikan iframe mengikuti ukuran induknya
+        }}
+      ></iframe>
+    </div>
   );
 };
 

@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 
-interface Props {
+interface SocialButtonProps {
     children: ReactNode;
     bgColor?: string | undefined;
 }
 
-const SocialButton: React.FC<Props> = ({ children, bgColor = "black" }) => {
+const SocialButton: React.FC<SocialButtonProps> = ({ children, bgColor = "black" }) => { // REACT.FC untuk penggunaan children
     let bgHoverColorClass;
 
     switch (bgColor) {

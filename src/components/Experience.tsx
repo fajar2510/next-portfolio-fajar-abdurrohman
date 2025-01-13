@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 
-const endpoint = 'https://ik.imagekit.io/fajarblog/porto/';
+const endpoint = "https://ik.imagekit.io/fajarblog/porto/";
 
-interface ExperienceData {
+interface ExperienceDataProps {
   id: number;
   title: string;
   time: string;
@@ -13,17 +13,23 @@ interface ExperienceData {
   images?: { id: number; title: string; urlImage: string }[];
 }
 
-const experiences: ExperienceData[] = [
+const experiences: ExperienceDataProps[] = [
   {
     id: 1,
     title: "Relevant Experience",
     time: "Aug 2020 - Jun 2021",
-    position: "Web Developer & IT Support - Disnakertrans Jawa Timur (Surabaya)",
-    description: "Build interactive Web Apps with mapping of labor in East Java, using Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap.",
+    position:
+      "Web Developer & IT Support - Disnakertrans Jawa Timur (Surabaya)",
+    description:
+      "Build interactive Web Apps with mapping of labor in East Java, using Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap.",
     images: [
       { id: 1, title: "Intern 1", urlImage: `${endpoint}intern/intern1.jpg` },
       { id: 2, title: "Intern 2", urlImage: `${endpoint}intern/intern2.jpeg` },
-      { id: 3, title: "Intern 3", urlImage: `${endpoint}intern/intern3_11zon.jpg` },
+      {
+        id: 3,
+        title: "Intern 3",
+        urlImage: `${endpoint}intern/intern3_11zon.jpg`,
+      },
       { id: 4, title: "Intern 4", urlImage: `${endpoint}intern/intern4.jpeg` },
     ],
   },
@@ -31,15 +37,18 @@ const experiences: ExperienceData[] = [
     id: 2,
     title: "Freelance",
     time: "Aug 2020 - Jun 2021",
-    position: "Frontend Mobile Android Flutter - CV. Linas Media Informatika (Gresik)",
-    description: "Build frontend to ordering food for school canteen application.",
+    position:
+      "Frontend Mobile Android Flutter - CV. Linas Media Informatika (Gresik)",
+    description:
+      "Build frontend to ordering food for school canteen application.",
   },
   {
     id: 3,
     title: "Project & Assignment",
     time: "Feb 2018 - Dec 2019",
     position: "Programmer Fullstack - Universitas Negeri Surabaya (Surabaya)",
-    description: "Build and Development; System Information Accountant(PHP Nattive), System Information Executive(CodeIgniter), System Information Wedding Organizer(Laravel), Mobile Psycholog Consutation(Flutter).",
+    description:
+      "Build and Development; System Information Accountant(PHP Nattive), System Information Executive(CodeIgniter), System Information Wedding Organizer(Laravel), Mobile Psycholog Consutation(Flutter).",
   },
   // {
   //   id: 4,
@@ -75,21 +84,35 @@ const experiences: ExperienceData[] = [
 
 const Experience = () => {
   return (
-    <div id="experience" className="h-full rounded-3xl p-2 lg:p-10 flex flex-col">
+    <div
+      id="experience"
+      className="h-full rounded-3xl p-2 lg:p-10 flex flex-col"
+    >
       <h2 className="text-3xl font-bold text-black mb-1.5">Experience</h2>
       <ul className="relative border-l p-2 m-0 border-slate-500">
         {experiences.map((exp) => (
           <li key={exp.id} className="mb-1 border-b border-slate-700 ml-4">
-            <h3 className="text-justify text-lg font-bold text-black mb-1.5">{exp.title}</h3>
+            <h3 className="text-justify text-lg font-bold text-black mb-1.5">
+              {exp.title}
+            </h3>
             <div className="absolute w-4 h-4 bg-black rounded-full mt-1.5 -left-[0.6rem]"></div>
-            <time className="text-justify mb-1 text-base md:text-base font-normal leading-none text-slate-700 dark:text-slate-300">{exp.time}</time>
-            <h3 className="text-justify text-base md:text-lg font-semibold text-black dark:text-white">{exp.position}</h3>
-            <p className="text-justify text-base font-normal text-slate-700 dark:text-slate-400">{exp.description}</p>
+            <time className="text-justify mb-1 text-base md:text-base font-normal leading-none text-slate-700 dark:text-slate-300">
+              {exp.time}
+            </time>
+            <h3 className="text-justify text-base md:text-lg font-semibold text-black dark:text-white">
+              {exp.position}
+            </h3>
+            <p className="text-justify text-base font-normal text-slate-700 dark:text-slate-400">
+              {exp.description}
+            </p>
             {exp.location && <p>{exp.location}</p>}
             {exp.images && (
               <div className="flex flex-wrap justify-center w-auto md:justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
                 {exp.images.map((image) => (
-                  <div key={image.id} className="group h-full rounded-md overflow-hidden">
+                  <div
+                    key={image.id}
+                    className="group h-full rounded-md overflow-hidden"
+                  >
                     <Image
                       src={image.urlImage}
                       width={138}

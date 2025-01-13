@@ -1,41 +1,42 @@
-import React from 'react';
-
-interface Project {
+interface ProjectProps {
   name: string;
   url: string;
   description: string;
 }
 
-const projects: Project[] = [
+const projects: ProjectProps[] = [
   {
-    name: 'Simple Blog with Laravel 11, TailwindCSS, and SQlite',
-    url: 'https://github.com/fajar2510/laravel11',
-    description: '▫️ Simple Blog with Laravel 11, TailwindCSS, and SQlite',
+    name: "Simple Blog with Laravel 11, TailwindCSS, and SQlite",
+    url: "https://github.com/fajar2510/laravel11",
+    description: "▫️ Simple Blog with Laravel 11, TailwindCSS, and SQlite",
   },
   {
-    name: 'Simple CRUD(Create-Read-Update-Delete) with Laravel 10',
-    url: 'https://github.com/fajar2510/crud-laravel-10',
-    description: '▫️ Simple CRUD(Create-Read-Update-Delete) with Laravel 10',
+    name: "Simple CRUD(Create-Read-Update-Delete) with Laravel 10",
+    url: "https://github.com/fajar2510/crud-laravel-10",
+    description: "▫️ Simple CRUD(Create-Read-Update-Delete) with Laravel 10",
   },
   {
-    name: 'REST API with Laravel 10 (tested in postman)',
-    url: 'https://github.com/fajar2510/rest-api-laravel-10',
-    description: '▫️ REST API with Laravel 10 (tested in postman)',
+    name: "REST API with Laravel 10 (tested in postman)",
+    url: "https://github.com/fajar2510/rest-api-laravel-10",
+    description: "▫️ REST API with Laravel 10 (tested in postman)",
   },
   {
-    name: 'Simple CRUD(Create-Read-Update-Delete) with Next.js, Prisma, and Typescript',
-    url: 'https://github.com/fajar2510/next-crud',
-    description: '▫️ Simple CRUD(Create-Read-Update-Delete) with Next.js, Prisma, and Typescript',
+    name: "Simple CRUD(Create-Read-Update-Delete) with Next.js, Prisma, and Typescript",
+    url: "https://github.com/fajar2510/next-crud",
+    description:
+      "▫️ Simple CRUD(Create-Read-Update-Delete) with Next.js, Prisma, and Typescript",
   },
   {
-    name: 'Simple CRUD(Create-Read-Update-Delete) with Express, Axios, MySql, Vite+ReactJs, TailwindCSS',
-    url: 'https://github.com/fajar2510/nodejs-reactjs-crud',
-    description: '▫️ Simple CRUD(Create-Read-Update-Delete) with Express, Axios, MySql, Vite+ReactJs, TailwindCSS',
+    name: "Simple CRUD(Create-Read-Update-Delete) with Express, Axios, MySql, Vite+ReactJs, TailwindCSS",
+    url: "https://github.com/fajar2510/nodejs-reactjs-crud",
+    description:
+      "▫️ Simple CRUD(Create-Read-Update-Delete) with Express, Axios, MySql, Vite+ReactJs, TailwindCSS",
   },
   {
-    name: 'Blog with Login System, CRUD, Middleware,Typescript, Prisma, TailwindCSS (styling), and MongoDB (Database)',
-    url: 'https://github.com/fajar2510/myblog-next',
-    description: '▫️ Blog with Login System, CRUD, Middleware,Typescript, Prisma, TailwindCSS (styling), and MongoDB (Database)',
+    name: "Blog with Login System, CRUD, Middleware,Typescript, Prisma, TailwindCSS (styling), and MongoDB (Database)",
+    url: "https://github.com/fajar2510/myblog-next",
+    description:
+      "▫️ Blog with Login System, CRUD, Middleware,Typescript, Prisma, TailwindCSS (styling), and MongoDB (Database)",
   },
 ];
 
