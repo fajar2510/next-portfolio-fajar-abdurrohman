@@ -88,11 +88,13 @@ const Experience = () => {
       id="experience"
       className="h-full rounded-3xl p-2 lg:p-10 flex flex-col"
     >
-      <h2 className="text-3xl font-bold text-black mb-1.5">Experience</h2>
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-1.5">
+        Experience
+      </h2>
       <ul className="relative border-l p-2 m-0 border-slate-500">
         {experiences.map((exp) => (
           <li key={exp.id} className="mb-1 border-b border-slate-700 ml-4">
-            <h3 className="text-justify text-lg font-bold text-black mb-1.5">
+            <h3 className="text-start text-base md:text-lg font-bold text-black mb-1.5">
               {exp.title}
             </h3>
             <div className="absolute w-4 h-4 bg-black rounded-full mt-1.5 -left-[0.6rem]"></div>
@@ -107,7 +109,7 @@ const Experience = () => {
             </p>
             {exp.location && <p>{exp.location}</p>}
             {exp.images && (
-              <div className="flex flex-wrap justify-center w-auto md:justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
+              <div className="hidden md:flex flex-wrap justify-start w-auto md:justify-start gap-1 lg:gap-4 px-1 lg:px-2 py-1">
                 {exp.images.map((image) => (
                   <div
                     key={image.id}

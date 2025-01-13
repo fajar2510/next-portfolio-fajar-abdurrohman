@@ -48,8 +48,10 @@ const Education: React.FC = () => {
       id="education"
       className="h-full rounded-3xl px-2 lg:px-10 mt-10 flex flex-col"
     >
-      <h2 className="text-3xl font-bold text-black mb-1.5">Education</h2>
-      <span className="mb-3 text-md font-semibold text-black">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-black mb-1.5">
+        Education
+      </h2>
+      <span className="mb-3 text-base md:text-lg font-semibold text-black">
         Latest education
       </span>
 
@@ -58,14 +60,14 @@ const Education: React.FC = () => {
           <li key={index} className="ml-4">
             <div className="absolute w-4 h-4 bg-black rounded-full mt-1.5 -left-[0.6rem]"></div>
             <time className="mb-1 text-md font-normal leading-none text-slate-700 dark:text-slate-300">
-              {edu.period}{" "}
-              <span className="font-bold text-slate-700 italic">
+              {edu.period}
+              <span className="pl-3 hidden md:inline-block font-base text-slate-700 italic">
                 ({edu.graduated})
               </span>
             </time>
 
             <div className="flex flex-wrap items-center justify-start py-2 gap-3">
-              <div className="overflow-hidden rounded-full">
+              <div className="hidden md:inline-block overflow-hidden rounded-full">
                 <Image
                   src={edu.logoSrc}
                   width={60}
@@ -77,14 +79,14 @@ const Education: React.FC = () => {
                 <h3 className="text-lg lg:text-xl font-bold text-slate-800 dark:text-white">
                   {edu.university}
                 </h3>
-                <h4 className="text-sm lg:text-lg font-normal text-slate-800 dark:text-white">
+                <h4 className="text-base lg:text-lg font-normal text-slate-800 dark:text-white">
                   {edu.department} <br />
                   {edu.program}
                 </h4>
               </div>
             </div>
 
-            <p className="text-base font-normal text-slate-700 dark:text-slate-400">
+            <p className="text-base text-justify font-normal text-slate-700 dark:text-slate-400">
               {edu.description}
             </p>
             <ol>
@@ -93,13 +95,13 @@ const Education: React.FC = () => {
                   key={idx}
                   className="text-base font-normal text-slate-700 dark:text-slate-400 inline-block mr-2"
                 >
-                  ▫️ <strong>Organization</strong> {org}
+                  ▫️ {org}
                 </li>
               ))}
               {edu.publications.map((pub, idx) => (
                 <li
                   key={idx}
-                  className="text-base font-normal text-slate-700 dark:text-slate-400"
+                  className="text-base text-justify  font-normal text-slate-700 dark:text-slate-400"
                 >
                   <a href={pub.link} target="_blank">
                     ▫️{" "}

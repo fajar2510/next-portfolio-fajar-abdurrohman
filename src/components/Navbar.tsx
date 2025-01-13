@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
       }`}
     >
       <div className="navbar mx-auto  bg-white dark:bg-black ">
-        <div className="navbar-start w-1/3">
+        <div className="navbar-start justify-between md:justify-start w-1/3">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost xl:hidden">
               <svg
@@ -104,14 +104,14 @@ const Navbar: React.FC = () => {
             {/* Navigasi Mobile - Tablet */}
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-6 shadow bg-white rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 p-6 shadow-brutalism bg-white rounded-box w-52"
             >
               {navItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
                   target={item.target}
-                  className="text-base font-bold py-1.5 px-2 text-black hover:translate-x-2 hover:underline transition-all duration-300 ease-in-ou"
+                  className="text-base font-bold py-1.5 px-2 text-black hover:translate-x-2 hover:scale-105 hover:no-underline underline transition-all duration-300 ease-in-ou"
                 >
                   {item.label}
                 </Link>
@@ -119,9 +119,12 @@ const Navbar: React.FC = () => {
             </ul>
           </div>
           <div className="flex items-center gap-[1ch]">
-            <div className="hidden lg:block w-5 h-5 bg-yellow-400 rounded-full shadow-brutalism" />
-            <span className="hidden lg:block text-md text-black font-semibold lg:font-bold tracking-widest uppercase">
-              Fajar Abdurrohman
+            <div className="hidden md:inline-block w-5 h-5 bg-yellow-400 rounded-full shadow-brutalism" />
+            <span className="text-base md:pl-3 text-black font-semibold md:font-semibold lg:font-bold tracking-widest uppercase">
+              Fajar
+              <span className="block md:pl-1 md:inline-block text-xs md:text-base tracking-tighter md:tracking-widest font-extralight md:font-semibold lg:font-bold text-black">
+                Abdurrohman
+              </span>
             </span>
           </div>
         </div>
