@@ -19,6 +19,11 @@ const nextConfig = {
       },
     ],
   },
+  env: {
+    EMAIL_USER: process.env.XT_PUBLIC_EMAIL_USER,
+    EMAIL_PASS: process.env.NEXT_PUBLIC_EMAIL_PASS,
+    EMAIL_RECEIVER: process.env.NEXT_PUBLIC_EMAIL_RECEIVER,
+  },
 };
 
 module.exports = nextConfig;

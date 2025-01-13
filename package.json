@@ -12,6 +12,7 @@
     "@types/node": "18.15.11",
     "@types/react": "18.0.31",
     "@types/react-dom": "18.0.11",
+    "axios": "^1.7.9",
     "eslint": "^8.57.1",
     "eslint-config-next": "^13.5.8",
     "flowbite": "^1.6.5",
@@ -19,11 +20,15 @@
     "framer-motion": "^10.12.16",
     "imagekitio-next": "^1.0.1",
     "next": "13.2.4",
+    "nodemailer": "^6.9.16",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-toastify": "^11.0.2"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
+    "@types/nodemailer": "^6.4.17",
+    "@types/react-toastify": "^4.0.2",
     "autoprefixer": "^10.4.20",
     "daisyui": "^3.0.1",
     "postcss": "^8.4.49",

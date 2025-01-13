@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import axios from "axios";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 interface OptionProps {
   value: string;
@@ -42,6 +45,9 @@ const navItems: NavItemProps[] = [
 const Navbar: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<OptionProps>(options[0]);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isDownloadSuccess, setIsDownloadSuccess] = useState(false);
+  const [isDownloadError, setIsDownloadError] = useState(false);
 
   const handleSelectChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value;
@@ -49,18 +55,31 @@ const Navbar: React.FC = () => {
     setSelectedOption(option || options[0]);
 
     if (value === "ID") {
-      alert("Mohon maaf CV Indonesia saat belum tersedia!");
+      setIsModalOpen(true);
       setSelectedOption(options[1]);
     }
   };
 
-  const handleDownloadClick = (
+  const handleDownloadClick = async (
     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
   ) => {
     if (selectedOption.value === "ID") {
       event.preventDefault();
-      alert("Mohon maaf CV Indonesia saat belum tersedia!");
-      setSelectedOption(options[1]);
+      setIsModalOpen(true);
+      return;
+    }
+
+    try {
+      // Panggil API untuk mengirim email
+      await axios.post("/api/sendEmail", {
+        email: process.env.NEXT_PUBLIC_USER_EMAIL,
+        message: `File ${selectedOption.label} telah diunduh.`,
+      });
+      console.log("Email sent successfully");
+      setIsDownloadSuccess(true);
+    } catch (error) {
+      console.error("Failed to send email:", error);
+      setIsDownloadError(true);
     }
   };
 
@@ -188,6 +207,65 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Modal */}
+
+      {isModalOpen && (
+        <div className="modal modal-open">
+          <div className="modal-box bg-white">
+            <h3 className="font-bold text-slate-900 text-lg">Informasi</h3>
+            <p className="py-4 text-slate-700 font-semibold">
+              Mohon maaf, CV Indonesia belum tersedia!
+            </p>
+            <div className="modal-action">
+              <button
+                className="btn text-white font-semibold"
+                onClick={() => setIsModalOpen(false)}
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isDownloadSuccess && (
+        <div className="modal modal-open">
+          <div className="modal-box bg-white">
+            <h3 className="font-bold text-slate-900 text-lg">Berhasil</h3>
+            <p className="py-4 text-slate-700 font-semibold">
+              CV berhasil diunduh!
+            </p>
+            <div className="modal-action">
+              <button
+                className="btn text-white font-semibold"
+                onClick={() => setIsDownloadSuccess(false)}
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isDownloadError && (
+        <div className="modal modal-open">
+          <div className="modal-box bg-white">
+            <h3 className="font-bold text-slate-900 text-lg">Gagal</h3>
+            <p className="py-4 text-slate-700 font-semibold">
+              Gagal mengunduh CV!
+            </p>
+            <div className="modal-action">
+              <button
+                className="btn text-white font-semibold"
+                onClick={() => setIsDownloadError(false)}
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

@@ -13,7 +13,7 @@ module.exports = {
         openSans: ["'Open Sans'", "sans-serif"], // Tambahkan Open Sans
       },
       boxShadow: {
-        brutalism: "5px 5px 0px 0px rgba(0,0,1,1)", // Custom shadow untuk brutalism
+        // Custom shadow untuk brutalism
       },
       colors: {
         github: "#181717",
@@ -22,10 +22,9 @@ module.exports = {
         twitter: "#1DA1F2",
         replit: "#fc9003",
       },
-      
     },
   },
-    plugins: [ 
+  plugins: [
     function ({ addUtilities }) {
       addUtilities({
         ".shadow-brutalism": {
