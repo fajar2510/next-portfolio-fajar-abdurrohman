@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Modal from "@/components/Modal";
 import axios from "axios";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -120,6 +121,7 @@ const Navbar: React.FC = () => {
                 />
               </svg>
             </label>
+
             {/* Navigasi Mobile - Tablet */}
             <ul
               tabIndex={0}
@@ -209,63 +211,29 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Modal */}
+      {/* Modal untuk CV Indonesia belum tersedia */}
+      <Modal
+        isOpen={isModalOpen}
+        title="Informasi"
+        message="Mohon maaf, CV Indonesia belum tersedia!"
+        onClose={() => setIsModalOpen(false)}
+      />
 
-      {isModalOpen && (
-        <div className="modal modal-open">
-          <div className="modal-box bg-white">
-            <h3 className="font-bold text-slate-900 text-lg">Informasi</h3>
-            <p className="py-4 text-slate-700 font-semibold">
-              Mohon maaf, CV Indonesia belum tersedia!
-            </p>
-            <div className="modal-action">
-              <button
-                className="btn text-white font-semibold"
-                onClick={() => setIsModalOpen(false)}
-              >
-                Tutup
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Modal untuk unduhan berhasil */}
+      <Modal
+        isOpen={isDownloadSuccess}
+        title="Berhasil"
+        message="CV berhasil diunduh!"
+        onClose={() => setIsDownloadSuccess(false)}
+      />
 
-      {isDownloadSuccess && (
-        <div className="modal modal-open">
-          <div className="modal-box bg-white">
-            <h3 className="font-bold text-slate-900 text-lg">Berhasil</h3>
-            <p className="py-4 text-slate-700 font-semibold">
-              CV berhasil diunduh!
-            </p>
-            <div className="modal-action">
-              <button
-                className="btn text-white font-semibold"
-                onClick={() => setIsDownloadSuccess(false)}
-              >
-                Tutup
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
-
-      {isDownloadError && (
-        <div className="modal modal-open">
-          <div className="modal-box bg-white">
-            <h3 className="font-bold text-slate-900 text-lg">Gagal</h3>
-            <p className="py-4 text-slate-700 font-semibold">
-              Gagal mengunduh CV!
-            </p>
-            <div className="modal-action">
-              <button
-                className="btn text-white font-semibold"
-                onClick={() => setIsDownloadError(false)}
-              >
-                Tutup
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {/* Modal untuk unduhan gagal */}
+      <Modal
+        isOpen={isDownloadError}
+        title="Gagal"
+        message="Gagal mengunduh CV!"
+        onClose={() => setIsDownloadError(false)}
+      />
     </div>
   );
 };

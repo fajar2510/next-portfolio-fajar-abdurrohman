@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import HeroImage from "@/components/HeroImage";
 import SocialButton from "@/components/SocialButton";
@@ -38,19 +38,32 @@ const socialLinks: SocialLinkProps[] = [
 ];
 
 const Hero = () => {
+  const [isH1Visible, setIsH1Visible] = useState(true);
+
+  useEffect(() => {
+    // Timer untuk pergantian elemen
+    const timer = setInterval(() => {
+      setIsH1Visible((prev) => !prev); // Toggle antara h1 dan p
+    }, 4000); // Durasi sesuai dengan animasi (4s)
+
+    return () => clearInterval(timer); // Bersihkan timer saat unmount
+  }, []);
+
   return (
     <section
       id="home"
       className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4"
     >
-      <div className="shadow-brutalism h-full lg:h-[28rem] rounded-3xl p-4 lg:p-10 flex flex-col gap-4 lg:gap-8 bg-amber-400 bg-cover">
-        <h1 className="group text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed ">
-          Hello! Welcome to My Page
-          <span className="inline-block transform group-hover:scale-125 group-hover:px-2 group-hover:rotate-45 transition-all duration-300 ease-in-out">
-            🖐
-          </span>
-          !&nbsp; <br />
-        </h1>
+      <div className="shadow-brutalism h-full lg:h-[28rem] rounded-3xl p-4 lg:p-10 flex justify-center items-center md:justify-start md:items-start flex-col gap-4 lg:gap-8 bg-amber-400 bg-cover">
+        {isH1Visible ? (
+          <h1 className="animate-typing overflow-clip whitespace-nowrap border-r-4 border-r-white pr-5  text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed ">
+            Hello! Welcome to My Page🖐!
+          </h1>
+        ) : (
+          <h1 className="animate-typing overflow-clip whitespace-nowrap border-r-4 border-r-white pr-5  text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed ">
+            Appreciate visits, Let&apos;s Explore!
+          </h1>
+        )}
         <p
           className="pb-4 pl-4  text-sm text-center 
         md:text-start md:text-base lg:text-lg text-black"
@@ -60,8 +73,11 @@ const Hero = () => {
           For web-mobile development, design, animation and enjoy to learn new
           things, always open to new opportunities as well. <br />
         </p>
-        <span className="text-base lg:text-lg text-black text-center md:text-start font-bold pl-4 pt-0">
-          Let’s explore what I can offer! 🚀
+        <span className="group text-base lg:text-lg text-black text-center md:text-start font-bold pl-4 pt-0">
+          Let’s explore what I can offer!
+          <span className="inline-block  group-hover:scale-150 group-hover:px-2 group-hover:-rotate-45 group-hover:translate-x-4  transition-all duration-300 ease-in-out">
+            🚀
+          </span>
         </span>
 
         <div className="flex m-4 flex-col md:flex-row items-center gap-4 lg:gap-16 mx-auto justify-between mt-auto ">

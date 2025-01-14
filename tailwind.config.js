@@ -9,6 +9,26 @@ module.exports = {
   theme: {
     darkMode: "class",
     extend: {
+      keyframes: {
+        typing: {
+          "0%": { width: "0%", visibility: "hidden" },
+          "90%": { width: "100%" },
+          "100%": { width: "100%" }, // Tetap di 100% selama jeda
+        },
+
+        blink: {
+          "50%": {
+            borderColor: "transparent",
+          },
+          "100%": {
+            borderColor: "white",
+          },
+        },
+      },
+      animation: {
+        typing:
+          "typing 2s steps(20, end)  infinite  alternate, blink 5s infinite",
+      },
       fontFamily: {
         openSans: ["'Open Sans'", "sans-serif"], // Tambahkan Open Sans
       },
