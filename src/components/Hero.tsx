@@ -6,6 +6,7 @@ import Github from "../../public/github.svg";
 import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
 import Replit from "../../public/replit.svg";
+import { lstat } from "fs";
 // import Twitter from "../../public/twitter.svg";
 
 interface SocialLinkProps {
@@ -39,6 +40,39 @@ const socialLinks: SocialLinkProps[] = [
 
 const Hero = () => {
   const [isH1Visible, setIsH1Visible] = useState(true);
+
+  const getRelativeTime = (date: Date) => {
+    const now = new Date();
+    const diff = now.getTime() - date.getTime();
+
+    const seconds = Math.floor(diff / 1000);
+    const minutes = Math.floor(seconds / 60);
+    const hours = Math.floor(minutes / 60);
+    const days = Math.floor(hours / 24);
+    const weeks = Math.floor(days / 7);
+    const months = Math.floor(days / 30);
+
+    if (months >= 6) {
+      return date.toLocaleDateString();
+    } else if (months > 0) {
+      return `${months} month${months > 1 ? "s" : ""} ago`;
+    } else if (weeks > 0) {
+      return `${weeks} week${weeks > 1 ? "s" : ""} ago`;
+    } else if (days > 0) {
+      return `${days} day${days > 1 ? "s" : ""} ago`;
+    } else if (hours > 0) {
+      return `${hours} hour${hours > 1 ? "s" : ""} ago`;
+    } else if (minutes > 0) {
+      return `${minutes} minute${minutes > 1 ? "s" : ""} ago`;
+    } else if (date > now) {
+      return `Invalid date`;
+    } else {
+      return `In a few seconds`;
+    }
+  };
+
+  // set Last Update
+  const lastUpdated = getRelativeTime(new Date("2025-01-02T00:00:00"));
 
   useEffect(() => {
     // Timer untuk pergantian elemen
@@ -99,8 +133,8 @@ const Hero = () => {
             ))}
           </div>
           <div className="flex p-2 flex-auto">
-            <p className=" text-sm font-normal text-black italic">
-              Last updated on 02/01/2025
+            <p className="text-sm font-semibold text-slate-800">
+              Last updated {lastUpdated}
             </p>
           </div>
         </div>

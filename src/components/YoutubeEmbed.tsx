@@ -29,8 +29,8 @@ const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
         style={{
-          width: "100%",
-          height: "100%", // Pastikan iframe mengikuti ukuran induknya
+          width: height,
+          height: width, // Pastikan iframe mengikuti ukuran induknya
         }}
       ></iframe>
     </div>
