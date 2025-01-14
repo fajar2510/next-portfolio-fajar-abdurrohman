@@ -60,7 +60,7 @@ const Hero = () => {
             Hello! Welcome to My Page🖐!
           </h1>
         ) : (
-          <h1 className="animate-typing overflow-clip whitespace-nowrap border-r-4 border-r-white pr-5  text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed ">
+          <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed">
             Appreciate visits, Let&apos;s Explore!
           </h1>
         )}
