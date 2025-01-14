@@ -27,7 +27,7 @@ module.exports = {
       },
       animation: {
         typing:
-          "typing 2s steps(20, end)  infinite  alternate, blink 5s infinite",
+          "typing 2s steps(20, end)  infinite  alternate, blink 4s infinite",
       },
       fontFamily: {
         openSans: ["'Open Sans'", "sans-serif"], // Tambahkan Open Sans
