@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-const endpoint = "https://ik.imagekit.io/fajarblog/porto/";
-
 interface ExperienceDataProps {
   id: number;
   title: string;
@@ -13,6 +11,7 @@ interface ExperienceDataProps {
   images?: { id: number; title: string; urlImage: string }[];
 }
 
+const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
 const experiences: ExperienceDataProps[] = [
   {
     id: 1,
@@ -23,14 +22,14 @@ const experiences: ExperienceDataProps[] = [
     description:
       "Build interactive Web Apps with mapping of labor in East Java, using Georaphics visualization, Leaflet.js, CodeIgniter, MySql, Bootstrap.",
     images: [
-      { id: 1, title: "Intern 1", urlImage: `${endpoint}intern/intern1.jpg` },
-      { id: 2, title: "Intern 2", urlImage: `${endpoint}intern/intern2.jpeg` },
+      { id: 1, title: "Intern 1", urlImage: `${IKIT}intern/intern1.jpg` },
+      { id: 2, title: "Intern 2", urlImage: `${IKIT}intern/intern2.jpeg` },
       {
         id: 3,
         title: "Intern 3",
-        urlImage: `${endpoint}intern/intern3_11zon.jpg`,
+        urlImage: `${IKIT}intern/intern3_11zon.jpg`,
       },
-      { id: 4, title: "Intern 4", urlImage: `${endpoint}intern/intern4.jpeg` },
+      { id: 4, title: "Intern 4", urlImage: `${IKIT}intern/intern4.jpeg` },
     ],
   },
   {
@@ -66,10 +65,10 @@ const experiences: ExperienceDataProps[] = [
   //     description: "Support system and freelance work for the 2024 election.",
   //     location: "Ngawi, East Java, Indonesia",
   //     images: [
-  //       { id: 1, title: "img 1", urlImage: `${endpoint}pemdes/pemdes00.jpg` },
-  //       { id: 2, title: "img 2", urlImage: `${endpoint}pemdes/pemdes01.jpg` },
-  //       { id: 3, title: "img 3", urlImage: `${endpoint}pemdes/pemdes3.jpg` },
-  //       { id: 4, title: "img 4", urlImage: `${endpoint}pemdes/pemdes4.jpg` },
+  //       { id: 1, title: "img 1", urlImage: `${IKIT}pemdes/pemdes00.jpg` },
+  //       { id: 2, title: "img 2", urlImage: `${IKIT}pemdes/pemdes01.jpg` },
+  //       { id: 3, title: "img 3", urlImage: `${IKIT}pemdes/pemdes3.jpg` },
+  //       { id: 4, title: "img 4", urlImage: `${IKIT}pemdes/pemdes4.jpg` },
   //     ],
   //   },
   {

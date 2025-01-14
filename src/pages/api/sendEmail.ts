@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 
-const IKIT = "https://ik.imagekit.io/fajarblog/porto/";
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
@@ -17,6 +16,7 @@ export default async function handler(
       },
     });
 
+    const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
     const mailOptions = {
       from: process.env.NEXT_PUBLIC_EMAIL_USER,
       to: process.env.NEXT_PUBLIC_EMAIL_RECEIVER,

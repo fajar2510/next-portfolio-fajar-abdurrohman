@@ -11,11 +11,11 @@ interface ImageProps {
 const Image: React.FC<ImageProps> = ({ src, className, w, h, alt }) => {
   // Jika src kosong atau undefined, gunakan defaultSrc
   const defaultSrc = "No_Image_Available.jpg";
-  const endpoint = "https://ik.imagekit.io/fajarblog/porto/";
+  const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
 
   return (
     <IKImage
-      urlEndpoint={endpoint}
+      urlEndpoint={IKIT}
       path={src || defaultSrc}
       className={className}
       loading="lazy"

@@ -19,12 +19,13 @@ interface NavItemProps {
   subLabel?: string;
 }
 
-const endpoint = "https://ik.imagekit.io/fajarblog/porto/";
+
+const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
 const options: OptionProps[] = [
   {
     value: "EN",
     label: "ENG",
-    file: `${endpoint}pdf-private/CV EN Fajar Abdurrohman 2024v2.pdf`,
+    file: `${IKIT}pdf-private/CV EN Fajar Abdurrohman 2024v2.pdf`,
   },
   {
     value: "ID",

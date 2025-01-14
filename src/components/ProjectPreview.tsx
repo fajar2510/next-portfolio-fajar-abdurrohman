@@ -12,7 +12,8 @@ interface ProjectPreviewProps {
   dark?: boolean | undefined;
 }
 
-const IKIT = "https://ik.imagekit.io/fajarblog/porto/";
+const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
+
 const ProjectPreview: React.FC<ProjectPreviewProps> = ({
   name,
   description,
