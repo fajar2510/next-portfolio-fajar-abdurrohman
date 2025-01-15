@@ -1,5 +1,6 @@
 import React from "react";
-import Image from "next/image";
+// import Image from "next/image";
+import { IKImage } from "imagekitio-next";
 
 interface ExperienceDataProps {
   id: number;
@@ -114,7 +115,8 @@ const Experience = () => {
                     key={image.id}
                     className="group h-full rounded-md overflow-hidden"
                   >
-                    <Image
+                    <IKImage
+                      urlEndpoint={IKIT}
                       src={image.urlImage}
                       width={138}
                       height={116}

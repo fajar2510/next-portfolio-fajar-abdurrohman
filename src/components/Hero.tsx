@@ -7,8 +7,8 @@ import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
 import Replit from "../../public/replit.svg";
 // import Twitter from "../../public/twitter.svg";
-import { useLastCommit } from "../pages/api/hooks/useLastCommit";
-import { useToggleTimer } from "../pages/api/hooks/useToggleTimer";
+import { useLastCommit } from "@/pages/hooks/useLastCommit";
+import { useToggleTimer } from "@/pages/hooks/useToggleTimer";
 
 interface SocialLinkProps {
   href: string;
