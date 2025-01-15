@@ -32,7 +32,18 @@ export default async function handler(
                     <img src="${IKIT}pngwing.png" alt="Email me" style="max-width: 20%; height: auto; border-radius: 10px; margin-right: 20px;">
                 </div>
                 <p style="border-left: 4px solid #1a73e8; padding-left: 10px; color: #000; margin: 20px 0;">
-                    ${message || "Tidak ada."}
+                     ${message}
+                </p>
+                <p style="color: #000; margin-top: 20px;">
+                  Email ini dikirim pada: ${new Date().toLocaleString("id-ID", {
+                    weekday: "long",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                    hour: "numeric",
+                    minute: "numeric",
+                    second: "numeric",
+                  })}
                 </p>
             </div>
         `,

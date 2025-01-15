@@ -35,9 +35,9 @@ const SocialButton: React.FC<SocialButtonProps> = ({
 
   return (
     <button
-      className={`group h-12 w-12 bg-white ${bgHoverColorClass} border-2 border-black rounded-full  duration-300 ease-in-out transition-all hover:scale-110 flex justify-center items-center`}
+      className={`group h-10 w-10 lg:h-12 lg:w-12 bg-white ${bgHoverColorClass} border-2 border-black rounded-full  duration-300 ease-in-out transition-all hover:scale-110 flex justify-center items-center`}
     >
-      <div className="fill-black group-hover:fill-white transition-colors duration-200 ease-in-out">
+      <div className="fill-black group-hover:fill-white transition-colors duration-300 ease-in-out">
         {children}
       </div>
     </button>

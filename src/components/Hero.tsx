@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import Button from "@/components/Button";
 import HeroImage from "@/components/HeroImage";
 import SocialButton from "@/components/SocialButton";
 import Github from "../../public/github.svg";
 import Instagram from "../../public/instagram.svg";
 import Linkedin from "../../public/linkedin.svg";
 import Replit from "../../public/replit.svg";
-import { lstat } from "fs";
 // import Twitter from "../../public/twitter.svg";
+import { useLastCommit } from "../pages/api/hooks/useLastCommit";
+import { useToggleTimer } from "../pages/api/hooks/useToggleTimer";
 
 interface SocialLinkProps {
   href: string;
@@ -39,70 +40,29 @@ const socialLinks: SocialLinkProps[] = [
 ];
 
 const Hero = () => {
-  const [isH1Visible, setIsH1Visible] = useState(true);
-
-  const getRelativeTime = (date: Date) => {
-    const now = new Date();
-    const diff = now.getTime() - date.getTime();
-
-    const seconds = Math.floor(diff / 1000);
-    const minutes = Math.floor(seconds / 60);
-    const hours = Math.floor(minutes / 60);
-    const days = Math.floor(hours / 24);
-    const weeks = Math.floor(days / 7);
-    const months = Math.floor(days / 30);
-
-    if (months >= 6) {
-      return date.toLocaleDateString();
-    } else if (months > 0) {
-      return `${months} month${months > 1 ? "s" : ""} ago`;
-    } else if (weeks > 0) {
-      return `${weeks} week${weeks > 1 ? "s" : ""} ago`;
-    } else if (days > 0) {
-      return `${days} day${days > 1 ? "s" : ""} ago`;
-    } else if (hours > 0) {
-      return `${hours} hour${hours > 1 ? "s" : ""} ago`;
-    } else if (minutes > 0) {
-      return `${minutes} minute${minutes > 1 ? "s" : ""} ago`;
-    } else if (date > now) {
-      return `Invalid date`;
-    } else {
-      return `In a few seconds`;
-    }
-  };
-
-  // set Last Update
-  const lastUpdated = getRelativeTime(new Date("2025-01-02T00:00:00"));
-
-  useEffect(() => {
-    // Timer untuk pergantian elemen
-    const timer = setInterval(() => {
-      setIsH1Visible((prev) => !prev); // Toggle antara h1 dan p
-    }, 4000); // Durasi sesuai dengan animasi (4s)
-
-    return () => clearInterval(timer); // Bersihkan timer saat unmount
-  }, []);
+  const isH1Visible = useToggleTimer(4000); // Toggle setiap 4 detik
+  const lastUpdated = useLastCommit(); // Fetch data dari GitHub
 
   return (
     <section
       id="home"
-      className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4"
+      className="grid grid-cols-1 md:grid-cols-subgrid lg:grid-cols-[2fr_1fr] gap-4 mb-4"
     >
-      <div className="shadow-brutalism h-full lg:h-[28rem] rounded-3xl p-4 lg:p-10 flex justify-center items-center md:justify-start md:items-start flex-col gap-4 lg:gap-8 bg-amber-400 bg-cover">
+      <div className="shadow-brutalism h-full lg:h-[28rem] rounded-3xl p-4 lg:p-10 flex justify-center items-center md:justify-start md:items-start flex-col gap-2 md:gap-4 lg:gap-6 bg-amber-400 bg-cover">
         {isH1Visible ? (
           <h1 className="animate-typing overflow-clip whitespace-nowrap border-r-4 border-r-white pr-5  text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed ">
             Hello! Welcome to My Page🖐!
           </h1>
         ) : (
-          <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed">
+          <h1 className="animate-typing overflow-clip whitespace-nowrap border-r-4 border-r-white pr-5 text-lg py-4 pl-4 text-center md:text-start md:text-2xl lg:text-3xl text-black font-semibold leading-relaxed">
             Appreciate visits, Let&apos;s Explore!
           </h1>
         )}
         <p
           className="pb-4 pl-4  text-sm text-center 
-        md:text-start md:text-base lg:text-lg text-black"
+        md:text-start md:text-base lg:text-lg text-black l"
         >
-          <span className="font-bold">I’m Fajar Abdurrohman</span>, have strong
+          <span className="font-bold ">I’m Fajar Abdurrohman</span>, have strong
           passion for modern and latest technology <br />
           For web-mobile development, design, animation and enjoy to learn new
           things, always open to new opportunities as well. <br />
@@ -114,16 +74,16 @@ const Hero = () => {
           </span>
         </span>
 
-        <div className="flex m-4 flex-col md:flex-row items-center gap-4 lg:gap-16 mx-auto justify-between mt-auto ">
-          <Link
+        {/* Conctact, sosial, updated */}
+        <div className="flex m-4 flex-col md:flex-row items-center gap-2 md:gap-6 lg:gap-14 justify-between ">
+          <Button
             href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email"
             target="_blank"
-            className="bg-black text-white  py-3 px-12 md:px-5 rounded-full w-full md:w-52 lg:w-64 text-lg text-center tracking-widest  
-          font-bold hover:scale-95 hover:bg-white hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out"
           >
-            Contact me
-          </Link>
-          <div className="flex mt-3 lg:mt-0 justify-self-end items-end gap-4">
+            Contact{" "}
+            <span className="inline-block lg:hidden xl:inline-block">me</span>
+          </Button>
+          <div className="flex mt-2 md:mt-0 items-center gap-4">
             {socialLinks.map(({ href, bgColor, Icon }) => (
               <Link href={href} target="_blank" key={href}>
                 <SocialButton bgColor={bgColor}>
@@ -132,10 +92,19 @@ const Hero = () => {
               </Link>
             ))}
           </div>
-          <div className="flex p-2 flex-auto">
-            <p className="text-sm font-semibold text-slate-800">
-              Last updated {lastUpdated}
-            </p>
+          <div className="inline-flex w-auto md:w-32  p-0">
+            {!lastUpdated ? (
+              <>
+                <p className="text-sm italic pr-2 font-semibold text-slate-800">
+                  Github checking
+                </p>
+                <div className="animate-spin rounded-full h-5 w-5 border-t-2 border-b-2 border-gray-900" />
+              </>
+            ) : (
+              <p className="text-sm italic font-medium text-slate-700">
+                {`Updated ${lastUpdated}`}
+              </p>
+            )}
           </div>
         </div>
       </div>

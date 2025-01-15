@@ -19,6 +19,7 @@
     "flowbite-react": "^0.4.7",
     "framer-motion": "^10.12.16",
     "imagekitio-next": "^1.0.1",
+    "moment": "^2.30.1",
     "next": "13.2.4",
     "nodemailer": "^6.9.16",
     "react": "18.2.0",

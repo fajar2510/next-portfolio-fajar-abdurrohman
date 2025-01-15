@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Arrow from "../../public/arrow.svg";
-// import Link from "next/link"
 import { motion } from "framer-motion";
 
 interface ProjectPreviewProps {
@@ -22,7 +21,7 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
   url,
   dark = false,
 }) => {
-  const [hasAnimated, setHasAnimated] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   return (
     <motion.div
@@ -31,8 +30,10 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
       }`}
       style={{ background: `${bgColor}` }}
       initial="initial"
-      animate={hasAnimated ? "animate" : "initial"}
-      onViewportEnter={() => setHasAnimated(true)} // Animasi hanya terjadi sekali
+      animate={isVisible ? "animate" : "exit"}
+      onViewportEnter={() => setIsVisible(true)}
+      onViewportLeave={() => setIsVisible(false)}
+      viewport={{ once: false, amount: 0.2 }}
       variants={PreviewAnimation}
     >
       <a href={url} target="_blank" rel="noopener noreferrer">
@@ -49,10 +50,8 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
                 {description}
               </p>
             </div>
-            {/* Elemen lingkaran dengan panah */}
             <div className="relative flex justify-center items-center">
               <div className="border-2 border-black h-14 w-14 bg-white hover:bg-amber-400 rounded-full flex justify-center items-center cursor-pointer">
-                {/* Panah new href direction link */}
                 <Arrow className="w-6 h-6 " />
               </div>
             </div>
@@ -65,19 +64,24 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
 
 const PreviewAnimation = {
   initial: {
-    y: 30,
-    opacity: 0,
-    scale: 0.9,
+    x: 30,
+    opacity: 0.7,
+    scale: 1,
   },
   animate: {
-    y: 0,
+    x: 0,
     opacity: 1,
     scale: 1,
     transition: {
       ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 0.8,
+      duration: 1,
     },
   },
+  // exit: {
+  //   y: -10,
+  //   opacity: 0,
+  //   scale: 0.9,
+  // },
 };
 
 export default ProjectPreview;

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import SocialButton from "@/components/SocialButton";
+import Button from "@/components/Button";
 
 import Github from "../../public/github.svg";
 import Instagram from "../../public/instagram.svg";
@@ -63,13 +64,12 @@ const Contact = () => {
 
         {/* Button Contact Me */}
         <div className="flex flex-col lg:flex-row items-center  justify-between">
-          <Link
+          <Button
             href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email"
             target="_blank"
-            className="bg-black text-white text-center tracking-widest font-medium py-3 px-12 rounded-full w-60 lg:w-auto hover:scale-95 hover:bg-transparent hover:border hover:border-black hover:text-black  transition-all duration-300 ease-in-out"
           >
             Contact me
-          </Link>
+          </Button>
           <div className="flex items-center mt-6 lg:mt-0 gap-4">
             {socialLinks.map(({ href, bgColor, Icon }) => (
               <Link href={href} target="_blank" key={href}>

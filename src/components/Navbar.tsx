@@ -3,8 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Modal from "@/components/Modal";
 import axios from "axios";
-import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useScroll } from "@/pages/api/hooks/useScrool";
 
 interface OptionProps {
   value: string;
@@ -18,7 +18,6 @@ interface NavItemProps {
   target?: string;
   subLabel?: string;
 }
-
 
 const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
 const options: OptionProps[] = [
@@ -46,7 +45,7 @@ const navItems: NavItemProps[] = [
 
 const Navbar: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<OptionProps>(options[0]);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const isScrolled = useScroll();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDownloadSuccess, setIsDownloadSuccess] = useState(false);
   const [isDownloadError, setIsDownloadError] = useState(false);
@@ -75,7 +74,7 @@ const Navbar: React.FC = () => {
       // Panggil API untuk mengirim email
       await axios.post("/api/sendEmail", {
         email: process.env.NEXT_PUBLIC_USER_EMAIL,
-        message: `File ${selectedOption.label} telah diunduh.`,
+        message: `File ${selectedOption.file.split("/").pop()} telah diunduh.`,
       });
       console.log("Email sent successfully");
       setIsDownloadSuccess(true);
@@ -84,18 +83,6 @@ const Navbar: React.FC = () => {
       setIsDownloadError(true);
     }
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 9);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div
@@ -126,7 +113,7 @@ const Navbar: React.FC = () => {
             {/* Navigasi Mobile - Tablet */}
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 p-6 shadow-brutalism bg-white rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 p-6 shadow-brutalism bg-white drop-shadow-2x rounded-box w-52"
             >
               {navItems.map((item) => (
                 <Link

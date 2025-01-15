@@ -16,7 +16,10 @@ const Modal: React.FC<ModalProps> = ({ isOpen, title, message, onClose }) => {
         <h3 className="font-bold text-slate-900 text-lg">{title}</h3>
         <p className="py-4 text-slate-700 font-semibold">{message}</p>
         <div className="modal-action">
-          <button className="btn text-white font-semibold" onClick={onClose}>
+          <button
+            className="btn rounded-full px-6 py-3 text-white font-semibold hover:bg-slate-300 border-transparent hover:text-black border-2 hover:border-black"
+            onClick={onClose}
+          >
             Tutup
           </button>
         </div>
