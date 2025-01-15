@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { IKImage } from "imagekitio-next";
 
 interface EducationProps {
   period: string;
@@ -15,12 +14,11 @@ interface EducationProps {
   // certificates: { href: string; text: string; validity: string; score: string }[];
 }
 
-const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
 const educationData: EducationProps[] = [
   {
     period: "2017 - 2023",
     graduated: "Graduated on September 2023",
-    logoSrc: `${IKIT}unesa.png`,
+    logoSrc: "/img/unesa.png",
     university: "Universitas Negeri Surabaya",
     program: "Study Program of Information System",
     department: "Major of Informatics Engineering",
@@ -69,21 +67,19 @@ const Education: React.FC = () => {
             </time>
 
             <div className="flex flex-wrap items-center justify-start py-2 gap-3">
-              <div className="hidden md:inline-block p-2 overflow-hidden rounded-full">
-                <IKImage
-                  urlEndpoint={IKIT}
+              <div className="hidden md:inline-block overflow-hidden rounded-full">
+                <Image
                   src={edu.logoSrc}
-                  width={70}
-                  height={75}
-                  alt="Logo Universitas Negeri Surabaya"
-                  className="rounded-md group-hover:scale-110 duration-300 transition ease-in-out filter grayscale object-cover"
+                  width={60}
+                  height={60}
+                  alt="logo unesa"
                 />
               </div>
               <div className="flex flex-col">
                 <h3 className="text-lg lg:text-xl font-bold text-slate-800 dark:text-white">
                   {edu.university}
                 </h3>
-                <h4 className="text-base  font-normal text-slate-800 dark:text-white">
+                <h4 className="text-base lg:text-lg font-normal text-slate-800 dark:text-white">
                   {edu.department} <br />
                   {edu.program}
                 </h4>
@@ -108,11 +104,11 @@ const Education: React.FC = () => {
                   className="text-base text-justify  font-normal text-slate-700 dark:text-slate-400"
                 >
                   <a href={pub.link} target="_blank">
-                    ▫️
+                    ▫️{" "}
                     <strong className="underline hover:no-underline hover:text-amber-500 transition-all duration-300 ease-in-out">
                       E-Journal Publication
                     </strong>
-                  </a>
+                  </a>{" "}
                   . {pub.title}
                 </li>
               ))}
