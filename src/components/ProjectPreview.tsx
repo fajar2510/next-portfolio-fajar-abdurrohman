@@ -64,12 +64,12 @@ const ProjectPreview: React.FC<ProjectPreviewProps> = ({
 
 const PreviewAnimation = {
   initial: {
-    x: 30,
+    y: 10,
     opacity: 0.7,
     scale: 1,
   },
   animate: {
-    x: 0,
+    y: 0,
     opacity: 1,
     scale: 1,
     transition: {
