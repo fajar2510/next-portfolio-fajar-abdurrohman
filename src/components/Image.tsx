@@ -1,17 +1,25 @@
 import { IKImage } from "imagekitio-next";
 
 interface ImageProps {
+  urlEndpoint?: string;
   src?: string;
   className?: string;
-  w: number;
-  h: number;
+  w?: number;
+  h?: number;
   alt: string;
 }
 
-const Image: React.FC<ImageProps> = ({ src, className, w, h, alt }) => {
+const Image: React.FC<ImageProps> = ({
+  urlEndpoint,
+  src,
+  className,
+  w = 300,
+  h = 300,
+  alt,
+}) => {
   // Jika src kosong atau undefined, gunakan defaultSrc
-  const defaultSrc = "No_Image_Available.jpg";
   const IKIT = process.env.NEXT_PUBLIC_IK_URL_ENDPOINT;
+  const defaultSrc = "No_Image_Available.jpg";
 
   return (
     <IKImage
@@ -26,8 +34,8 @@ const Image: React.FC<ImageProps> = ({ src, className, w, h, alt }) => {
       // Reduce image size with transform
       transformation={[
         {
-          width: w.toString(),
-          height: h.toString(),
+          height: `${h}`,
+          width: `${w}`,
         },
       ]}
     />

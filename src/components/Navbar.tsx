@@ -4,7 +4,7 @@ import Image from "next/image";
 import Modal from "@/components/Modal";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
-import { useScroll } from "@/pages/api/hooks/useScrool";
+import { useScroll } from "@/pages/hooks/useScrool";
 
 interface OptionProps {
   value: string;
