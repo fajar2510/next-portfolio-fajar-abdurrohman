@@ -1,5 +1,3 @@
-import Button from "./Button";
-
 interface ModalProps {
   isOpen: boolean;
   title: string;
