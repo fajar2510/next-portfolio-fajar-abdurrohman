@@ -4,7 +4,7 @@ import Image from "next/image";
 import Modal from "@/components/Modal";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
-import { useScroll } from "../pages/hooks/useScrool";
+import { useScroll } from "../pages/api/hooks/useScrool";
 
 interface OptionProps {
   value: string;
@@ -34,7 +34,7 @@ const options: OptionProps[] = [
 ];
 
 const navItems: NavItemProps[] = [
-  { href: "", label: "Home" },
+  { href: "#home", label: "Home" },
   { href: "#project", label: "Project" },
   { href: "#education", label: "Education" },
   { href: "#experience", label: "Experience" },
@@ -128,7 +128,7 @@ const Navbar: React.FC = () => {
             </ul>
           </div>
           <div className="flex items-center gap-[1ch]">
-            <Link href={""}>
+            <Link href={"#home"}>
               <div className="hidden md:inline-block w-5 h-5 bg-yellow-400 rounded-full shadow-brutalism" />
               <span className="text-base md:pl-3 text-black font-semibold md:font-semibold lg:font-bold tracking-widest uppercase">
                 Fajar
