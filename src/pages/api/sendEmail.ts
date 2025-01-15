@@ -1,5 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
+import moment from "moment";
 
 export default async function handler(
   req: NextApiRequest,
@@ -35,15 +36,7 @@ export default async function handler(
                      ${message}
                 </p>
                 <p style="color: #000; margin-top: 20px;">
-                  Email ini dikirim pada: ${new Date().toLocaleString("id-ID", {
-                    weekday: "long",
-                    year: "numeric",
-                    month: "long",
-                    day: "numeric",
-                    hour: "numeric",
-                    minute: "numeric",
-                    second: "numeric",
-                  })}
+                  Email ini dikirim pada: ${moment().locale("id").format("dddd, D MMMM YYYY, HH:mm:ss")}
                 </p>
             </div>
         `,
