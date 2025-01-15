@@ -75,7 +75,7 @@ const Hero = () => {
         </span>
 
         {/* Conctact, sosial, updated */}
-        <div className="flex flex-wrap m-4 mx-auto w-full items-center gap-2 md:gap-2 lg:gap-4 justify-center lg:justify-between">
+        <div className="flex pl-4 flex-wrap m-4 mx-auto w-full items-center gap-2 md:gap-2 lg:gap-4 justify-center lg:justify-between">
           <Button
             href="mailto:abdurrohmanfajar10@gmail.com?subject=Subjek%20Email&body=Isi%20Email"
             target="_blank"

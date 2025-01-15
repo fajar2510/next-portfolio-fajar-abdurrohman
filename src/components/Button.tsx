@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
     <Link
       href={href}
       target={target}
-      className={`tracking-widest px-8 py-3 md:px-10  text-sm md:text-base  border-2 font-bold rounded-full hover:scale-95 transition-all duration-300 ease-in-out  ${variantClass} ${className}`}
+      className={`tracking-widest px-8 py-3 md:px-10 lg:px-16  text-sm md:text-base  border-2 font-bold rounded-full hover:scale-95 transition-all duration-300 ease-in-out  ${variantClass} ${className}`}
     >
       {children}
     </Link>
